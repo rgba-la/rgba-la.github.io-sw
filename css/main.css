@@ -52,6 +52,7 @@ ul {
 }
 
 img {
+   max-width: 100%;
    vertical-align: middle;
    border-style: none;
 }
@@ -116,8 +117,6 @@ nav a:hover {
 }
 .about-nav li a {
    color:#0F0F0F;
-   font-size: 11px;
-   letter-spacing: 3px;
    font-family: DIN-BlackAlternate;
 }
 
@@ -133,6 +132,91 @@ nav a:hover {
    margin: 0;
 }
 
+.intro {
+   width: 100%;
+   margin: 0 auto;
+}
+
+.intro-module {
+   max-width: 100%;
+   margin: 0 auto;
+}
+
+.intro-image-container {
+   position: relative;
+}
+
+.intro-image {
+   margin: 115px 0;
+   width: 51%;
+   z-index: 1;
+   position: absolute;
+   left: 0;
+   box-shadow: 0 2px 50px 0 rgba(0,0,0,.1);
+}
+
+
+.grey-box-container {
+   margin: 115px auto 0 auto;
+   max-width: 1063px;
+   position: relative;
+   top: -50%;
+   right: 28%;
+}
+
+.grey-box {
+   background-color: #F3F3F3;
+   height: 500px; /*ASK ANDREA*/
+   width: 100%;
+   position: absolute;
+}
+
+.intro-copy-container {
+   max-width: 1360px;
+   width: 100%;
+   padding-right: 153px;
+   position: relative;
+}
+
+.intro-copy {
+   position: absolute;
+   z-index: 50;
+}
+
+hr {
+   height: 2px;
+   background-color: #EEE;
+   color: #EEE;
+   border-style: solid;
+
+}
+
+.intro-copy h2 {
+   margin: 0;
+   font-family: DIN-CondensedBold;
+   color: #0F0F0F;
+   word-break: break-all;
+}
+
+.intro-2 {
+   display: flex;
+   justify-content: center;
+}
+.intro-module-2 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.intro-quote {
+   font-family: DIN-CondensedBold;
+   color: #0F0F0F;
+}
+
+.intro-bio {
+   font-family: Apercu-Regular;
+}
 /***************************
        MEDIA QUERIES
 ***************************/
@@ -152,6 +236,8 @@ nav a:hover {
 
    .about-nav li a {
       margin: 0 40px 0 0 ;
+      font-size: 10px;
+      letter-spacing: 2px;
    }
 
    .about-p {
@@ -163,16 +249,57 @@ nav a:hover {
       font-size: 12px;
    }
 
+   .grey-box {
+      height: 250px;
+   }
+
+   .intro {
+      min-height: 180px;
+   }
+
+   .intro-copy {
+      left: 48.5%;
+      top: -30px;
+   }
+
+   hr {
+      width: 25px;
+      margin: 0 0 15px 0;
+   }
+
+   .intro-copy h2 {
+      font-size: 30px;
+      letter-spacing: 1.5px;
+      line-height: 25px;
+   }
+
+   .intro-2 {
+      margin-top: 45px;
+   }
+
+   .intro-quote {
+      width: 300px;
+      font-size: 14px;
+      letter-spacing: 1.17px;
+      line-height: 25px;
+      text-align: left;
+   }
+
+   .intro-bio {
+      width: 320px;
+      font-size: 12px;
+      line-height: 25px;
+   }
+
+
+
 }
+
 
 @media only screen and (min-width: 768px) {
    .hero-banner {
       margin-top: 43px;
       margin-left: 40px;
-   }
-
-   .logo img {
-      max-width: 100%;
    }
 
    nav {
@@ -195,6 +322,8 @@ nav a:hover {
       margin-top: 5.4%;
    }
    .about-nav li a {
+      font-size: 11px;
+      letter-spacing: 3px;
       margin: 0 50px 0 0 ;
    }
 
@@ -207,5 +336,52 @@ nav a:hover {
       font-size: 15px;
    }
 
+   .intro {
+      min-height: 765px;
+   }
+
+   .intro-copy {
+      left: 52%;
+      top: -75px;
+   }
+
+   hr {
+      width: 82px;
+      margin: 0 0 35px 0;
+   }
+
+   .intro-copy h2 {
+      font-size: 100px;
+      letter-spacing: 5px;
+      line-height: 75px;
+   }
+
+   .intro-quote {
+      width: 782px;
+      font-size: 24px;
+      letter-spacing: 2px;
+      line-height: 40px;
+      text-align: center;
+   }
+
+   .intro-bio {
+      width: 500px;
+      font-size: 15px;
+      line-height: 30px;
+   }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1079px) {
+   .logo img {
+      max-width: 50%;
+   }
+}
+
+@media only screen and (min-width: 1080px) {
+   .logo img {
+      max-width: 100%;
+   }
 
 }
