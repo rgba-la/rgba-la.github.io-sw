@@ -147,7 +147,6 @@ nav a:hover {
 }
 
 .intro-image {
-   margin: 115px 0;
    width: 51%;
    z-index: 1;
    position: absolute;
@@ -158,21 +157,23 @@ nav a:hover {
 
 .grey-box-container {
    margin: 115px auto 0 auto;
-   max-width: 1063px;
+   max-width: 100%;
    position: relative;
    top: -50%;
-   right: 28%;
+   /*height: 650px;*/
 }
 
 .grey-box {
    background-color: #F3F3F3;
-   height: 500px; /*ASK ANDREA*/
-   width: 100%;
+   width: 50%;
+   height: 100%;
+   padding-right: 115px;
+   border-radius: 6px;
    position: absolute;
 }
 
 .intro-copy-container {
-   max-width: 1360px;
+   max-width: 52%;
    width: 100%;
    padding-right: 153px;
    position: relative;
@@ -212,14 +213,54 @@ hr {
 .intro-quote {
    font-family: DIN-CondensedBold;
    color: #0F0F0F;
+   text-transform: uppercase;
 }
 
 .intro-bio {
    font-family: Apercu-Regular;
 }
+
+
+.athlete {
+   width: 100%;
+   margin: 0 auto;
+   height: auto;
+   margin-top: 50px;
+}
+
+.athlete-module {
+   max-width: 1869px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.athlete-title-container {
+   text-align: center;
+}
+
+.athlete-title-container h2 {
+   font-family: DIN-BlackAlternate;
+   margin: 0;
+   color: #F7F7F7;
+}
+
+
+.athlete-image {
+   box-shadow: 0 2px 50px 0 rgba(0,0,0,.1);
+}
+
+
 /***************************
        MEDIA QUERIES
 ***************************/
+
+@media only screen and (min-width: 320px) and (max-width: 670px) {
+   .grey-box-container {
+      height: 150px;
+   }
+
+}
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
    .hero-container {
@@ -249,17 +290,22 @@ hr {
       font-size: 12px;
    }
 
-   .grey-box {
+
+   .grey-box-container {
       height: 250px;
    }
 
    .intro {
-      min-height: 180px;
+      min-height: 280px;
    }
 
    .intro-copy {
-      left: 48.5%;
+      right: 36px;
       top: -30px;
+   }
+
+   .intro-image {
+      margin: 75px 0;
    }
 
    hr {
@@ -289,6 +335,12 @@ hr {
       width: 320px;
       font-size: 12px;
       line-height: 25px;
+   }
+
+   .athlete-title-container h2 {
+      font-size: 50px;
+      letter-spacing: 20px;
+      line-height: 100px;
    }
 
 
@@ -336,24 +388,8 @@ hr {
       font-size: 15px;
    }
 
-   .intro {
-      min-height: 765px;
-   }
-
-   .intro-copy {
-      left: 52%;
-      top: -75px;
-   }
-
-   hr {
-      width: 82px;
-      margin: 0 0 35px 0;
-   }
-
-   .intro-copy h2 {
-      font-size: 100px;
-      letter-spacing: 5px;
-      line-height: 75px;
+   .intro-image {
+      margin: 115px 0;
    }
 
    .intro-quote {
@@ -370,18 +406,85 @@ hr {
       line-height: 30px;
    }
 
+   .athlete-title-container h2 {
+      line-height: 305px;
+      padding: 0 2.8%;
+   }
 
+   .athlete-image-container {
+      display: inline-block;
+      position: relative;
+      top: -100px;
+
+   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1079px) {
    .logo img {
       max-width: 50%;
    }
+
+   hr {
+      width: 50px;
+      margin: 0 0 35px 0;
+   }
+
+   .intro {
+      min-height: 550px;
+   }
+
+
+   .intro-copy {
+      right: 20px;
+      top: -74px;
+   }
+
+   .intro-copy h2 {
+      font-size: 75px;
+      letter-spacing: 2px;
+      line-height: 65px;
+   }
+
+   .grey-box-container {
+      height: 350px;
+   }
+
+   .athlete-title-container h2 {
+      font-size: 95px;
+      letter-spacing: 50px;
+   }
 }
 
 @media only screen and (min-width: 1080px) {
    .logo img {
       max-width: 100%;
+   }
+
+   hr {
+      width: 82px;
+      margin: 0 0 35px 0;
+   }
+   .intro {
+      min-height: 765px;
+   }
+
+   .intro-copy {
+      right: 10px;
+      top: -80px;
+   }
+
+   .intro-copy h2 {
+      font-size: 100px;
+      letter-spacing: 5px;
+      line-height: 75px;
+   }
+
+   .grey-box-container {
+      height: 450px;
+   }
+   .athlete-title-container h2 {
+      font-size: 220px;
+      letter-spacing: 95px;
    }
 
 }
