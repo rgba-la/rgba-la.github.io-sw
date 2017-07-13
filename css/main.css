@@ -355,6 +355,8 @@ hr {
    line-height: 25px;
 }
 
+/* SNOW */
+
 .snow-video-container {
    width: 100%;
    margin: 0 auto;
@@ -404,6 +406,90 @@ hr {
 .snow-video-text-2 {
    margin: 0 auto;
    text-align: center;
+}
+
+/* SKATE */
+
+.skate-container {
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+   position: relative;
+}
+
+.skate-carousel {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   z-index: 10;
+}
+
+.skate-carousel img {
+   box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
+   border-radius: 6px;
+}
+
+.skate-bg {
+   width: 100%;
+   position: absolute;
+   z-index: 0;
+}
+
+.skate-bg img {
+   position: absolute;
+}
+
+.skate {  /*COME BACK TO THIS!!*/
+   position: absolute;
+   display: flex;
+}
+
+.skate-2-container {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.skate-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#skate-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.skate-text-1, .skate-text-3 {
+   font-size: 14px;
+   letter-spacing: 1.17px;
+   line-height: 25px;
+   text-align: center;
+   width: 100%;
+   text-transform: uppercase;
+   font-family: DIN-CondensedBold;
+   text-align: center;
+}
+
+.skate-text-2, .skate-text-4 {
+   text-align: center;
+}
+
+.skate-video, .skate-img {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%
+}
+
+.skate-text-container-2 {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
 }
 
 
@@ -590,12 +676,92 @@ hr {
          width: 320px;
          font-size: 11px;
          line-height: 25px;
-         margin-top: 34px;
+         margin-top: 20px;
       }
 
       .snow-video-text-container {
          margin-top: 15vh;
       }
+
+      .skate-carousel {
+         margin-top: 6.5vh;
+      }
+
+      .skate-carousel img {
+         margin: 0 auto;
+         width: 75%;
+      }
+
+      .skate-2-container {
+         margin: 46px auto 0 auto;
+      }
+      .skate-text-3 {
+         font-size: 14px;
+         letter-spacing: 1.17px;
+         line-height: 25px;
+         text-align: center;
+      }
+
+
+      .skate-text-4 {
+         font-size: 11px;
+         line-height: 25px;
+         text-align: center;
+      }
+
+      .skate-text-1, .skate-text-2 {
+         display: none;
+      }
+
+      .skate-text-3 {
+         margin-top: 45px;
+         margin-bottom: 10px;
+         width: 300px;
+      }
+
+      .skate-text-4 {
+         width: 320px;
+      }
+
+      .skate-img {
+         width: 116px;
+         margin: 118px auto 0 auto;
+      }
+
+      .skate-video {
+         width: 150px;
+         margin-right: 15vw;
+      }
+
+      .skate-video img {
+         width: 95%;
+         border-radius: 4px;
+         box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
+      }
+
+
+      .skate-img img {
+         width: 100%;
+         border-radius: 4px;
+         box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
+      }
+
+      .skate-text-5 {
+         width: 320px;
+         font-size: 12px;
+         line-height: 25px;
+      }
+
+      .skate-text-6 {
+         margin-top: 21px;
+         width: 300px;
+         font-family: DIN-CondensedBold;
+         letter-spacing: 1.17px;
+         line-height: 25px;
+         text-align: center;
+         text-transform: uppercase;
+      }
+
   }
 
   /* Extra Small Devices, Phones */
@@ -674,6 +840,36 @@ hr {
       .snow-video-text-2 {
          width: 420px;
       }
+
+      .skate-text-3 {
+         margin-top: 45px;
+         margin-bottom: 10px;
+         width: 550px;
+      }
+
+      .skate-text-4 {
+         width: 420px;
+      }
+
+      .skate-img {
+         width: 160px;
+         margin: 118px auto 0 auto;
+      }
+
+      .skate-video {
+         width: 194px;
+         margin-right: 15vw;
+      }
+
+      .skate-text-5 {
+         width: 420px;
+      }
+
+      .skate-text-6 {
+         width: 550px;
+      }
+
+
   }
 
   /* Small Devices, Tablets */
@@ -831,6 +1027,16 @@ hr {
          margin-top: 28vh;
       }
 
+      .skate-img {
+         width: 190px;
+         margin: 118px auto 0 auto;
+      }
+
+      .skate-video {
+         width: 230px;
+         margin-right: 15vw;
+      }
+
    }
 
   /* Medium Devices, Desktops */
@@ -945,6 +1151,79 @@ hr {
          line-height: 30px;
       }
 
+      .skate-carousel {
+         margin-top: 14.8vh;
+      }
+
+      .skate-carousel img {
+         margin: 0 auto;
+         width: 85%;
+      }
+
+      .skate-text {
+         margin: 0 auto;
+      }
+
+      #skate-text {
+         display: none;
+      }
+
+      .skate-2-container {
+         width: 95%;
+      }
+
+      .skate-text-1, .skate-text-2 {
+         display: block;
+      }
+
+      .skate-text-1 {
+         font-size: 24px;
+         letter-spacing: 2px;
+         line-height: 40px;
+         width: 513px;
+         text-align: left;
+         margin-top: 150px;
+         margin-bottom: 35px;
+      }
+      .skate-text-2 {
+         font-size: 15px;
+         line-height: 30px;
+         width: 500px;
+         text-align: left;
+      }
+
+      .skate-text-1 p, .skate-text-2 p {
+         margin: 0;
+      }
+
+      .skate-img {
+         width: 334px;
+         margin: 115px auto 0 10px;
+      }
+
+      .skate-video {
+         width: 427px;
+         margin: 69px auto 0 auto;
+      }
+
+      .skate-video img {
+         width: 75%;
+      }
+
+      .skate-text-5 {
+         width: 448px;
+         font-size: 15px;
+         line-height: 30px;
+      }
+
+      .skate-text-6 {
+         width: 726px;
+         font-size: 24px;
+         letter-spacing: 2px;
+         line-height: 40px;
+      }
+
+
    }
 
 
@@ -1027,6 +1306,10 @@ hr {
 
       .snow-video-1 {
          margin-top: 10vh;
+      }
+
+      .skate-video {
+         margin: 69px 0 0 auto;
       }
 
    }
