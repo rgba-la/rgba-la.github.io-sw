@@ -529,12 +529,7 @@ hr {
 
 .grey-box-2 {
    background-color: #F3F3F3;
-   width: 52%;
-   /*height: 160px;*/
-   height: 20vh;
-   border-radius: 6px;
-   margin-left: 50.73px;
-   margin-top: 140px;
+   border-radius: 2px;
 }
 
 .entre-image-container-1 {
@@ -543,19 +538,10 @@ hr {
    flex-direction: row;
    justify-content: flex-start;
    z-index: 10;
-   margin-top: 13vh;
-
-}
-
-.entre-image-1 {
-   width: 57.4%;
-   margin-right: 2.4%;
-   margin-left: 2.4%;
-
 }
 
 .entre-image-1 img {
-   border-radius: 6px;
+   border-radius: 2px;
    box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
 }
 
@@ -564,7 +550,6 @@ hr {
    font-family: DIN-CondensedBold;
    letter-spacing: 1.5px;
    line-height: 25px;
-   margin-top: 50px;
 }
 
 .air-style-text p {
@@ -791,7 +776,6 @@ hr {
          text-align: center;
       }
 
-
       .skate-text-4 {
          font-size: 11px;
          line-height: 25px;
@@ -828,7 +812,6 @@ hr {
          box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
       }
 
-
       .skate-img img {
          width: 100%;
          border-radius: 4px;
@@ -863,6 +846,26 @@ hr {
          color: #F7F7F7;
       }
 
+      .grey-box-2 {
+         width: 52%;
+         height: 20vh;
+         margin-left: 15vw;
+         margin-top: 140px;
+      }
+
+      .entre-image-container-1 {
+         margin-top: 13vh;
+      }
+
+      .entre-image-1 {
+         width: 57.4%;
+         margin-right: 2.4%;
+         margin-left: 2.4%;
+      }
+
+      .air-style-text {
+         margin-top: 60px;
+      }
   }
 
   /* Extra Small Devices, Phones */
@@ -909,6 +912,23 @@ hr {
       .skate {
          top: 15.6vh;
          left: 18%;
+      }
+
+      .grey-box-2 {
+         margin-left: 15vw;
+         margin-top: 160px;
+         height: 26vh;
+      }
+
+      .entre-image-container-1 {
+         margin-top: 15.5vh;
+      }
+
+      .entre-image-1 {
+         width: 57.4%;
+         margin-right: 5%;
+         margin-left: 2.4%;
+
       }
 
    }
@@ -978,6 +998,20 @@ hr {
 
       .skate-text-6 {
          width: 550px;
+      }
+
+      .grey-box-2 {
+         margin-left: 15vw;
+         margin-top: 200px;
+         height: 29.5vh;
+      }
+
+      .entre-image-container-1 {
+         margin-top: 18.8vh;
+      }
+
+      .air-style-text {
+         margin-top: 80px;
       }
 
 
@@ -1152,6 +1186,21 @@ hr {
          width: 230px;
          margin-right: 15vw;
       }
+
+      .grey-box-2 {
+         margin-left: 15vw;
+         margin-top: 254px;
+         height: 40vh;
+      }
+
+      .entre-image-container-1 {
+         margin-top: 24vh;
+      }
+
+      .air-style-text {
+         margin-top: 100px;
+      }
+
 
    }
 
@@ -1361,6 +1410,21 @@ hr {
          letter-spacing: 3.41px;
       }
 
+      .grey-box-2 {
+         margin-left: 15vw;
+         margin-top: 380px;
+         height: 50vh;
+      }
+
+      .entre-image-container-1 {
+         margin-top: 36.5vh;
+      }
+
+      .air-style-text {
+         margin-top: 140px;
+      }
+
+
 
    }
 
@@ -1429,6 +1493,20 @@ hr {
          left: 11%;
       }
 
+      .grey-box-2 {
+         margin-left: 15vw;
+         margin-top: 450px;
+         height: 50vh;
+      }
+
+      .entre-image-container-1 {
+         margin-top: 39vh;
+      }
+
+      .air-style-text {
+         margin-top: 220px;
+      }
+
 
    }
 
@@ -1459,6 +1537,20 @@ hr {
       .skate {
          top: 38.5vh;
          left: 11%;
+      }
+
+      .grey-box-2 {
+         margin-left: 15vw;
+         margin-top: 450px;
+         height: 60vh;
+      }
+
+      .entre-image-container-1 {
+         margin-top: 43.5vh;
+      }
+
+      .air-style-text {
+         margin-top: 220px;
       }
 
    }
@@ -1497,6 +1589,20 @@ hr {
      .skate {
         top: 43.5vh;
         left: 11%;
+     }
+
+     .grey-box-2 {
+        margin-left: 15vw;
+        margin-top: 540px;
+        height: 62.5vh;
+     }
+
+     .entre-image-container-1 {
+        margin-top: 48vh;
+     }
+
+     .air-style-text {
+        margin-top: 240px;
      }
 
    }
