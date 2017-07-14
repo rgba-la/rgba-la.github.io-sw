@@ -439,9 +439,15 @@ hr {
    position: absolute;
 }
 
-.skate {  /*COME BACK TO THIS!!*/
+.skate {
    position: absolute;
    display: flex;
+   z-index: 10;
+}
+
+.skate p {
+   font-family: DIN-CondensedBold;
+   color: #FFF;
 }
 
 .skate-2-container {
@@ -755,6 +761,17 @@ hr {
          margin-top: 15vh;
       }
 
+      .skate {
+         top: 14.5vh;
+         left: 18%;
+      }
+
+      .skate p {
+         font-size: 6.4vw;
+         letter-spacing: 1.5px;
+         line-height: 25px;
+      }
+
       .skate-carousel {
          margin-top: 6.5vh;
       }
@@ -889,6 +906,11 @@ hr {
          bottom: 18%;
       }
 
+      .skate {
+         top: 15.6vh;
+         left: 18%;
+      }
+
    }
 
   /* Extra Small Devices, Phones */
@@ -923,6 +945,11 @@ hr {
 
       .snow-video-text-2 {
          width: 420px;
+      }
+
+      .skate {
+         top: 18vh;
+         left: 18%;
       }
 
       .skate-text-3 {
@@ -1111,6 +1138,11 @@ hr {
          margin-top: 28vh;
       }
 
+      .skate {
+         top: 22.5vh;
+         left: 18%;
+      }
+
       .skate-img {
          width: 190px;
          margin: 118px auto 0 auto;
@@ -1233,6 +1265,17 @@ hr {
          width: 600px;
          font-size: 15px;
          line-height: 30px;
+      }
+
+      .skate {
+         top: 32vh;
+         left: 10%;
+      }
+
+      .skate p {
+         letter-spacing: 5px;
+         line-height: 75px;
+         font-size: 8.8vw;
       }
 
       .skate-carousel {
@@ -1366,7 +1409,7 @@ hr {
          max-width: 90%;
       }
 
-     .atp { /*COME BACK TO THIS */
+     .atp {
         font-size: 1.4vw;
         line-height: 3.5vh;
      }
@@ -1380,6 +1423,12 @@ hr {
      .athlete-snow {
         bottom: -4%;
       }
+
+      .skate {
+         top: 36vh;
+         left: 11%;
+      }
+
 
    }
 
@@ -1405,6 +1454,11 @@ hr {
 
       .skate-video {
          margin: 69px 0 0 auto;
+      }
+
+      .skate {
+         top: 38.5vh;
+         left: 11%;
       }
 
    }
@@ -1438,6 +1492,11 @@ hr {
 
      .snow-video-text-container {
         margin-top: 40vh;
+     }
+
+     .skate {
+        top: 43.5vh;
+        left: 11%;
      }
 
    }
