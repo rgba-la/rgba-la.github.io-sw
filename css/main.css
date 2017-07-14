@@ -848,13 +848,13 @@ hr {
 
       .grey-box-2 {
          width: 52%;
-         height: 20vh;
+         height: 160px;
          margin-left: 15vw;
          margin-top: 140px;
       }
 
       .entre-image-container-1 {
-         margin-top: 13vh;
+         margin-top: 110px;
       }
 
       .entre-image-1 {
@@ -877,7 +877,6 @@ hr {
 
      .intro-copy {
         right: 9vw;
-        /*right: 50px;*/
         top: -30px;
      }
 
@@ -917,11 +916,12 @@ hr {
       .grey-box-2 {
          margin-left: 15vw;
          margin-top: 160px;
-         height: 26vh;
+         height: 212px;
+
       }
 
       .entre-image-container-1 {
-         margin-top: 15.5vh;
+         margin-top: 134px;
       }
 
       .entre-image-1 {
@@ -1003,11 +1003,11 @@ hr {
       .grey-box-2 {
          margin-left: 15vw;
          margin-top: 200px;
-         height: 29.5vh;
+         height: 240px;
       }
 
       .entre-image-container-1 {
-         margin-top: 18.8vh;
+         margin-top: 154px;
       }
 
       .air-style-text {
@@ -1190,11 +1190,11 @@ hr {
       .grey-box-2 {
          margin-left: 15vw;
          margin-top: 254px;
-         height: 40vh;
+         height: 335px;
       }
 
       .entre-image-container-1 {
-         margin-top: 24vh;
+         margin-top: 198px;
       }
 
       .air-style-text {
@@ -1413,11 +1413,11 @@ hr {
       .grey-box-2 {
          margin-left: 15vw;
          margin-top: 380px;
-         height: 50vh;
+         height: 414px;
       }
 
       .entre-image-container-1 {
-         margin-top: 36.5vh;
+         margin-top: 300px;
       }
 
       .air-style-text {
@@ -1496,11 +1496,11 @@ hr {
       .grey-box-2 {
          margin-left: 15vw;
          margin-top: 450px;
-         height: 50vh;
+         height: 415px;
       }
 
       .entre-image-container-1 {
-         margin-top: 39vh;
+         margin-top: 320px;
       }
 
       .air-style-text {
@@ -1541,12 +1541,12 @@ hr {
 
       .grey-box-2 {
          margin-left: 15vw;
-         margin-top: 450px;
-         height: 60vh;
+         margin-top: 480px;
+         height: 486px;
       }
 
       .entre-image-container-1 {
-         margin-top: 43.5vh;
+         margin-top: 360px;
       }
 
       .air-style-text {
@@ -1594,11 +1594,12 @@ hr {
      .grey-box-2 {
         margin-left: 15vw;
         margin-top: 540px;
-        height: 62.5vh;
+        height: 540px;
+
      }
 
      .entre-image-container-1 {
-        margin-top: 48vh;
+        margin-top: 405px;
      }
 
      .air-style-text {
