@@ -529,7 +529,7 @@ hr {
 
 .grey-box-2 {
    background-color: #F3F3F3;
-   border-radius: 2px;
+   border-radius: 4px;
 }
 
 .entre-image-container-1 {
@@ -541,7 +541,7 @@ hr {
 }
 
 .entre-image-1 img {
-   border-radius: 2px;
+   border-radius: 4px;
    box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
 }
 
@@ -555,6 +555,159 @@ hr {
 .air-style-text p {
    margin: 0;
 }
+
+.ec2 {
+   width: 100%;
+   margin: 65px auto 0 auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+
+.ei2 img {
+   width: 100%;
+   border-radius: 4px;
+}
+
+
+.et1 {
+   margin: 0 auto;
+}
+
+.ec3 {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/*.ei3-container {
+   display: flex;
+   flex-direction: column;
+}*/
+
+.et2-container {
+   display: flex;
+   justify-content: center;
+   margin-top: 45px;
+}
+
+.et2-container p {
+   text-align: center;
+   font-family: DIN-CondensedBold;
+   text-transform: uppercase;
+}
+
+.recap-mobile {
+   width: 100%;
+   margin: 50px auto 0 auto;
+   display: flex;
+   justify-content: center;
+}
+
+.rc-mobile {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 320px;
+}
+
+.ec4 {
+   width: 100%;
+   margin: 60px auto 0 auto;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+}
+
+.evc1, .evc2 {
+   display: inline-block;
+   margin: 0 auto;
+   width: 40%;
+   overflow: hidden;
+}
+
+.evc3 {
+   display: flex;
+   justify-content: center;
+   flex-flow: column;
+   width: 42%;
+   margin: 0 auto;
+   text-align: center;
+   padding-right: 20%;
+   padding-top: 2%;
+}
+.ev3 {
+   position: relative;
+}
+
+.evc2 {
+   vertical-align: top;
+   margin: 0 auto;
+}
+
+
+.ev1 p, .ev2 p, .ev3 p {
+   transform: rotate(270deg);
+   font-size: 11px;
+}
+
+.wht-space {
+   width: 100%;
+   position: relative;
+}
+
+.sw-portrait {
+   width: 40%;
+   float: right;
+   z-index: 0;
+   position: absolute;
+   right: 0;
+   height: 315px;
+
+}
+
+.wht-space-title-container {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   position: relative;
+   margin-left: 50px;
+}
+
+.wht-space-title {
+   text-align: left;
+}
+
+.wht-space-title h2 {
+   margin: 0;
+}
+
+
+.wsi1 {
+   z-index: 600;
+   margin: 0 auto;
+   border-radius: 6px;
+}
+
+.wsi2 {
+   border-radius: 6px;
+   z-index: 1;
+}
+
+.examp {
+   z-index: 700;
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: column;
+   position: relative;
+   width: 25%;
+   margin: -15% -15% -10% 85%;
+   box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
+
+}
+
+
 
 /***************************
        MEDIA QUERIES
@@ -866,6 +1019,113 @@ hr {
       .air-style-text {
          margin-top: 60px;
       }
+
+      .ei2-container {
+         width: 25vw;
+      }
+
+      .et1 {
+         font-size: 12px;
+         line-height: 25px;
+         width: 72vw;
+      }
+
+      .et1-container {
+         display: flex;
+         width: 50%;
+         margin: 32px auto 0 auto;
+
+      }
+
+      .et2-container {
+         width: 300px;
+      }
+
+      .et2-container p {
+         font-size: 14px;
+         letter-spacing: 1.17px;
+         line-height: 25px;
+      }
+
+      .rc-mobile h2 {
+         font-size: 24px;
+         font-family: DIN-CondensedBold;
+         letter-spacing: 2px;
+         line-height: 40px;
+         margin: 0;
+      }
+
+      .rc-mobile p {
+         margin: 0;
+         font-size: 12px;
+         line-height: 25px;
+      }
+
+      .evc1 {
+         margin: 0 auto;
+      }
+
+      .ev2 {
+         margin-top: 100px;
+      }
+
+      .ev-text {
+         display: none;
+      }
+
+      .ev1 img, .ev2 img, .ev3 img {
+         border-radius: 6px;
+         box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2); /* FIX AFTER*/
+      }
+
+      .wht-space {
+         margin: 170px auto 0;
+      }
+
+      .wht-space-title hr {
+         width: 6vw;
+
+      }
+
+      .wht-space-title h2 {
+         font-family: DIN-CondensedBold;
+         font-size: 7.5vw;
+         letter-spacing: 1.5px;
+         line-height: 6.4vw;
+      }
+
+      .wsi-container {
+         z-index: 400;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         margin-top: 34px;
+         position: relative;
+      }
+      .wsi {
+         width: 60%;
+         margin-left: 50px;
+      }
+
+      .wst {
+         margin-top: 25%;
+         display: flex;
+         justify-content: center;
+      }
+
+      .wst p {
+         margin: 0;
+         font-family: DIN-CondensedBold;
+         font-size: 3.5vw;
+         letter-spacing: 1.17px;
+         line-height: 25px;
+         text-transform: uppercase;
+      }
+
+      #wst1 {
+         display: none;
+      }
+
   }
 
   /* Extra Small Devices, Phones */
@@ -1424,6 +1684,108 @@ hr {
          margin-top: 140px;
       }
 
+      .ei2-container {
+         width: 20vw;
+         margin-top: 90px;
+      }
+
+      .et1 {
+         font-size: 15px;
+         line-height: 30px;
+         width: 72vw;
+      }
+
+      .et1-container {
+         display: flex;
+         width: 448px;
+         margin: 150px auto 0 auto;
+      }
+
+      .et2-container {
+         width: 695px;
+      }
+
+      .et2-container p {
+         font-size: 24px;
+         letter-spacing: 2px;
+         line-height: 40px;
+      }
+
+      .recap-mobile {
+         display: none;
+      }
+
+      .evc1 {
+         margin: 95px auto 0;
+      }
+
+      .ev-text {
+         display: block;
+      }
+
+      .ev-text h2 {
+         margin: 0;
+         font-size: 24px;
+         font-family: DIN-CondensedBold;
+         letter-spacing: 2px;
+         line-height: 40px;
+         text-align: left;
+      }
+
+      .ev-text p {
+         margin: 0;
+         font-size: 15px;
+         line-height: 30px;
+         text-align: left;
+      }
+
+      .ev1 img, .ev2 img, .ev3 img {
+         border-radius: 4px;
+         box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2); /* FIX AFTER*/
+      }
+
+      .wht-space {
+         margin: 100px auto 0;
+      }
+
+      .wsi-container {
+         margin-top: 115px;
+      }
+
+      .wsi {
+         width: 52%;
+      }
+
+      .wht-space-title {
+         text-align: left;
+         margin-top: 90px;
+      }
+
+      .wht-title {
+         padding-left: 15%;
+      }
+
+      #wst1 {
+         z-index: 700;
+         display: flex;
+         justify-content: flex-end;
+         position: relative;
+         margin: -26% -32% 1% 94%;
+         width: 340px;
+      }
+
+
+      #wst1 p {
+         font-family: DIN-CondensedBold;
+         font-size: 24px;
+         letter-spacing: 2px;
+         line-height: 40px;
+         margin: 0;
+      }
+
+      .wst {
+         display: none;
+      }
 
 
    }
@@ -1552,6 +1914,12 @@ hr {
       .air-style-text {
          margin-top: 220px;
       }
+
+      .et1-container {
+         margin: 195px auto 0 auto;
+
+      }
+
 
    }
 
