@@ -57,7 +57,6 @@ ul {
 }
 
 
-
 img {
    max-width: 100%;
    vertical-align: middle;
@@ -72,6 +71,8 @@ nav a {
 nav a:hover {
    color: #fff;
 }
+
+
 
 
 /*******************************
@@ -553,13 +554,6 @@ hr {
    box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
 }
 
-.air-style-text {
-   font-size: 30px;
-   font-family: DIN-CondensedBold;
-   letter-spacing: 1.5px;
-   line-height: 25px;
-}
-
 .air-style-text p {
    margin: 0;
 }
@@ -633,6 +627,7 @@ hr {
    margin: 0 auto;
    width: 40%;
    overflow: hidden;
+   position: relative;
 }
 
 .evc3 {
@@ -643,7 +638,8 @@ hr {
    margin: 0 auto;
    text-align: center;
    padding-right: 20%;
-   padding-top: 2%;
+   padding-top: 8%;
+   position: relative;
 }
 .ev3 {
    position: relative;
@@ -658,7 +654,9 @@ hr {
 .ev1 p, .ev2 p, .ev3 p {
    transform: rotate(270deg);
    font-size: 11px;
+   position: absolute;
 }
+
 
 .wht-space {
    width: 100%;
@@ -763,7 +761,6 @@ hr {
    display: flex;
    align-items: center;
    flex-direction: column;
-   margin: 35% -15% -15% 0%;
    text-align: center;
    width: 100%;
    color: #FFF;
@@ -777,10 +774,8 @@ hr {
 }
 
 .mcc {
-   max-width: 100%;
-   /*width: 250px;*/
-   /*height: 199px;*/
-   margin-top: 14%;
+   max-width: 350px;
+   margin: 50px auto 0;
    display: flex;
    align-items: center;
    flex-flow: column;
@@ -792,11 +787,7 @@ hr {
    height: 172px;
    position: relative;
    z-index: 2;
-   margin: -215px -15% -107px -15%;
-   /*left: 0;
-   transform: translateY(-82%);
-   transform: translateY(84%);*/
-
+   margin: -184px -15% -107px -15%;
 }
 
 .mcci img {
@@ -824,9 +815,9 @@ hr {
 
 .gb {
    background-color: #F3F3F3;
-   width: 228px;
+   width: 210px;
    /*height: 240px;*/
-   height: 32vh;
+   height: 26vh;
    border-radius: 6px;
 }
 
@@ -872,6 +863,10 @@ hr {
 
   /* Custom, iPhone Retina */
   @media only screen and (min-width : 320px) {
+
+     .vertical-text {
+        display: none;
+     }
 
      .hero-container {
        padding: 10px;
@@ -1173,7 +1168,18 @@ hr {
       }
 
       .air-style-text {
+         font-size: 30px;
+         letter-spacing: 1.5px;
+         line-height: 25px;
+         font-family: DIN-CondensedBold;
+      }
+
+      .air-style-text {
          margin-top: 60px;
+      }
+
+      #view {
+         display: none;
       }
 
       .ei2-container {
@@ -1232,6 +1238,9 @@ hr {
       .ev1 img, .ev2 img, .ev3 img {
          border-radius: 6px;
          box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2); /* FIX AFTER*/
+         float: right;
+         vertical-align: text-top;
+         width: 90%
       }
 
       .wht-space {
@@ -1305,6 +1314,10 @@ hr {
          margin-top: 45px;
       }
 
+      .mr-title {
+         margin: 35% -15% -15% 0%;
+      }
+
       .mr-title h2 {
          font-family: DIN-CondensedBold;
          font-size: 7.5vw;
@@ -1342,7 +1355,7 @@ hr {
       }
 
       .mctc {
-         margin-top: 200px;
+         margin-top: 194px;
       }
 
       .mctc p {
@@ -1454,6 +1467,9 @@ hr {
 
       }
 
+      .mr-title {
+         margin: 32% -15% -15% 1%;
+      }
    }
 
   /* Extra Small Devices, Phones */
@@ -1537,6 +1553,10 @@ hr {
          margin-top: 80px;
       }
 
+      .mr-title {
+         margin: 30% -15% -15% 1%;
+      }
+
 
   }
 
@@ -1594,7 +1614,7 @@ hr {
         min-height: 550px;
      }
 
-     hr {
+     .intro-copy hr, .snow-text hr {
         width: 50px;
         margin: 0 0 25px 0;
      }
@@ -1728,11 +1748,32 @@ hr {
          margin-top: 100px;
       }
 
+      .mr-title {
+         margin: 28% -15% -15% 1%;
+      }
+
 
    }
 
   /* Medium Devices, Desktops */
   @media only screen and (min-width : 992px) {
+
+     .vertical-text {
+     width: 11%;
+     transform: rotate(270deg);
+     transform-origin: left top 0;
+     /*float: right;*/
+     font-size: 13px;
+     font-weight: normal;
+     letter-spacing: 0.19px;
+     padding-bottom: 10px;
+     border-bottom: 1px solid black;
+     margin: 0px 0px 0px 75px;
+     position: fixed;
+     display: inline-block;
+     color: #2a2a2a;
+     z-index: 10000;
+     }
 
      .intro-quote {
         width: 782px;
@@ -1951,6 +1992,32 @@ hr {
          margin-top: 140px;
       }
 
+      .air-style-text {
+         font-size: 100px;
+         letter-spacing: 5px;
+         line-height: 80px;
+         font-family: DIN-CondensedBold;
+      }
+
+      .air-style-text hr {
+         display: none;
+      }
+
+      a.view {
+         border: 1.5px solid #ECECEC;
+         padding: 10px 45px;
+      }
+
+      #view {
+         display: block;
+         font-size: 14px;
+         letter-spacing: 0.93px;
+         font-family: Apercu-Regular;
+         text-transform: uppercase;
+         margin: 0;
+         padding-left: 130px;
+      }
+
       .ei2-container {
          width: 20vw;
          margin-top: 90px;
@@ -2081,6 +2148,10 @@ hr {
          display: block;
       }
 
+      .mr-title {
+         margin: 36% -15% -15% 1%;
+      }
+
       .mr-title h2 {
          /*font-size: 100px;*/
          font-size: 6vw;
@@ -2170,6 +2241,11 @@ hr {
 
 
  @media only screen and (min-width: 1080px) {
+
+      .vertical-text {
+         width: 10%;
+      }
+
       .logo img {
          max-width: 100%;
       }
@@ -2246,11 +2322,20 @@ hr {
          margin-top: 220px;
       }
 
+      .mr-title {
+         margin: 34% -15% -15% 1%;
+      }
+
 
    }
 
    /* Large Devices, Wide Screens */
    @media only screen and (min-width : 1200px) {
+
+      .vertical-text {
+         width: 9%;
+      }
+
       .intro {
          min-height: 600px;
       }
@@ -2301,6 +2386,11 @@ hr {
    }
 
    @media only screen and (min-width: 1350px) {
+
+      .vertical-text {
+         width: 8%;
+      }
+
       .intro {
          min-height: 700px;
       }
