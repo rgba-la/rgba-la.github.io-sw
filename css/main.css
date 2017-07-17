@@ -62,16 +62,6 @@ img {
    border-style: none;
 }
 
-nav a {
-   color: rgba(255,255,255,0.5);
-   letter-spacing: 3px;
-}
-
-nav a:hover {
-   color: #fff;
-}
-
-
 
 /*******************************
        Base Layout Styles
@@ -104,7 +94,6 @@ nav a:hover {
    display: flex;
    flex-direction: column;
    position: relative;
-
 }
 
 .about {
@@ -845,6 +834,7 @@ hr {
    flex-flow: column;
 }
 
+
 /***************************
        MEDIA QUERIES
 ***************************/
@@ -852,6 +842,109 @@ hr {
 
   /* Custom, iPhone Retina */
   @media only screen and (min-width : 320px) {
+
+     /* MOBILE NAV */
+     .desktop {
+        display: none;
+      }
+
+     nav a {
+        color: #ACACAC;
+        margin-bottom: 40px;
+        font-family: DIN-BlackAlternate;
+        font-size: 16px;
+        letter-spacing: 4px;
+        line-height: 20px;
+     }
+
+     nav a:focus {
+        color: black;
+     }
+
+     .overlay a {
+        display: block;
+     }
+
+     .overlay a:hover {
+        color: #000;
+     }
+
+     .menu-toggle {
+        padding: 1em;
+        position: absolute;
+        cursor: pointer;
+        z-index: 100;
+        margin-top: 25px;
+        margin-left: 22px;
+     }
+
+     .hamburger, .hamburger::before,
+     .hamburger::after {
+        content: '';
+        display: block;
+        background: #FFF;
+        height: 3px;
+        width: 1.4em;
+        border-radius: 3px;
+     }
+
+     .hamburger::before {
+        transform: translateY(-8px);
+     }
+
+     .hamburger::after {
+        transform: translateY(5px);
+     }
+
+     .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: white;
+        overflow-x: hidden;
+        z-index: 1000;
+        transition: all 0.5s;
+     }
+
+     .menu {
+        position: relative;
+        top: 100px;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+     }
+
+     .mobile-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+        text-align: center;
+     }
+     a.closeBtn {
+        font-size: 40px;
+     }
+
+     .mobile-logo {
+        align-self: center;
+        margin: 0 auto;
+        padding-right: 55px;
+        font-size: 35px;
+        font-family: DIN-BlackAlternate;
+     }
+
+     .ml {
+        font-family: Apercu-Regular
+     }
+
+     .closeBtn {
+        margin: 31px 0 25px 36px;
+        font-size: 20px;
+     }
+
+     /* END MOBILE NAV */
 
      .vertical-text {
         display: none;
@@ -1260,7 +1353,7 @@ hr {
       }
 
       .wst {
-         margin-top: 25%;
+         margin-top: 28%;
          display: flex;
          justify-content: center;
       }
@@ -1550,6 +1643,39 @@ hr {
   /* Small Devices, Tablets */
   @media only screen and (min-width : 768px) {
 
+     .desktop {
+        margin-top: 84px;
+        margin-left: 20px;
+        margin-right: 20px;
+        float: right;
+        right: 0;
+        position: fixed;
+        font-family: 'DIN-BlackAlternate';
+        font-size: 11px;
+        z-index: 500;
+        display: block;
+     }
+
+     .desktop a {
+       color: rgba(255,255,255,0.5);
+       letter-spacing: 3px;
+        margin: 0 30px 0 0;
+     }
+
+     .desktop a:hover {
+       color: #FFF;
+     }
+
+     .desktop a:focus {
+        color: #FFF;
+     }
+
+     .menu-toggle, .menu, .overlay, .mobile-header {
+        display: none;
+     }
+
+
+
      .hero-banner {
         margin-top: 43px;
         margin-left: 40px;
@@ -1563,21 +1689,6 @@ hr {
          max-width: 50%;
       }
 
-     nav {
-        margin-top: 41px;
-        margin-left: 20px;
-        margin-right: 20px;
-        float: right;
-        right: 0;
-        position: fixed;
-        font-family: 'DIN-BlackAlternate';
-        font-size: 11px;
-        z-index: 500;
-     }
-
-     nav a {
-        margin: 0 30px 0 0;
-     }
 
      .about {
         margin-top: 5.4%;

@@ -14,11 +14,13 @@
    <body>
    <!-- Header -->
       <header>
-            <!-- <input class="menu-btn" type="checkbox" id="menu-btn"/> -->
-            <!-- <label class="menu-icon" for="menu-btn">
-               <span class="navicon"></span>
-            </label> -->
-            <nav class="menu">
+         <!--Mobile Nav -->
+         <div id="nav" class="overlay">
+            <div class="mobile-header">
+               <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
+               <p class="mobile-logo">S<span class="ml">W</span></p>
+            </div>
+            <nav class="menu overlay">
                <a href="#">HOME</a>
                <a href="#">BIO</a>
                <a href="#">MEDIA</a>
@@ -26,12 +28,26 @@
                <a href="#">PARTNERSHIPS</a>
                <a href="#">CONTACT</a>
             </nav>
+         </div>
+         <!--End Mobile Nav -->
+         <!--Desktop Nav -->
+         <nav class="desktop">
+            <a href="#">HOME</a>
+            <a href="#">BIO</a>
+            <a href="#">MEDIA</a>
+            <a href="#">NEWS</a>
+            <a href="#">PARTNERSHIPS</a>
+            <a href="#">CONTACT</a>
+         </nav>
       </header>
    <!-- Hero Banner -->
       <section class="full-width hero-banner">
-            <div class="hero-container">
-               <img class="hero" src="images/assets/homepage/01-home-hero-bg@2x.png"/>
-            </div>
+         <div class="hero-container">
+            <img class="hero" src="images/assets/homepage/01-home-hero-bg@2x.png"/>
+         </div>
+         <div class="menu-toggle">
+            <div class="hamburger openBtn" onclick="openNav()"></div>
+         </div>
          <div class="logo">
             <img src="images/assets/homepage/01-home-hero-logo.png"/>
          </div>

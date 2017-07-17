@@ -1,3 +1,13 @@
+//nav
+
+function openNav() {
+   document.getElementById('nav').style.width = "100%";
+}
+
+function closeNav() {
+   document.getElementById('nav').style.width = "0%";
+}
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -29,7 +39,7 @@ $('a[href*="#"]')
           } else {
             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
-          };
+         }
         });
       }
     }
