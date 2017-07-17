@@ -1,4 +1,4 @@
-//nav
+// Nav slide
 
 function openNav() {
    document.getElementById('nav').style.width = "100%";
@@ -7,6 +7,7 @@ function openNav() {
 function closeNav() {
    document.getElementById('nav').style.width = "0%";
 }
+
 
 // Select all links with hashes
 $('a[href*="#"]')
