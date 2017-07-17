@@ -56,7 +56,6 @@ ul {
    list-style: none;
 }
 
-
 img {
    max-width: 100%;
    vertical-align: middle;
@@ -71,7 +70,6 @@ nav a {
 nav a:hover {
    color: #fff;
 }
-
 
 
 
@@ -101,7 +99,6 @@ nav a:hover {
    z-index: 100;
 }
 
-
 .hero-banner {
    z-index: 0;
    display: flex;
@@ -109,7 +106,6 @@ nav a:hover {
    position: relative;
 
 }
-
 
 .about {
    display: flex;
@@ -119,13 +115,13 @@ nav a:hover {
 
 }
 
-
 .about-nav ul {
    display: flex;
    justify-content: center;
    margin: 0;
 
 }
+
 .about-nav li a {
    color:#0F0F0F;
    font-family: DIN-BlackAlternate;
@@ -165,7 +161,6 @@ nav a:hover {
    left: 0;
    box-shadow: 0 2px 50px 0 rgba(0,0,0,.2);
 }
-
 
 .grey-box-container {
    margin: 115px auto 0 auto;
@@ -309,7 +304,7 @@ hr {
 
 .athlete-snow img {
    border-radius: 6px;
-   box-shadow: -8px 40px 50px 0 rgba(0,0,0,.2); /*COME BACK TO THIS */
+   box-shadow: -8px 30px 50px 0 rgba(0,0,0,.2);
 }
 
 .accomplishments {
@@ -333,6 +328,7 @@ hr {
 .number {
    font-family: DIN-CondensedBold;
 }
+
 .acc-text {
    font-family: DIN-BlackAlternate;
    color: #101010;
@@ -353,9 +349,7 @@ hr {
 
 .accomplishments-copy {
    display: block;
-   /*width: 86%;*/
    margin: 0 auto;
-
 }
 
 .accomplishments-copy p {
@@ -509,6 +503,7 @@ hr {
 }
 
 /* ENTREPRENEUR*/
+
 .entrepreneur-container {
    width: 100%;
    margin: 0 auto;
@@ -570,7 +565,6 @@ hr {
    width: 100%;
    border-radius: 4px;
 }
-
 
 .et1 {
    margin: 0 auto;
@@ -641,6 +635,7 @@ hr {
    padding-top: 8%;
    position: relative;
 }
+
 .ev3 {
    position: relative;
 }
@@ -650,13 +645,11 @@ hr {
    margin: 0 auto;
 }
 
-
 .ev1 p, .ev2 p, .ev3 p {
    transform: rotate(270deg);
    font-size: 11px;
    position: absolute;
 }
-
 
 .wht-space {
    width: 100%;
@@ -670,7 +663,6 @@ hr {
    position: absolute;
    right: 0;
    height: 315px;
-
 }
 
 .wht-space-title-container {
@@ -688,7 +680,6 @@ hr {
 .wht-space-title h2 {
    margin: 0;
 }
-
 
 .wsi1 {
    z-index: 600;
@@ -794,11 +785,9 @@ hr {
    width: 255px;
 }
 
-
 .mcci img {
    border-radius: 4px;
    box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
-
 }
 
 .gbc {
@@ -1196,7 +1185,6 @@ hr {
          display: flex;
          width: 50%;
          margin: 32px auto 0 auto;
-
       }
 
       .et2-container {
@@ -1249,7 +1237,6 @@ hr {
 
       .wht-space-title hr {
          width: 6vw;
-
       }
 
       .wht-space-title h2 {
@@ -1365,7 +1352,6 @@ hr {
          width: 320px;
       }
 
-
       .si {
          margin-top: 320px;
       }
@@ -1378,6 +1364,7 @@ hr {
          text-align: center;
          margin: 0;
       }
+
       .email {
          width: 320px;
          height: 60px;
@@ -1662,7 +1649,6 @@ hr {
          display: inline-block;
          position: relative;
          top: -15.5vh;
-
       }
 
      .athlete-title-container h2 {
@@ -1752,7 +1738,6 @@ hr {
          margin: 28% -15% -15% 1%;
       }
 
-
    }
 
   /* Medium Devices, Desktops */
@@ -1787,7 +1772,7 @@ hr {
 
      }
 
-     .athlete-text-container { /*COME BACK TO THIS */
+     .athlete-text-container {
         top: 46vh;
      }
 
@@ -1796,7 +1781,7 @@ hr {
      }
 
 
-     .atp { /*COME BACK TO THIS */
+     .atp {
         font-size: 1.4vw;
         line-height: 3.5vh;
      }
@@ -2172,13 +2157,11 @@ hr {
          z-index: 50;
       }
 
-
       .mri-right-container img {
          width: 100%;
          box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
          border-radius: 4px;
       }
-
 
       .mrtc {
          width: 100%;
@@ -2264,6 +2247,7 @@ hr {
          width: 82px;
          margin: 0 0 35px 0;
       }
+
       .intro {
          min-height: 580px;
       }
