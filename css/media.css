@@ -1,0 +1,155 @@
+/*******************************
+       Base Element Styles
+********************************/
+
+html, body {
+   box-sizing: border-box;
+   margin: 0;
+   overflow-x: hidden;
+   width: 100%;
+   height: auto;
+   padding: 0;
+   font-family: Apercu-Regular;
+   color: #0F0F0F;
+}
+
+/*******************************
+       Base Layout Styles
+********************************/
+/* BANNER AREA */
+
+.media-logo {
+   position: absolute;
+   width: 45px;
+   height: 22px;
+   margin-top: 32px;
+   margin-left: 4.7%;
+}
+
+.banner-text {
+   font-family: DIN-CondensedBold;
+   position: absolute;
+   left: 0;
+   text-align: center;
+   color: #FFF;
+   display:flex;
+   flex-flow: column wrap;
+}
+
+/* SUBNAV AREA */
+
+.m-subnav ul {
+   display: flex;
+   margin: 0;
+
+}
+
+.m-subnav li a {
+   font-family: DIN-CondensedBold;
+}
+
+.m-subnav li a:hover {
+   color: #0F0F0F;
+   text-decoration: underline; /*COME BACK TO THIS */
+}
+
+/***************************
+       MEDIA QUERIES
+***************************/
+
+@media only screen and (min-width : 320px) {
+
+   /* BANNER AREA */
+   .banner-text-container {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .banner-text {
+      width: 100%;
+      top: 25%;
+      margin: 0 auto;
+      display: inline-block;
+   }
+
+   .banner-text h2 {
+      width: 50%;
+      margin: 0 auto;
+      font-size: 30px;
+      letter-spacing: 8px;
+      line-height: 40px;
+      word-wrap: break-word;
+
+   }
+
+   /* SUBNAV AREA */
+   .m-subnav ul {
+      /*margin-top: 42px;*/
+      justify-content: center;
+
+   }
+
+   .m-subnav li a {
+      margin-right: 31px;
+      font-size: 24px;
+   }
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 570px) {
+
+   /* BANNER AREA */
+   .banner-text {
+      width: 100%;
+      top: 35%;
+   }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+   /* BANNER AREA */
+   .banner-text {
+      width: 100%;
+      top: 40%;
+   }
+
+   .banner-text h2 {
+      width: 100%;
+      font-size: 4.02vw;
+      /*font-size: 40px;*/
+      /*letter-spacing: 15px;*/
+      letter-spacing: 1.5vw;
+      line-height: 50px;
+   }
+
+
+      /* SUBNAV AREA */
+      .m-subnav ul {
+         margin-top: 32px;
+         margin-left: 10%;
+         justify-content: flex-start;;
+
+      }
+
+      .m-subnav li a {
+         margin-right: 31px;
+         font-size: 24px;
+         line-height: 40px;
+         color: #CFCFCF;
+      }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+
+}
