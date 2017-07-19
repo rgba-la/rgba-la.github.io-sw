@@ -103,14 +103,47 @@ img {
 
 }
 
+.about-nav li {
+   position: relative;
+}
+
 .about-nav li a {
    color:#0F0F0F;
    font-family: DIN-BlackAlternate;
 }
 
-.about-nav li a:hover {
+/*.about-nav li a:hover {
    text-decoration: line-through; /*COME BACK TO THIS */
+/*}*/
+
+.about-nav li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 8px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: -10%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
+
+.icon:hover:after {
+  width: 45%;
+  left: 0;
+}
+
+.athlete:hover:after {
+  width: 60%;
+  left: 0;
+}
+
+.entrepreneur:hover:after {
+  width: 72%;
+  left: 0;
+}
+
 
 .about-p {
    flex-wrap: wrap;
