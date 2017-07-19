@@ -65,7 +65,6 @@ html, body {
 }
 
 .s1 img {
-   border-radius: 6px;
    box-shadow: 0 2px 50px 0 rgba(0,0,0,.2);
 }
 
@@ -235,6 +234,11 @@ html, body {
       color: #CFCFCF;
    }
 
+   /* SECTION 1 */
+   .s1 img {
+      border-radius: 6px;
+   }
+
    /* SECTION 2 */
    .section2 {
       margin-top: 35px; /*Check this later */
@@ -292,7 +296,7 @@ html, body {
    }
 
    .sv3-container {
-      margin-top: 75px;
+      margin-top: 100px;
    }
 
    .sv4 {
@@ -482,6 +486,8 @@ html, body {
 
    .sv2-container {
       margin-top: 65px;
+      margin-bottom: 50px;
+
    }
 
    .sv2 {
@@ -513,6 +519,27 @@ html, body {
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
+   /* SECTION 1 */
+   .s1 img, .sv4 img, .sv5 img {
+      border-radius: 0;
+   }
+
+   .s1 img {
+      width: 85%;
+   }
+
+   .s1 {
+      margin-top: 75px;
+      margin-right: 32%;
+      margin-left: 30%;
+
+   }
+
+   #sv4 {
+      padding: 0 12.4% 0 17%;
+      position: relative;
+   }
+
    /* SECTION 2 */
 
    .svc {
@@ -540,6 +567,7 @@ html, body {
 
    .sv2-container {
       margin-top: -20px;
+      margin-bottom: 0;
    }
 
    .sv2 {
@@ -560,7 +588,7 @@ html, body {
 
    .sv4 {
       /*padding: 0 95px 0 200px;*/
-      padding: 0 9.4% 0 20%;
+      padding: 0 10.4% 0 18%;
       position: relative;
 
    }
