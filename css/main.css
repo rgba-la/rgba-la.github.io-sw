@@ -1305,7 +1305,7 @@ hr {
       .et1-container {
          display: flex;
          width: 50%;
-         margin: 32px auto 0 auto;
+         margin: 32px auto 0 32px;
       }
 
       .et2-container {
@@ -1669,6 +1669,11 @@ hr {
 
       .air-style-text {
          margin-top: 80px;
+      }
+
+      .et1-container {
+
+         margin: 70px auto 0 auto;
       }
 
       .mr-title {
