@@ -183,7 +183,6 @@ html, body {
 
 .iv1 img, .iv2 img, .iv3 img, .iv4 img {
    width: 100%;
-   border-radius: 6px;
    box-shadow: 0 2px 50px 0 rgba(0,0,0,.2);
 }
 
@@ -365,6 +364,11 @@ html, body {
       width: 100%;
       /*padding: 0 17px 0 48px;*/
       padding: 0 2.5% 0 6.8%;
+   }
+
+   .iv1 img, .iv2 img, .iv3 img, .iv4 img {
+      width: 100%;
+      border-radius: 6px;
    }
 
    .iv4 {
@@ -613,8 +617,12 @@ html, body {
 
    }
 
+   .sv2 img, .sv3 img {
+      border-radius: 0;
+   }
+
    .sv3-container {
-      margin-top: 220px;
+      margin-top: 150px;
    }
 
    .sv4 {
@@ -666,8 +674,18 @@ html, body {
    .iv1, .itc2 {
       width: 100%;
       /*padding: 0 45px 0 188px;*/
-      padding: 0 8% 0 7%;
+      padding: 0 6% 0 7%;
       margin-left: 10%;
+   }
+
+   .itc2 {
+      padding: 0 7% 0 7%;
+      margin-left: 10%;
+   }
+
+   .iv1 img, .iv2 img, .iv3 img, .iv4 img {
+      width: 100%;
+      border-radius: 0;
    }
 
    .itc2 {
@@ -677,7 +695,7 @@ html, body {
    .iv2 {
       width: 100%;
       /*padding: 0 45px 0 188px;*/
-      padding: 0 4% 0 7%;
+      padding: 0 6% 0 7%;
       margin-left: 10%;
    }
 
@@ -686,7 +704,7 @@ html, body {
    }
 
    .iv2 {
-      width: 92%
+      width: 90%
    }
 
    .itc1 {
@@ -696,6 +714,11 @@ html, body {
 
    .iv3 {
       padding: 0 7% 0 0;
+   }
+
+   .iv4 {
+    width: 100%;
+    padding: 0px 7% 0 0;
    }
 
 
