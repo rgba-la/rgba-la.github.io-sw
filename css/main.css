@@ -2195,6 +2195,7 @@ hr {
 
       .ev-text {
          display: block;
+         margin-left: 10%;
       }
 
       .ev-text h2 {
