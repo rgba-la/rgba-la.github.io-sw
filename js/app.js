@@ -1,4 +1,4 @@
-// Nav slide
+// Mobile Nav Slide
 
 function openNav() {
    document.getElementById('nav').style.width = "100%";
@@ -8,7 +8,9 @@ function closeNav() {
    document.getElementById('nav').style.width = "0%";
 }
 
+//==================================//
 
+// Subnav Scroll
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -45,3 +47,11 @@ $('a[href*="#"]')
       }
     }
   });
+
+//===================================//
+
+//Carousel Slider
+
+ $(function() {
+    $(".skate-carousel").responsiveSlides();
+ });
