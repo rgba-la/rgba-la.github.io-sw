@@ -648,10 +648,28 @@ hr {
    margin: 0 auto;
 }
 
+.vertical-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 10px;
+   padding-right: 16px;
+}
+
+.ev1 .vertical-container p {
+   padding-bottom: 20px;
+
+}
+
 .ev1 p, .ev2 p, .ev3 p {
-   transform: rotate(270deg);
+   width: 25px;
+   transform: rotate(180deg);
    font-size: 11px;
-   position: absolute;
+   /*position: absolute;*/
+   display: flex;
+   justify-content: flex-end;
+   writing-mode: vertical-lr;
+   text-align: right;
 }
 
 .wht-space {
@@ -939,6 +957,7 @@ hr {
         box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
         text-align: center;
      }
+
      a.closeBtn {
         font-size: 40px;
      }
