@@ -439,13 +439,20 @@ html, body {
 
 }
 
+@media only screen and (min-width : 430px) {
+   .banner-text {
+      top: 44%;
+   }
+}
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 570px) {
 
    /* BANNER AREA */
    .banner-text {
       width: 100%;
-      top: 38%;
+      /*top: 38%;*/
    }
 
 }
@@ -467,7 +474,7 @@ html, body {
 
    .banner-text {
       width: 100%;
-      top: 40%;
+      top: 42%;
    }
 
    .banner-text h2 {
