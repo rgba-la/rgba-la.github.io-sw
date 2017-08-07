@@ -61,6 +61,10 @@ img {
 
 /* TOP */
 
+header {
+   position: relative;
+}
+
 .full-width {
    width: 100%;
 }
@@ -293,7 +297,7 @@ hr {
 }
 
 .athlete-text p {
-   margin: 0;
+   margin: 35px;
    color: #FFF;
 }
 
@@ -1702,9 +1706,10 @@ hr {
         margin-top: 84px;
         margin-left: 20px;
         margin-right: 20px;
-        /*float: right;*/
+        float: right;
+        top: 0;
         right: 0;
-        position: fixed;
+        position: absolute;;
         z-index: 500;
         display: block;
      }
