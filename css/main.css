@@ -617,10 +617,14 @@ hr {
 
 .ec4 {
    width: 100%;
-   margin: 60px auto 0 auto;
+   margin:  0 auto;
    text-align: center;
    display: flex;
    justify-content: center;
+}
+
+.ev1 img {
+   margin-top: 60px;
 }
 
 .evc1, .evc2 {
@@ -661,7 +665,7 @@ hr {
 }
 
 .ev1 .vertical-container p {
-   padding-bottom: 20px;
+   padding-bottom: 80px;
 
 }
 
@@ -792,11 +796,9 @@ hr {
 
 .mcc {
    width: 100%;
-   margin: 12% auto 0;
    display: flex;
    align-items: center;
    flex-flow: column;
-   /*position: relative;*/
 }
 
 .mcci {
@@ -1187,12 +1189,8 @@ hr {
          line-height: 25px;
       }
 
-      .skate-carousel {
-         margin-top: 6.5vh;
-      }
-
       .skate-carousel img {
-         margin: 0 auto;
+         margin: 6.5vh auto;
          width: 75%;
       }
 
@@ -1245,7 +1243,7 @@ hr {
       .skate-img img {
          width: 100%;
          border-radius: 4px;
-         box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
+         box-shadow: 2px 2px 50px 0 rgba(0,0,0,.1);
       }
 
       .skate-text-container-2 {
@@ -1478,8 +1476,12 @@ hr {
          margin-top: 45px;
       }
 
+      .mcc {
+         margin: 12% auto 0;
+      }
+
       .mctc {
-         margin-top: 194px;
+         margin-top: 12%;
       }
 
       .mctc p {
@@ -2050,12 +2052,8 @@ hr {
          font-size: 8.8vw;
       }
 
-      .skate-carousel {
-         margin-top: 14.8vh;
-      }
-
       .skate-carousel img {
-         margin: 0 auto;
+         margin: 14.8vh auto;
          width: 85%;
       }
 
@@ -2210,6 +2208,7 @@ hr {
 
       .ev-text {
          display: block;
+         margin-top: 60px;
          margin-left: 10%;
       }
 
@@ -2264,7 +2263,6 @@ hr {
          width: 340px;
       }
 
-
       #wst1 p {
          font-family: DIN-CondensedBold;
          font-size: 24px;
@@ -2279,6 +2277,10 @@ hr {
 
       .mammoth {
          margin: 30% auto 0;
+      }
+
+      .mcc {
+         margin: 35% auto 0;
       }
 
       .col {
@@ -2358,7 +2360,7 @@ hr {
       }
 
       .mctc {
-         margin-top: 200px;
+         margin-top: 165px;
       }
 
       .mctc p {
