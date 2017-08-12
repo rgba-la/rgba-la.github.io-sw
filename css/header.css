@@ -1,0 +1,286 @@
+/* Fonts */
+/* Come back to this */
+@font-face {
+   font-family: 'Apercu-Regular';
+   src: url('../_fonts/ApercuRegular-f396cd8a.otf');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'DIN-BlackAlternate';
+   src: url('../_fonts/DINBlackAlternate.ttf');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'DIN-CondensedBold';
+   src: url('../_fonts/DINCondensedBold.ttf');
+   font-weight: normal;
+   font-style: normal;
+}
+
+/*******************************
+Base Element Styles
+********************************/
+html, body {
+   box-sizing: border-box;
+   margin: 0;
+   overflow-x: hidden;
+   width: 100%;
+   height: auto;
+   padding: 0;
+   font-family: Apercu-Regular;
+   color: #0F0F0F;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:hover {
+   cursor: pointer;
+}
+
+ul {
+   list-style: none;
+}
+
+img {
+   width: 100%;
+   vertical-align: middle;
+   border-style: none;
+}
+
+/* TOP */
+
+header {
+   position: relative;
+}
+
+.full-width {
+   width: 100%;
+}
+
+.hero-banner, .image-container,
+.hero-container, .hero {
+   max-width: 100%;
+
+}
+
+.hero-banner {
+   z-index: 0;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+/***************************
+MEDIA QUERIES
+***************************/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+   /* MOBILE NAV */
+   .desktop {
+      display: none;
+   }
+
+   nav a {
+      color: #ACACAC;
+      margin-bottom: 40px;
+      font-family: DIN-BlackAlternate;
+      font-size: 16px;
+      letter-spacing: 4px;
+      line-height: 20px;
+   }
+
+   nav .active {
+      color: black;
+   }
+
+   .overlay a {
+      display: block;
+   }
+
+   .overlay a:hover {
+      color: #000;
+
+   }
+
+   .menu-toggle {
+      padding: 1em;
+      position: absolute;
+      cursor: pointer;
+      z-index: 100;
+      margin-top: 31px;
+      margin-left: 22px;
+      -webkit-transition: all .7s ease;
+      -moz-transition: all .7s ease;
+      -ms-transition: all .7s ease;
+      -o-transition: all .7s ease;
+      transition: all .7s ease;
+   }
+
+   .hamburger, .hamburger::before,
+   .hamburger::after {
+      content: '';
+      display: block;
+      background: #FFF;
+      height: 3px;
+      width: 1.4em;
+      border-radius: 3px;
+
+      -webkit-transition: all .7s ease;
+      -moz-transition: all .7s ease;
+      -ms-transition: all .7s ease;
+      -o-transition: all .7s ease;
+      transition: all .7s ease;
+   }
+
+   .navbar-on .hamburger::before, .navbar-on .hamburger::after{
+    background-color: #333;
+    position: absolute;
+    margin-top: 12px;
+    z-index: 1000;
+   }
+
+   .navbar-on .hamburger::before {
+      -webkit-transform: translateY(-15px) rotateZ(45deg);
+   }
+
+   .navbar-on .hamburger::after {
+      -webkit-transform: translateY(-15px) rotateZ(-45deg);
+   }
+
+   .navbar-on .hamburger {
+      background-color: transparent;
+   }
+
+
+/*
+   .menu-toggle.active .hamburger::before {
+      margin-top: 12px;
+  -webkit-transform: translateY(-12px) rotateZ(45deg);
+  -moz-transform: translateY(-12px) rotateZ(45deg);
+  -ms-transform: translateY(-12px) rotateZ(45deg);
+  -o-transform: translateY(-12px) rotateZ(45deg);
+  transform: translateY(-12px) rotateZ(45deg);
+}
+
+   */
+   .hamburger::before {
+      transform: translateY(-8px);
+   }
+
+   .hamburger:hover:before {
+      transform: translateY(-10px);
+   }
+
+   .hamburger::after {
+      transform: translateY(5px);
+   }
+
+   .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: white;
+      overflow-x: hidden;
+      z-index: 1000;
+      transition: all 0.5s;
+   }
+
+   .menu {
+      position: relative;
+      top: 100px;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+   }
+
+   .mobile-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+      text-align: center;
+   }
+
+   a.closeBtn {
+      font-size: 40px;
+   }
+
+   .mobile-logo {
+      align-self: center;
+      margin: 0 auto;
+      padding-right: 55px;
+      font-size: 35px;
+      font-family: DIN-BlackAlternate;
+   }
+
+   .ml {
+      font-family: Apercu-Regular
+   }
+
+   .closeBtn {
+      margin: 31px 0 25px 36px;
+      font-size: 20px;
+   }
+
+   /* END MOBILE NAV */
+
+   .hero-container {
+     padding: 10px;
+   }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+   .desktop {
+      margin-top: 84px;
+      margin-left: 20px;
+      margin-right: 20px;
+      float: right;
+      top: 0;
+      right: 0;
+      position: absolute;;
+      z-index: 500;
+      display: block;
+   }
+
+   .desktop a {
+      color: rgba(255,255,255,0.5);
+      font-family: 'DIN-BlackAlternate';
+      letter-spacing: 3px;
+      margin: 0 30px 0 0;
+      font-size: 11px;
+   }
+
+   .desktop a:hover {
+      color: #FFF;
+   }
+
+   .desktop .active {
+      color: #FFF;
+   }
+
+   .menu-toggle, .menu, .overlay, .mobile-header {
+      display: none;
+   }
+
+   .hero-banner {
+      margin-top: 43px;
+      margin-left: 40px;
+   }
+
+   .hero-container img {
+     box-shadow: -2px -2px 30px 0 rgba(0,0,0,.1);
+   }
+}

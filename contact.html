@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Shaun White | Contact</title>
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/media.css">
+   <link rel="stylesheet" href="css/contact.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script
+   src="https://code.jquery.com/jquery-3.2.1.min.js"
+   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+   crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
+</head>
+<body>
+   <!-- Header -->
+   <header>
+      <!--Mobile Nav -->
+      <div id="nav" class="overlay">
+         <div class="mobile-header">
+            <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
+            <p class="mobile-logo">S<span class="ml">W</span></p>
+         </div>
+         <nav class="menu overlay">
+            <a href="index.html">HOME</a>
+            <a href="#">BIO</a>
+            <a href="media.html">MEDIA</a>
+            <a href="#">NEWS</a>
+            <a href="#">PARTNERSHIPS</a>
+            <a class="active" href="contact.html">CONTACT</a>
+         </nav>
+      </div>
+      <!--End Mobile Nav -->
+      <!--Desktop Nav -->
+      <nav class="desktop">
+         <a href="index.html">HOME</a>
+         <a href="#">BIO</a>
+         <a href="media.html">MEDIA</a>
+         <a href="#">NEWS</a>
+         <a href="#">PARTNERSHIPS</a>
+         <a class="active" href="contact.html">CONTACT</a>
+      </nav>
+      <!--End Desktop Nav -->
+   </header>
+   <!-- Hero Banner -->
+   <section class="full-width hero-banner">
+      <div class="hero-container">
+         <img class="mm-hero" src="images/assets/media/mobile/mobile-media-hero@2x.jpg"/>
+         <a href="index.html"><img class="media-logo" src="images/assets/media/condensed-logo@2x.png"/></a>
+         <img class="hero" src="images/assets/media/main-media-hero@2x.png"/>
+      </div>
+      <div class="menu-toggle openBtn" onclick="openNav()">
+         <div class="hamburger"></div>
+      </div>
+      <div class="banner-text-container">
+         <div class="banner-text">
+            <h2>CONTACT</h2>
+         </div>
+      </div>
+   </section>
+   <!-- End Hero Banner -->
+   <section class="content-wrapper">
+         <div class="email-container">
+            <p class="description">For business opportunities, press inquiries, fan mail, or, ya know… maybe just your random thoughts of the day, please contact us via email:</p>
+            <p>info@shaunwhiteenterprises.com</p>
+         </div>
+         <div class="form-wrapper">
+            <form id="form" onsubmit="submitForm(); return false;">
+               <div class="NE-container">
+                  <label for="name"></label>
+                  <input id="name" type="text" name="name" placeholder="name" value="Name" required/>
+                  <label for="email"></label>
+                  <input id="email" type="email" name="email" value="Your Email" placeholder="Your Email" required/>
+               </div>
+               <label for="message"></label>
+               <textarea id="message" name="message" type="text" rows="10" cols="35" placeholder="Your Message" required></textarea>
+               <input id="submit" type="submit" value="Send"/><span id="status"></span>
+            </form>
+         </div>
+      </section>
+   <!-- Footer -->
+   <section class="footer">
+      <img src="images/assets/media/media-footer@2x.png"/>
+   </section>
+   <!-- End Footer -->
+   <script src="js/app.js"></script>
+</body>
+</html>

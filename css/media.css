@@ -473,7 +473,6 @@ html, body {
    }
 
    .banner-text {
-      width: 100%;
       top: 42%;
    }
 
@@ -556,10 +555,23 @@ html, body {
       padding: 58px 80px 0 0;
    }
 
+   .sv4 p, .sv5 p, .s1 p {
+      font-size: 13px;
+   }
+
+   .iv1 p, .iv2 p, .iv3 p, .iv4 p {
+      font-size: 13px;
+   }
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
+   .banner-text {
+      width: 100%;
+      top: 43%;
+   }
 
    /* SECTION 1 */
    .s1 img, .sv4 img, .sv5 img {

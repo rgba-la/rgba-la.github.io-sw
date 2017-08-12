@@ -1,5 +1,5 @@
 // Mobile Nav Slide
-
+//
 function openNav() {
    document.getElementById('nav').style.width = "100%";
 }
@@ -7,6 +7,16 @@ function openNav() {
 function closeNav() {
    document.getElementById('nav').style.width = "0%";
 }
+
+// $(function(){
+//   $('.menu-toggle, nav').click(function(){
+//     $('.menu-toggle').toggleClass('navbar-on');
+//     $('menu').fadeToggle();
+//     $('menu').removeClass('menu');
+//
+//   });
+// });
+
 
 //==================================//
 
@@ -55,3 +65,37 @@ $('a[href*="#"]')
 $(function() {
    $(".skate-carousel").responsiveSlides();
 });
+
+
+document.querySelector( ".menu-toggle" )
+  .addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+  });
+
+//===================================//
+
+//Contact form
+
+function _(id){ return document.getElementById(id); }
+
+function submitForm() {
+   _("submit").disabled = true;
+   _("status").innerHTML = "please wait...";
+   var formdata = new FormData();
+   formdata.append("name", _("name").value);
+   formdata.append("email", _("email").value);
+   formdata.append("message", _("message").value);
+   var ajax = new XMLHttpRequest();
+   ajax.open("POST", "form.php");
+   ajax.onreadystatechange = function(){
+      if(ajax.readyState == 4 && ajax.status == 200) {
+         if(ajax.responseText == "success") {
+            _("form").innerHTML = '<h2>Thanks ' + _("name").value+', your message has bent sent.</h2>';
+         } else {
+            _("status").innerHTML = ajax.responseText;
+            _("submit").disabled = false;
+         }
+      }
+   };
+   ajax.send(formdata);
+}
