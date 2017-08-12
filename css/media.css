@@ -134,6 +134,11 @@ html, body {
    align-items: center;
 }
 
+.offset-container {
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
 .sv2-container, .sv3-container {
    width: 100%;
    margin: 0 auto;
@@ -154,6 +159,7 @@ html, body {
    width: 100%;
    margin: 50px auto 0;
    height: auto;
+   max-width: 1440px;
 }
 
 .i-section-container {
@@ -321,7 +327,7 @@ html, body {
    }
 
    .sv3-container {
-      margin-top: 100px;
+      margin-top: 50px;
    }
 
    .sv4 {
@@ -362,7 +368,6 @@ html, body {
 
    .iv1 {
       width: 100%;
-      /*padding: 0 17px 0 48px;*/
       padding: 0 2.5% 0 6.8%;
    }
 
@@ -579,7 +584,7 @@ html, body {
    }
 
    .s1 img {
-      width: 85%;
+      width: 75%;
    }
 
    .s1 {
@@ -677,12 +682,9 @@ html, body {
    }
 
    .itc1 p, .itc2 p {
-      /*font-size: 24px;*/
-      font-size: 2.2vw;
-      /*letter-spacing: 2px;*/
+      font-size: 1.5vw;
       letter-spacing: 0.2vw;
-      /*line-height: 40px;*/
-      line-height: 4vw;
+      line-height: 3vw;
       padding-left: 0;
    }
 
@@ -692,14 +694,12 @@ html, body {
 
    .iv1, .itc2 {
       width: 100%;
-      /*padding: 0 45px 0 188px;*/
-      padding: 0 6% 0 7%;
-      margin-left: 10%;
+      padding: 0 8% 0 7%;
    }
 
    .itc2 {
       padding: 0 7% 0 7%;
-      margin-left: 10%;
+      /*margin-left: 10%;*/
    }
 
    .iv1 img, .iv2 img, .iv3 img, .iv4 img {
@@ -713,9 +713,8 @@ html, body {
 
    .iv2 {
       width: 100%;
-      /*padding: 0 45px 0 188px;*/
       padding: 0 6% 0 7%;
-      margin-left: 10%;
+      /*margin-left: 10%;*/
    }
 
    .iv1, .iv3 {
@@ -727,8 +726,7 @@ html, body {
    }
 
    .itc1 {
-      padding: 8% 14% 0 0;
-      /*padding: 10% 5.2% 0 2%;*/
+      padding: 8% 16% 0 0;
    }
 
    .iv3 {
