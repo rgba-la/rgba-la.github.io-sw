@@ -27,7 +27,7 @@
             <a class="active" href="media.html">MEDIA</a>
             <a href="#">NEWS</a>
             <a href="#">PARTNERSHIPS</a>
-            <a href="contact.html">CONTACT</a>
+            <a href="#" class="contact-open">CONTACT</a>
          </nav>
       </div>
       <!--End Mobile Nav -->
@@ -38,7 +38,7 @@
          <a class="active" href="media.html">MEDIA</a>
          <a href="#">NEWS</a>
          <a href="#">PARTNERSHIPS</a>
-         <a href="contact.html">CONTACT</a>
+         <a href="#" class="contact-open">CONTACT</a>
       </nav>
       <!--End Desktop Nav -->
    </header>
@@ -175,6 +175,44 @@
       <img src="images/assets/media/media-footer@2x.png"/>
    </section>
    <!-- End Footer -->
+   <!--  CONTACT MODAL -->
+   <section id="contact-modal" class="modal">
+      <section class="modal-input-box">
+         <!--Button to close modal-->
+         <div id="close">
+            <div class="close">
+               <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                   <title>Page 1</title>
+                   <desc>Created with Sketch.</desc>
+                   <defs></defs>
+                   <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                       <g id="Contact" transform="translate(-967.000000, -361.000000)" fill="#000000">
+                           <polygon id="Page-1" points="980.7144 361 975 366.7144 969.2848 361 967 363.2856 972.7144 369 967 374.7136 969.2848 377 975 371.2856 980.7144 377 983 374.7136 977.2848 369 983 363.2856"></polygon>
+                       </g>
+                   </g>
+               </svg>
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="legend-container">
+            <legend align="left"><h2>CONTACT</h2></legend>
+         </div>
+         <form class="contact-form">
+            <div class="email-container">
+               <p>For business opportunities, press inquiries, fan mail, or, ya know… maybe just your random thoughts of the day, please contact us via email: <b><a href="MAILTO:info@shaunwhiteenterprises.com?subject=Hello!">info@shaunwhiteenterprises.com</a></b></p>
+            </div>
+            <label for="name"></label>
+            <input class="contact-input" id="name" type="text" name="name" placeholder="Name" required/><br/>
+            <label for="email"></label>
+            <input class="contact-input" id="email" type="email" name="email" placeholder="Your Email" required/>
+            <label for="message"></label>
+            <textarea class="contact-input" id="message" name="message" type="text" rows="10" cols="35" placeholder="Your Message" required></textarea>
+            <input id="submit" type="submit" value="SUBMIT"/><span id="status"></span>
+         </form>
+      </section>
+   </section>
+   <!-- END CONTACT MODAL -->
+   <!-- OWN JS SCRIPT-->
    <script src="js/app.js"></script>
 </body>
 </html>
