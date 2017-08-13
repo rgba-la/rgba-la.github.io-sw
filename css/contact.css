@@ -2,6 +2,58 @@
        Base Layout Styles
 ********************************/
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(48, 48, 48, 0.7);
+  overflow: scroll;
+}
+
+.modal-input-box {
+  background-color: white;
+  max-width: 450px;
+  border-radius: 4px;
+  margin: 150px auto;
+  padding: 2%;
+  line-height: 120%;
+}
+
+.legend-container {
+  display: flex;
+  margin: auto;
+}
+
+.legend-container legend {
+  margin: auto;
+  margin-bottom: 12px;
+}
+
+label {
+  margin-left: 21px;
+}
+
+/*#name, #email, #message {
+  padding: 10px;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}*/
+
+.close {
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #566473;;
+}
+
+
 .email-container p {
    margin: 0 auto;
    width: 90%;
@@ -25,7 +77,6 @@ form {
    flex-direction: column;
    justify-content: center;
    margin: 0 auto 30px auto;
-   border: 1px solid #333;
 }
 
 input, textarea {

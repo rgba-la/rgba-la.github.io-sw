@@ -66,7 +66,7 @@
             <p>info@shaunwhiteenterprises.com</p>
          </div>
          <div class="form-wrapper">
-            <form id="form" onsubmit="submitForm(); return false;">
+            <!-- <form id="form" onsubmit="submitForm(); return false;">
                <div class="NE-container">
                   <label for="name"></label>
                   <input id="name" type="text" name="name" placeholder="name" value="Name" required/>
@@ -76,7 +76,7 @@
                <label for="message"></label>
                <textarea id="message" name="message" type="text" rows="10" cols="35" placeholder="Your Message" required></textarea>
                <input id="submit" type="submit" value="Send"/><span id="status"></span>
-            </form>
+            </form> -->
          </div>
       </section>
    <!-- Footer -->
@@ -84,6 +84,35 @@
       <img src="images/assets/media/media-footer@2x.png"/>
    </section>
    <!-- End Footer -->
+
+   <!--  CONTACT MODAL -->
+   <section id="contact-modal" class="modal">
+      <section class="modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <a class="close">X</a>
+         </div>
+         <!-- Button to close the modal END-->
+         <form>
+            <div class="legend-container">
+               <legend align="center"><h2>CONTACT</h2></legend>
+            </div>
+            <div class="email-container">
+               <p class="description">For business opportunities, press inquiries, fan mail, or, ya know… maybe just your random thoughts of the day, please contact us via email:</p>
+               <p>info@shaunwhiteenterprises.com</p>
+            </div>
+            <label for="name"></label>
+            <input id="name" type="text" name="name" placeholder="name" value="Name" required/><br/>
+            <label for="email"></label>
+            <input id="email" type="email" name="email" value="Your Email" placeholder="Your Email" required/>
+            <label for="message"></label>
+            <textarea id="message" name="message" type="text" rows="10" cols="35" placeholder="Your Message" required></textarea>
+            <input id="submit" type="submit" value="Send"/><span id="status"></span>
+         </form>
+         <p>{{ctrl.error}}</p>
+      </section>
+   </section>
+   <!-- END CONTACT MODAL -->
    <script src="js/app.js"></script>
 </body>
 </html>

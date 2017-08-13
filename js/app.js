@@ -74,6 +74,20 @@ document.querySelector( ".menu-toggle" )
 
 //===================================//
 
+//Event listener to open/close contact modal
+$('.contact-open').on('click', function () {
+  $('#contact-modal').css('display', 'block');
+});
+
+$('.close').on('click', function() {
+  $('#contact-modal').css('display', 'none');
+});
+// 
+// $('.modal').on('click', function() {
+//   $('#contact-modal').css('display', 'none');
+// });
+
+
 //Contact form
 
 function _(id){ return document.getElementById(id); }
