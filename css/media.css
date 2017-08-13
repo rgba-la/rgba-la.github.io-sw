@@ -27,6 +27,10 @@ html, body {
    flex-flow: column wrap;
 }
 
+.play-icon {
+   position: absolute;
+}
+
 /* SUBNAV AREA */
 
 .m-subnav ul {
@@ -234,6 +238,25 @@ html, body {
       top: 35%;
       margin: 0 auto;
       display: inline-block;
+   }
+
+   .banner-text .play-icon {
+      position: absolute;
+      top: 175px;
+      left: 49%;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+   }
+
+   .sv .play-icon {
+      position: absolute;
+      top: 43%;
+      left: 50%;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      right: auto;
    }
 
    .banner-text h2 {
@@ -448,6 +471,15 @@ html, body {
    .banner-text {
       top: 44%;
    }
+
+   .banner-text .play-icon {
+      position: absolute;
+      top: 140px;
+      left: 49%;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+   }
 }
 
 
@@ -484,10 +516,17 @@ html, body {
    .banner-text h2 {
       width: 100%;
       font-size: 4.02vw;
-      /*font-size: 40px;*/
-      /*letter-spacing: 15px;*/
       letter-spacing: 1.5vw;
       line-height: 50px;
+   }
+
+   .banner-text .play-icon {
+      position: absolute;
+      top: 120px;
+      left: 49%;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
    }
 
    .hero {
