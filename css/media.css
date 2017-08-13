@@ -205,6 +205,25 @@ html, body {
 .footer {
    width: 100%;
 }
+
+.sv4 img, .sv5 img, .s1 img, .ev3 img {
+   transition: all .4s ease-in-out;
+   z-index: -1;
+}
+
+.sv4 img:hover, .sv5 img:hover, .s1 img:hover, .ev3 img:hover {
+   transform: scale(.95);
+   /*opacity: 0.9;*/
+}
+
+.sv2 img, .sv3 img, .iv1 img, .iv2 img, .iv3 img, .iv4 img {
+   transition: all .4s ease-in-out;
+   z-index: -1;
+}
+
+.sv2 img:hover, .sv3 img:hover, .iv1 img:hover, .iv2 img:hover, .iv3 img:hover, .iv4 img:hover {
+   transform: scale(.95);
+}
 /***************************
        MEDIA QUERIES
 ***************************/

@@ -94,6 +94,17 @@ header {
   opacity: 1;
 }
 
+/* Text Selection */
+::-moz-selection { /* Code for Firefox */
+   color: #fff;
+   background: #313131;
+}
+
+::selection {
+   color: #fff;
+   background: #313131;
+}
+
 
 /*Contact Form */
 
@@ -201,7 +212,7 @@ input, textarea {
 
 input:hover, textarea:hover {
    border: 2px solid #000;
-   transition: 1s;
+   transition: 0.2s;
 }
 
 input:focus, textarea:focus {

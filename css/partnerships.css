@@ -1,0 +1,343 @@
+
+/*******************************
+       Base Element Styles
+********************************/
+
+html, body {
+   box-sizing: border-box;
+   margin: 0;
+   overflow-x: hidden;
+   width: 100%;
+   height: auto;
+   padding: 0;
+   font-family: Apercu-Regular;
+   color: #0F0F0F;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:hover {
+   cursor: pointer;
+}
+
+ul {
+   list-style: none;
+}
+
+img {
+   width: 100%;
+   vertical-align: middle;
+   border-style: none;
+}
+
+
+/*******************************
+       Base Layout Styles
+********************************/
+
+.skate-2-container {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.skate-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#skate-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.skate-text-1, .skate-text-3 {
+   font-size: 14px;
+   letter-spacing: 1.17px;
+   line-height: 25px;
+   text-align: center;
+   width: 100%;
+   text-transform: uppercase;
+   font-family: DIN-CondensedBold;
+   text-align: center;
+}
+
+.skate-text-2, .skate-text-4 {
+   text-align: center;
+}
+
+.skate-video, .skate-img {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%
+}
+
+.skate-text-container-2 {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.partnerships {
+   max-width: 966px;
+   margin: 115px auto;
+   /*position: relative;*/
+}
+
+hr {
+   max-width: 1090px;
+   width: 80%;
+   background-color: #EEE;
+   color: #EEE;
+   border-style: solid;
+}
+
+.bg {
+   position: absolute;
+   z-index: -1;
+   left: 0;
+}
+
+/***************************
+       MEDIA QUERIES
+***************************/
+
+
+  /* Custom, iPhone Retina */
+  @media only screen and (min-width : 320px) {
+
+     .partnerships {
+         width: 80%;
+         margin: 75px auto;
+     }
+
+     .bg {
+        top: 50%;
+     }
+
+     .skate-2-container {
+        margin: 46px auto 0 auto;
+     }
+
+     .skate-text-3 {
+        font-size: 14px;
+        letter-spacing: 1.17px;
+        line-height: 25px;
+        text-align: center;
+     }
+
+     .skate-text-4 {
+        font-size: 11px;
+        line-height: 25px;
+        text-align: center;
+     }
+
+     .skate-text-1, .skate-text-2 {
+        display: none;
+     }
+
+     .skate-text-3 {
+        margin-top: 45px;
+        margin-bottom: 10px;
+        width: 300px;
+     }
+
+     .skate-text-4 {
+        width: 320px;
+     }
+
+     .skate-video {
+        width: 150px;
+        margin-right: 15vw;
+     }
+
+     .skate-video img {
+        width: 95%;
+        border-radius: 4px;
+        box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
+     }
+
+     .skate-text-container-2 {
+        margin-top: 45px;
+     }
+
+     .skate-text-5 {
+        width: 320px;
+        font-size: 12px;
+        line-height: 25px;
+     }
+
+     .skate-text-6 {
+        margin-top: 21px;
+        width: 300px;
+        font-family: DIN-CondensedBold;
+        letter-spacing: 1.17px;
+        line-height: 25px;
+        text-align: center;
+        text-transform: uppercase;
+     }
+
+     .skate-img img {
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: 2px 2px 50px 0 rgba(0,0,0,.1);
+     }
+
+     .skate-img {
+        width: 116px;
+        margin: 118px auto 0 auto;
+     }
+
+     .banner-text h2 {
+        width: 80% !important;
+      }
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (min-width : 570px) {
+
+      .skate-text-3 {
+         margin-top: 45px;
+         margin-bottom: 10px;
+         width: 550px;
+      }
+
+      .skate-text-4 {
+         width: 420px;
+      }
+
+      .skate-video {
+         width: 194px;
+         margin-right: 15vw;
+      }
+
+      .skate-text-5 {
+         width: 420px;
+      }
+
+      .skate-text-6 {
+         width: 550px;
+      }
+
+      .skate-img {
+         width: 160px;
+         margin: 118px auto 0 auto;
+      }
+
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+
+      .skate-video {
+         width: 230px;
+         margin-right: 15vw;
+      }
+
+      .skate-img {
+         width: 190px;
+         margin: 118px auto 0 auto;
+      }
+
+   }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+
+
+      .skate-text {
+         margin: 0 auto;
+      }
+
+      #skate-text {
+         display: none;
+      }
+
+      .skate-2-container {
+         max-width: 1440px;
+         width: 95%;
+      }
+
+      .skate-text-1, .skate-text-2 {
+         display: block;
+      }
+
+      .skate-text-1 {
+         font-size: 24px;
+         letter-spacing: 2px;
+         line-height: 40px;
+         width: 513px;
+         text-align: left;
+         margin-top: 150px;
+         margin-bottom: 35px;
+      }
+
+      .skate-text-2 {
+         font-size: 15px;
+         line-height: 30px;
+         width: 500px;
+         text-align: left;
+      }
+
+      .skate-text-1 p, .skate-text-2 p {
+         margin: 0;
+      }
+
+      .skate-video {
+         width: 600px;
+         margin: 69px auto 0 auto;
+      }
+
+      .skate-video img {
+         width: 75%;
+      }
+
+      .skate-text-container-2 {
+         margin-top: 115px;
+      }
+
+      .skate-text-5 {
+         width: 448px;
+         font-size: 15px;
+         line-height: 30px;
+      }
+
+      .skate-text-6 {
+         width: 726px;
+         font-size: 24px;
+         letter-spacing: 2px;
+         line-height: 40px;
+      }
+
+      .skate-img {
+         width: 334px;
+         margin: 115px auto 0 10px;
+      }
+
+   }
+
+   /* Large Devices, Wide Screens */
+   @media only screen and (min-width : 1200px) {
+
+      .skate-video {
+         margin: 69px 0 0 auto;
+      }
+
+      .partnerships {
+          width: 80%;
+          margin: 115px auto;
+      }
+      .bg {
+         top: 70%;
+      }
+
+
+   }
