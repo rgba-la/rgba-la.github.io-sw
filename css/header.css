@@ -108,7 +108,7 @@ header {
 
 /*Contact Form */
 
-.modal {
+.modal, .video-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -119,9 +119,36 @@ header {
   overflow: scroll;
 }
 
-#contact-modal {
+#contact-modal, #video-modal, #video-modal2, #video-modal3, #video-modal4, #video-modal5  {
   overflow: auto;
   display: none;
+}
+
+
+.video-modal-input-box {
+   max-width: 350px;
+   border-radius: 4px;
+   margin: 150px auto;
+   padding: 75px;
+   position: relative;
+}
+
+.videoWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#video-close {
+
+   cursor: pointer;
+display: flex;
+justify-content: flex-end;
+position: absolute;
+top: 36px;
+left: 532px;
+
 }
 
 .modal-input-box {
@@ -254,6 +281,20 @@ textarea {
 #email {
    margin-top: -19px;
 }
+
+
+#scroll-to-top {
+   background: url('../images/arrow2.png') no-repeat center center;
+   width: 32px;
+   height: 30px;
+   position: fixed;
+   right: 30px;
+   bottom: 30px;
+   cursor: pointer;
+   font-size: 0;
+   display: none;
+}
+
 
 /***************************
 MEDIA QUERIES

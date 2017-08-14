@@ -74,9 +74,12 @@ document.querySelector( ".menu-toggle" )
 
 //===================================//
 
+//CONTACT MODAL//
+
 //Event listener to open/close contact modal
 $('.contact-open').on('click', function () {
   $('#contact-modal').css('display', 'block');
+  // $('#contact-modal').fadeIn(350);
 });
 
 $('.close').on('click', function() {
@@ -86,6 +89,32 @@ $('.close').on('click', function() {
 // $('.modal').on('click', function() {
 //   $('#contact-modal').css('display', 'none');
 // });
+
+
+//Event listener to open/close contact modal
+$('.video-open').on('click', function () {
+  $('#video-modal').css('display', 'block');
+});
+$('.video-open-2').on('click', function () {
+  $('#video-modal2').css('display', 'block');
+});
+$('.video-open-3').on('click', function () {
+  $('#video-modal3').css('display', 'block');
+});
+$('.video-open-5').on('click', function () {
+  $('#video-modal5').css('display', 'block');
+});
+
+
+$('.video-close').on('click', function() {
+  $('#video-modal').css('display', 'none');
+  $('#video-modal2').css('display', 'none');
+  $('#video-modal3').css('display', 'none');
+  $('#video-modal4').css('display', 'none');
+  $('#video-modal5').css('display', 'none');
+
+
+});
 
 
 //Contact form
@@ -137,4 +166,27 @@ $(".lazyload").each(function(idx){
             $(elem).addClass('active');
         };
     }
+});
+
+
+//Scroll to top
+var link,
+toggleScrollToTop = function() {
+   if($("body").scrollTop() > 0 || $("html").scrollTop() > 0){
+      link.fadeIn(400);
+   } else {
+      link.fadeOut(400);
+   }
+};
+$(document).ready(function() {
+   link = $("#scroll-to-top");
+
+   $(window).scroll(toggleScrollToTop);
+
+   toggleScrollToTop();
+
+   link.on("click", function() {
+      $("body").animate({scrollTop: 0});
+      $("html").animate({scrollTop: 0});
+   });
 });
