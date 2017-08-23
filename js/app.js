@@ -96,17 +96,14 @@ $('.close').on('click', function() {
 $('.video-open').on('click', function () {
   // $('#video-modal').css('display', 'block');
   $('#video-modal').fadeIn();
-
 });
 $('.video-open-2').on('click', function () {
   // $('#video-modal2').css('display', 'block');
   $('#video-modal2').fadeIn();
-
 });
 $('.video-open-3').on('click', function () {
   // $('#video-modal3').css('display', 'block');
   $('#video-modal3').fadeIn();
-
 });
 $('.video-open-4').on('click', function () {
   // $('#video-modal4').css('display', 'block');
@@ -197,39 +194,31 @@ $('.video-close').on('click', function() {
 });
 
 
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-var player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player');
-
-}
-
-
-$(".video-close").click(function() {
-  player.stopVideo();
+$('.video-close').click(function(){
+  $('.player').each(function(){
+  this.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+});
 });
 
 
-// var videoOverlay = $('.video-modal');
-//   var videoObject = videoOverlay.find('.video-modal-input-box');
-//   var hasVideo = 1;
+// var tag = document.createElement('script');
+// tag.src = "https://www.youtube.com/iframe_api";
+// var firstScriptTag = document.getElementsByTagName('script')[0];
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //
-//   $('li.video-thumb').click(function () {
-//      if (hasVideo == 0) {
-//         videoObject.appendTo(videoOverlay);
-//      }
-//      videoOverlay.fadeIn();
-//   });
-//   $('.video-modal, .video-modal.video-modal.video-close').click(function (e) {
-//      e.stopPropagation();
-//      videoOverlay.fadeOut();
-//      videoObject.stop();
-//      hasVideo = 0;
-//   });
+// var player2;
+// function onYouTubeIframeAPIReady() {
+//   player2 = new YT.Player('player2', {
+//      videoID: 'IFHcflZbBq0'
+//  });
+//
+// }
+//
+//
+// $(".video-close").click(function() {
+//   player2.pauseVideo();
+// });
+
 
 
 //Contact form
