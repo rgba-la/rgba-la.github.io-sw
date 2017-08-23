@@ -196,7 +196,7 @@ $('.video-close').on('click', function() {
 
 $('.video-close').click(function(){
   $('.player').each(function(){
-  this.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+  this.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 });
 });
 
