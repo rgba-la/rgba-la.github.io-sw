@@ -1,77 +1,64 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <title>Shaun White | Home</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!--Stylesheets-->
-      <link rel="stylesheet" href="css/header.css">
-      <link rel="stylesheet" href="css/main.css">
-      <!-- <link href="http://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
-      <!--jQuery Scripts-->
-      <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
+<head>
+   <meta charset="utf-8">
+   <title>Shaun White | Home</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--Stylesheets-->
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/main.css">
+   <!-- <link href="http://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
+   <!--jQuery Scripts-->
+   <script
+   src="https://code.jquery.com/jquery-3.2.1.min.js"
+   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+   crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
 
-      <!--MAILCHIMP STYLE EMBED-->
-      <style type="text/css">
+   <!--MAILCHIMP STYLE EMBED-->
+   <style type="text/css">
 
-         #mc_embed_signup input.mce_inline_error {
-            border-color: #000;
-         }
+   #mc_embed_signup input.mce_inline_error {
+      border-color: #000;
+   }
+   #mailchimp {
+      /*background: #f8f8f8;*/
+   }
+   #mailchimp input {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 25px auto;
+   }
+   .mce_inline_error {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+   }
+   div#mce-success-response {
+      text-align: center;
+      width: 70%;
+   }
+   #mailchimp input.email { background: #fff }
+   #mailchimp input.name { background: #fff}
+   #mailchimp input[type="submit"] {
+      cursor: pointer;
+   }
+   #mailchimp input[type="submit"]:hover {
+      /*color: #fff;*/
+   }
+   </style>
 
-         #mailchimp {
-            /*background: #f8f8f8;*/
-         }
-         #mailchimp input {
-            display: flex;
-            justify-content: center;
-            margin: 0 auto 25px auto;
-         }
-         .mce_inline_error {
-            display: flex;
-            justify-content: center;
-            padding-bottom: 10px;
-         }
-
-         div#mce-success-response {
-            text-align: center;
-            width: 70%;
-         }
-
-         #mailchimp input.email { background: #fff }
-         #mailchimp input.name { background: #fff}
-         #mailchimp input[type="submit"] {
-            cursor: pointer;
-         }
-         #mailchimp input[type="submit"]:hover {
-            /*color: #fff;*/
-         }
-      </style>
-   </head>
-   <body>
+</head>
+<body>
    <!-- Header -->
-      <header>
-         <!--Mobile Nav -->
-         <div id="nav" class="overlay">
-            <div class="mobile-header">
-               <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
-               <p class="mobile-logo">S<span class="ml">W</span></p>
-            </div>
-            <nav class="menu overlay">
-               <a class="active" href="#">HOME</a>
-               <!-- <a href="#">BIO</a> -->
-               <a href="media.html">MEDIA</a>
-               <!-- <a href="#">NEWS</a> -->
-               <a href="partnerships.html">PARTNERSHIPS</a>
-               <a class="contact-open">CONTACT</a>
-            </nav>
+   <header>
+      <!--Mobile Nav -->
+      <div id="nav" class="overlay">
+         <div class="mobile-header">
+            <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
+            <p class="mobile-logo">S<span class="ml">W</span></p>
          </div>
-         <!--End Mobile Nav -->
-         <!--Desktop Nav -->
-         <nav class="desktop">
+         <nav class="menu overlay">
             <a class="active" href="#">HOME</a>
             <!-- <a href="#">BIO</a> -->
             <a href="media.html">MEDIA</a>
@@ -79,36 +66,47 @@
             <a href="partnerships.html">PARTNERSHIPS</a>
             <a class="contact-open">CONTACT</a>
          </nav>
-         <!--End Desktop Nav -->
-      </header>
+      </div>
+      <!--End Mobile Nav -->
+      <!--Desktop Nav -->
+      <nav class="desktop">
+         <a class="active" href="#">HOME</a>
+         <!-- <a href="#">BIO</a> -->
+         <a href="media.html">MEDIA</a>
+         <!-- <a href="#">NEWS</a> -->
+         <a href="partnerships.html">PARTNERSHIPS</a>
+         <a class="contact-open">CONTACT</a>
+      </nav>
+      <!--End Desktop Nav -->
+   </header>
    <!-- Hero Banner -->
-      <section class="full-width hero-banner">
-         <div class="hero-container">
-            <img class="hero" src="images/assets/homepage/01-home-hero-bg@2x.png"/>
-         </div>
-         <div class="menu-toggle openBtn" onclick="openNav()">
-            <div class="hamburger"></div>
-         </div>
-         <div class="logo lazyload">
-            <img src="images/assets/homepage/01-home-hero-logo.png"/>
-         </div>
-      </section>
+   <section class="full-width hero-banner">
+      <div class="hero-container">
+         <img class="hero" src="images/assets/homepage/01-home-hero-bg@2x.png"/>
+      </div>
+      <div class="menu-toggle openBtn" onclick="openNav()">
+         <div class="hamburger"></div>
+      </div>
+      <div class="logo lazyload">
+         <img src="images/assets/homepage/01-home-hero-logo.png"/>
+      </div>
+   </section>
    <!-- End Hero Banner -->
    <!-- Fixed Elements -->
    <div class="text-container">
-     <p class="vertical-text" data-font-size="13px">
-       <span class="scroll">scroll to discover</span>
-     </p>
+      <p class="vertical-text" data-font-size="13px">
+         <span class="scroll">scroll to discover</span>
+      </p>
    </div>
    <!-- End Fixed Elements -->
    <!-- About -->
    <section class="about">
       <div class="about-nav">
-            <ul>
-               <li><a href="#icon" class="icon">ICON</a></li>
-               <li><a href="#athlete" class="athlete">ATHLETE</a></li>
-               <li><a href="#entrepreneur" class="entrepreneur">ENTREPRENEUR</a></li>
-            </ul>
+         <ul>
+            <li><a href="#icon" class="icon">ICON</a></li>
+            <li><a href="#athlete" class="athlete">ATHLETE</a></li>
+            <li><a href="#entrepreneur" class="entrepreneur">ENTREPRENEUR</a></li>
+         </ul>
       </div>
       <div class="about-p lazyload">
          <p>Shaun White is a dual sport professional athlete who maintains some of the highest accolades within snowboarding and skateboarding. Shaun has amassed numerous titles and victories, most notably gold medaling in both the 2006 &amp; 2010 Winter Olympics. He holds the X Games records for gold medals with 15 and the highest overall medal count with 23 to date. He also has won 10 ESPY awards for Best Male Action Sports Athlete and Best Male US Olympic Athlete.</p>
@@ -124,7 +122,7 @@
             </div>
          </div>
          <div class="intro-copy-container">
-               <div class="intro-copy lazyload"><a name="icon"></a>
+            <div class="intro-copy lazyload"><a name="icon"></a>
                <hr>
                <h2>INT</h2>
                <h2>RO</h2>
@@ -166,28 +164,28 @@
                         <p class="atp">Shaun got sponsored by Burton at 7 and turned pro at 13. He won his first US Open at 16, becoming the youngest rider ever to do so, and won his first Olympics gold medal at 19. He racked up a record-breaking number of X Games golds, Dew Tour wins, and ESPY Awards, becoming the most decorated snowboarder in history—all before legal drinking age. </p>
                      </div>
                   </div>
+               </div>
             </div>
+         </div>
+         <div class="athlete-snow-img-container">
+            <div class="athlete-snow">
+               <img src="images/assets/homepage/03-snow-02@2x.png" />
             </div>
          </div>
-      <div class="athlete-snow-img-container">
-         <div class="athlete-snow">
-            <img src="images/assets/homepage/03-snow-02@2x.png" />
+         <div class="accomplishments">
+            <div class="one">
+               <p class="number lazyload">2</p>
+               <p class="acc-text lazyload">OLYMPIC GOLD</p><p class="acc-text">MEDALS</p>
+            </div>
+            <div class="two">
+               <p class="number lazyload">10</p>
+               <p class="acc-text lazyload">ESPY AWARDS</p>
+            </div>
+            <div class="three">
+               <p class="number lazyload">23</p>
+               <p class="acc-text lazyload">X GAMES</p>
+            </div>
          </div>
-      </div>
-      <div class="accomplishments">
-         <div class="one">
-            <p class="number lazyload">2</p>
-            <p class="acc-text lazyload">OLYMPIC GOLD</p><p class="acc-text">MEDALS</p>
-         </div>
-         <div class="two">
-            <p class="number lazyload">10</p>
-            <p class="acc-text lazyload">ESPY AWARDS</p>
-         </div>
-         <div class="three">
-            <p class="number lazyload">23</p>
-            <p class="acc-text lazyload">X GAMES</p>
-         </div>
-      </div>
       </div>
    </section>
    <section class="accomplishments-copy-container">
@@ -199,14 +197,14 @@
       <div class="snow-video-1 parallax">
          <div class="play-icon">
             <svg width="50px" height="75px" viewbox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
-                        <g id="play" transform="translate(695.000000, 3899.000000)">
-                            <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
-                            <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
-                        </g>
-                    </g>
-                </g>
+               <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
+                     <g id="play" transform="translate(695.000000, 3899.000000)">
+                        <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
+                        <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
+                     </g>
+                  </g>
+               </g>
             </svg>
          </div>
          <img src="images/assets/homepage/03-snow-video@2x.png" />
@@ -237,9 +235,7 @@
    </section>
    <section class="skate-2-container">
       <div class="skate-video">
-         <!-- <a href="https://www.youtube.com/watch?v=mc8HehH1gSA" target="_blank"> -->
-            <img class="video-open" src="images/assets/homepage/04-skate-verticalvideo@2x.png" />
-         <!-- </a> -->
+         <img class="video-open" src="images/assets/homepage/04-skate-verticalvideo@2x.png" />
       </div>
       <div class="skate-text">
          <div class="skate-text-1 lazyload">
@@ -327,44 +323,28 @@
       <section class="ec4">
          <div class="evc1">
             <div class="ev1">
-               <!-- <div class="play-icon" id="playicon1">
-                  <svg width="50px" height="75px" viewbox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
-                              <g id="play" transform="translate(695.000000, 3899.000000)">
-                                  <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
-                                  <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
-                              </g>
-                          </g>
-                      </g>
-                  </svg>
-               </div> -->
-               <!-- <a href="https://www.youtube.com/watch?v=IFHcflZbBq0" target="_blank"> -->
-                  <img class="video-open-2" src="images/assets/homepage/05-as-sml-video1@2x.png"/>
-               <!-- </a> -->
+               <img class="video-open-2" src="images/assets/homepage/05-as-sml-video1@2x.png"/>
                <div class="vertical-container lazyload">
                   <p>A+S BEIJING</p>
                </div>
             </div>
+         </div>
+         <div class="evc2">
+            <div class="ev-text lazyload">
+               <h2>RECAPS</h2>
+               <p>With 3 stops across the globe (Innsbruck, Beijing, Los Angeles) and a 16-story jump, Air + Style is an annual winter sports and music festival that has seen some of the most groundbreaking riding in history, as well as musical performances from Kendrick Lamar, J Cole, Steve Aoki, Kaskade, Haim, and many more.</p>
             </div>
-            <div class="evc2">
-               <div class="ev-text lazyload">
-                  <h2>RECAPS</h2>
-                  <p>With 3 stops across the globe (Innsbruck, Beijing, Los Angeles) and a 16-story jump, Air + Style is an annual winter sports and music festival that has seen some of the most groundbreaking riding in history, as well as musical performances from Kendrick Lamar, J Cole, Steve Aoki, Kaskade, Haim, and many more.</p>
-               </div>
-               <div class="ev2">
-                     <img class="video-open-3" src="images/assets/homepage/05-as-sml-video2@2x.png" />
-                  <!-- </a> -->
-                  <div class="vertical-container lazyload">
-                     <p>A+S INNSBRUCK</p>
-                  </div>
+            <div class="ev2">
+               <img class="video-open-3" src="images/assets/homepage/05-as-sml-video2@2x.png" />
+               <div class="vertical-container lazyload">
+                  <p>A+S INNSBRUCK</p>
                </div>
             </div>
+         </div>
       </section>
       <div class="evc3">
          <div class="ev3 video-open-4">
-               <img class="video-open-4" src="images/assets/homepage/05-as-sml-video3@2x.png" />
-            <!-- </a> -->
+            <img class="video-open-4" src="images/assets/homepage/05-as-sml-video3@2x.png" />
             <div class="vertical-container lazyload">
                <p>A+S LOS ANGELES</p>
             </div>
@@ -420,31 +400,31 @@
             <div class="play-icon" id="playicon4">
                <!--mobile-->
                <a href="https://vimeo.com/185576329" target="_blank"><svg class="play-mobile" width="25px" height="38px" viewBox="0 0 25 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                   <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
-                   <title>play</title>
-                   <desc>Created with Sketch.</desc>
-                   <defs></defs>
-                   <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                       <g id="Home-Mobile" transform="translate(-176.000000, -2001.000000)" stroke="#FFFFFF">
-                           <g id="Group-5" transform="translate(0.000000, 1928.000000)">
-                               <g id="play" transform="translate(176.000000, 73.000000)">
-                                   <rect id="Rectangle-3" stroke-width="2" opacity="0.50157416" x="1" y="1" width="23" height="35.5"></rect>
-                                   <polygon id="Path-5" stroke-width="1.5" points="11 15.5 11 22.3961835 14.5 18.9480918"></polygon>
-                               </g>
+                  <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+                  <title>play</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                     <g id="Home-Mobile" transform="translate(-176.000000, -2001.000000)" stroke="#FFFFFF">
+                        <g id="Group-5" transform="translate(0.000000, 1928.000000)">
+                           <g id="play" transform="translate(176.000000, 73.000000)">
+                              <rect id="Rectangle-3" stroke-width="2" opacity="0.50157416" x="1" y="1" width="23" height="35.5"></rect>
+                              <polygon id="Path-5" stroke-width="1.5" points="11 15.5 11 22.3961835 14.5 18.9480918"></polygon>
                            </g>
-                       </g>
-                   </g>
+                        </g>
+                     </g>
+                  </g>
                </svg></a>
                <!--desktop-->
-               <svg class="play-desktop video-open-5"  width="50px" height="75px" viewbox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                   <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                       <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
-                           <g id="play" transform="translate(695.000000, 3899.000000)">
-                               <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
-                               <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
-                           </g>
-                       </g>
-                   </g>
+               <svg class="play-desktop video-open-5"  width="50px" height="75px" viewBox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                     <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
+                        <g id="play" transform="translate(695.000000, 3899.000000)">
+                           <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
+                           <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
+                        </g>
+                     </g>
+                  </g>
                </svg>
             </div>
          </div>
@@ -462,245 +442,231 @@
    </section>
    <section class="mcc">
       <!-- <div class="gbc">
-         <div class="gb"></div>
-      </div> -->
-      <div class="mcci skate-carousel">
-         <img src="images/assets/homepage/07-mammoth-carousel-1@2x.png" />
-         <img src="images/assets/homepage/07-mammoth-carousel-1@2x.png" />
+      <div class="gb"></div>
+   </div> -->
+   <div class="mcci skate-carousel">
+      <img src="images/assets/homepage/07-mammoth-carousel-1@2x.png" />
+      <img src="images/assets/homepage/07-mammoth-carousel-1@2x.png" />
+   </div>
+   <div class="mctc lazyload">
+      <p>Shaun is looking to change that. As a part owner of Mammoth Resorts, he helps oversee the operation of more than 4,000 acres of skiable land in California, visited by more than 2 million skiers and snowboarders each year.</p>
+   </div>
+</section>
+<!-- End Mammoth Resort -->
+<!-- Mailing List -->
+<section class="signup">
+   <div class="sc">
+      <img class="si" src="images/assets/homepage/08-footer-bg.png" />
+      <div class="si">
       </div>
-      <div class="mctc lazyload">
-         <p>Shaun is looking to change that. As a part owner of Mammoth Resorts, he helps oversee the operation of more than 4,000 acres of skiable land in California, visited by more than 2 million skiers and snowboarders each year.</p>
-      </div>
-   </section>
-   <!-- End Mammoth Resort -->
-   <!-- Mailing List -->
-   <section class="signup">
-      <div class="sc">
-         <img class="si" src="images/assets/homepage/08-footer-bg.png" />
-         <div class="si">
-         </div>
-      </div>
-      <div class="si-form">
-         <p class="lazyload">SIGN UP FOR SHAUN’S MAILING LIST</p>
-         <div id="mailchimp">
-            <form action="http://air-style.us9.list-manage.com/subscribe/post?u=b7d67a249b4705d767125d932&amp;id=9383cadb8f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-               <div id="mc_embed_signup_scroll">
-                  <div class="mc-field-group">
-                     <label for="email"></label>
-                     <input type="email" name="EMAIL" value="Enter Email Address" class="required email" id="mce-EMAIL" width="550px" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                  </div>
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b7d67a249b4705d767125d932_9383cadb8f" tabindex="-1" value=""></div>
-                  <div class="clear">
-                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe subscribe" class="subscribe">
-                  </div>
-                  <div id="mce-responses" class="clear">
-                     <div class="response" id="mce-error-response" style="display:none"></div>
-                     <div class="response" id="mce-success-response" style="display:none"></div>
-                  </div>  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+   </div>
+   <div class="si-form">
+      <p class="lazyload">SIGN UP FOR SHAUN’S MAILING LIST</p>
+      <div id="mailchimp">
+         <form action="http://air-style.us9.list-manage.com/subscribe/post?u=b7d67a249b4705d767125d932&amp;id=9383cadb8f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+               <div class="mc-field-group">
+                  <label for="email"></label>
+                  <input type="email" name="EMAIL" value="Enter Email Address" class="required email" id="mce-EMAIL" width="550px" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
                </div>
-            </form>
+               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b7d67a249b4705d767125d932_9383cadb8f" tabindex="-1" value=""></div>
+               <div class="clear">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe subscribe" class="subscribe">
+               </div>
+               <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+               </div>  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            </div>
+         </form>
+      </div>
+   </div>
+   <a id="scroll-to-top" href="#" title="Scroll to Top" style="display: inline; opacity:1">Top</a>
+</section>
+<!-- End Mailing List -->
+<!--  CONTACT MODAL -->
+<section id="contact-modal" class="modal">
+   <section class="modal-input-box">
+      <!--Button to close modal-->
+      <div id="close">
+         <div class="close">
+            <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <title>Page 1</title>
+               <desc>Created with Sketch.</desc>
+               <defs></defs>
+               <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Contact" transform="translate(-967.000000, -361.000000)" fill="#000000">
+                     <polygon id="Page-1" points="980.7144 361 975 366.7144 969.2848 361 967 363.2856 972.7144 369 967 374.7136 969.2848 377 975 371.2856 980.7144 377 983 374.7136 977.2848 369 983 363.2856"></polygon>
+                  </g>
+               </g>
+            </svg>
          </div>
       </div>
-      <a id="scroll-to-top" href="#" title="Scroll to Top" style="display: inline; opacity:1">Top</a>
-   </section>
-   <!-- End Mailing List -->
-   <!--  CONTACT MODAL -->
-   <section id="contact-modal" class="modal">
-      <section class="modal-input-box">
-         <!--Button to close modal-->
-         <div id="close">
-            <div class="close">
-               <svg width="16px" height="16px" viewbox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                   <title>Page 1</title>
-                   <desc>Created with Sketch.</desc>
-                   <defs></defs>
-                   <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                       <g id="Contact" transform="translate(-967.000000, -361.000000)" fill="#000000">
-                           <polygon id="Page-1" points="980.7144 361 975 366.7144 969.2848 361 967 363.2856 972.7144 369 967 374.7136 969.2848 377 975 371.2856 980.7144 377 983 374.7136 977.2848 369 983 363.2856"></polygon>
-                       </g>
-                   </g>
-               </svg>
-            </div>
+      <!-- Button to close the modal END-->
+      <div class="legend-container">
+         <legend align="left"><h2>CONTACT</h2></legend>
+      </div>
+      <form class="contact-form">
+         <div class="email-container">
+            <p>For business opportunities, press inquiries, fan mail, or, ya know… maybe just your random thoughts of the day, please contact us via email: <b><a href="MAILTO:info@shaunwhiteenterprises.com?subject=Hello!">info@shaunwhiteenterprises.com</a></b></p>
          </div>
-         <!-- Button to close the modal END-->
-         <div class="legend-container">
-            <legend align="left"><h2>CONTACT</h2></legend>
-         </div>
-         <form class="contact-form">
-            <div class="email-container">
-               <p>For business opportunities, press inquiries, fan mail, or, ya know… maybe just your random thoughts of the day, please contact us via email: <b><a href="MAILTO:info@shaunwhiteenterprises.com?subject=Hello!">info@shaunwhiteenterprises.com</a></b></p>
-            </div>
-            <label for="name"></label>
-            <input class="contact-input" id="name" type="text" name="name" placeholder="Name" required/><br/>
-            <label for="email"></label>
-            <input class="contact-input" id="email" type="email" name="email" placeholder="Your Email" required/>
-            <label for="message"></label>
-            <textarea class="contact-input" id="message" name="message" type="text" rows="10" cols="35" placeholder="Your Message" required></textarea>
-            <input class="button" id="submit" type="submit" value="SUBMIT"/><span id="status"></span>
-         </form>
-      </section>
+         <label for="name"></label>
+         <input class="contact-input" id="name" type="text" name="name" placeholder="Name" required/><br/>
+         <label for="email"></label>
+         <input class="contact-input" id="email" type="email" name="email" placeholder="Your Email" required/>
+         <label for="message"></label>
+         <textarea class="contact-input" id="message" name="message" type="text" rows="10" cols="35" placeholder="Your Message" required></textarea>
+         <input class="button" id="submit" type="submit" value="SUBMIT"/><span id="status"></span>
+      </form>
    </section>
-   <!-- END CONTACT MODAL -->
+</section>
+<!-- END CONTACT MODAL -->
+<!--  VIDEO MODALS -->
+<!--Skate-->
+<section id="video-modal" class="video-modal">
+   <section class="video-modal-input-box">
+      <!--Button to close modal-->
+      <div>
+         <div class="video-close">
+            <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <title>close</title>
+               <desc>Created with Sketch.</desc>
+               <defs></defs>
 
-   <!--MAILCHIMP SCRIPT-->
-   <script type="text/javascript" src="http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-   <script type="text/javascript">
-   (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
-   </script>
-   <!-- END MAILCHIMP SCRIPT-->
-
-
-
-   <!--  VIDEO MODALS -->
-   <!--skate-->
-   <section id="video-modal" class="video-modal">
-      <section class="video-modal-input-box">
-         <!--Button to close modal-->
-         <div id="video-close">
-            <div class="video-close">
-               <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <title>close</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs></defs>
-                  <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                     <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                        <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
-                           <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
-                           <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
-                        </g>
-                     </g>
+               <g transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
+                  <g transform="translate(1073.000000, 81.000000)">
+                     <path d="M1,1 L11.7331956,11.4784785"></path>
+                     <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
                   </g>
-               </svg>
-            </div>
+               </g>
+            </svg>
          </div>
-         <!-- Button to close the modal END-->
-         <div class="videoWrapper">
-            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/mc8HehH1gSA?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-         </div>
-      </section>
+      </div>
+      <!-- Button to close the modal END-->
+      <div class="videoWrapper">
+         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/mc8HehH1gSA?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
    </section>
+</section>
 
-   <!--A+S BEIJING-->
-   <section id="video-modal2" class="video-modal">
-      <section class="video-modal-input-box">
-         <!--Button to close modal-->
-         <div id="video-close">
-            <div class="video-close">
-               <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <title>close</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs></defs>
-                  <path style="" fill="#fff"></path>
-                  <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                     <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                        <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
-                           <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
-                           <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
-                        </g>
-                     </g>
+<!--A+S BEIJING-->
+<section id="video-modal2" class="video-modal">
+   <section class="video-modal-input-box">
+      <!--Button to close modal-->
+      <div>
+         <div class="video-close">
+            <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <title>close</title>
+               <desc>Created with Sketch.</desc>
+               <defs></defs>
+               <path style="" fill="#fff"></path>
+               <g transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
+                  <g transform="translate(1073.000000, 81.000000)">
+                     <path d="M1,1 L11.7331956,11.4784785"></path>
+                     <path d="M1,11.7025585 L11.5097688,1"></path>
                   </g>
-               </svg>
-            </div>
+               </g>
+            </svg>
          </div>
-         <!-- Button to close the modal END-->
-         <div class="videoWrapper">
-            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/IFHcflZbBq0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-         </div>
-      </section>
+      </div>
+      <!-- Button to close the modal END-->
+      <div class="videoWrapper">
+         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/IFHcflZbBq0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
    </section>
+</section>
 
-   <!--A+S INNSBRUCK-->
-   <section id="video-modal3" class="video-modal">
-      <section class="video-modal-input-box">
-         <!--Button to close modal-->
-         <div id="video-close">
-            <div class="video-close">
-               <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <title>close</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs></defs>
-                  <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                     <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                        <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
-                           <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
-                           <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
-                        </g>
-                     </g>
+<!--A+S INNSBRUCK-->
+<section id="video-modal3" class="video-modal">
+   <section class="video-modal-input-box">
+      <!--Button to close modal-->
+      <div>
+         <div class="video-close">
+            <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <title>close</title>
+               <desc>Created with Sketch.</desc>
+               <defs></defs>
+               <g transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
+                  <g transform="translate(1073.000000, 81.000000)">
+                     <path d="M1,1 L11.7331956,11.4784785"></path>
+                     <path d="M1,11.7025585 L11.5097688,1"></path>
                   </g>
-               </svg>
-            </div>
+               </g>
+            </svg>
          </div>
-         <!-- Button to close the modal END-->
-         <div class="videoWrapper">
-            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/_E0PGhcdo2g?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-         </div>
-      </section>
+      </div>
+      <!-- Button to close the modal END-->
+      <div class="videoWrapper">
+         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/_E0PGhcdo2g?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
    </section>
+</section>
 
-   <!--A+S LOS ANGELES-->
-   <section id="video-modal4" class="video-modal">
-      <section class="video-modal-input-box">
-         <!--Button to close modal-->
-         <div id="video-close">
-            <div class="video-close">
-               <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <title>close</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs></defs>
-                  <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                     <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                        <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
-                           <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
-                           <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
-                        </g>
-                     </g>
+<!--A+S LOS ANGELES-->
+<section id="video-modal4" class="video-modal">
+   <section class="video-modal-input-box">
+      <!--Button to close modal-->
+      <div>
+         <div class="video-close">
+            <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <title>close</title>
+               <desc>Created with Sketch.</desc>
+               <defs></defs>
+               <g transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
+                  <g transform="translate(1073.000000, 81.000000)">
+                     <path d="M1,1 L11.7331956,11.4784785"></path>
+                     <path d="M1,11.7025585 L11.5097688,1"></path>
                   </g>
-               </svg>
-            </div>
+               </g>
+            </svg>
          </div>
-         <!-- Button to close the modal END-->
-         <div class="videoWrapper">
-            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/Ay3jvf_hN6g?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-         </div>
-      </section>
+      </div>
+      <!-- Button to close the modal END-->
+      <div class="videoWrapper">
+         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/Ay3jvf_hN6g?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
    </section>
+</section>
 
-   <!--Mammoth Resort-->
-   <section id="video-modal5" class="video-modal">
-      <section class="video-modal-input-box">
-         <!--Button to close modal-->
-         <div id="video-close">
-            <div class="video-close">
-               <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <title>close</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs></defs>
-                  <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                     <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                        <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
-                           <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
-                           <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
-                        </g>
-                     </g>
+<!--Mammoth Resort-->
+<section id="video-modal5" class="video-modal">
+   <section class="video-modal-input-box">
+      <!--Button to close modal-->
+      <div>
+         <div class="video-close">
+            <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <title>close</title>
+               <desc>Created with Sketch.</desc>
+               <defs></defs>
+               <g transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
+                  <g transform="translate(1073.000000, 81.000000)">
+                     <path d="M1,1 L11.7331956,11.4784785"></path>
+                     <path d="M1,11.7025585 L11.5097688,1"></path>
                   </g>
-               </svg>
-            </div>
+               </g>
+            </svg>
          </div>
-         <!-- Button to close the modal END-->
-         <div class="videoWrapper">
-            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/Ay3jvf_hN6g?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-         </div>
-      </section>
+      </div>
+      <!-- Button to close the modal END-->
+      <div class="videoWrapper">
+         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/Ay3jvf_hN6g?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
    </section>
-
-   <!-- END VIDEO MODALS -->
-
-   <!-- Carousel JS -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-   <script src="js/responsiveslides.min.js"></script>
-   <!-- OWN JS FILE -->
-   <script src="js/lazyload.js"></script>
-   <script src="js/parallax.js"></script>
-   <script src="js/app.js"></script>
-   </body>
+</section>
+<!-- END VIDEO MODALS -->
+<!--MAILCHIMP SCRIPT-->
+<script type="text/javascript" src="http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script type="text/javascript">
+(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+</script>
+<!-- END MAILCHIMP SCRIPT-->
+<!-- Carousel JS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<!-- OWN JS FILE -->
+<script src="js/lazyload.js"></script>
+<script src="js/scrolltotop.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/app.js"></script>
+</body>
 </html>

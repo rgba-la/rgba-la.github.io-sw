@@ -140,7 +140,7 @@ header {
    align-items: center;
 }
 
-#video-close {
+.video-close {
    cursor: pointer;
    display: flex;
    justify-content: flex-end;
@@ -159,7 +159,7 @@ iframe {
   background-color: white;
   max-width: 350px;
   border-radius: 4px;
-  margin: 300px auto;
+  margin: 150px auto;
   padding: 75px;
   position: relative;
 }
