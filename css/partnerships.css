@@ -434,7 +434,8 @@ hr {
      }
 
      .banner-text {
-       top: 42%;
+       /*top: 42%;*/
+       top: 45%;
      }
 
      .banner-text h2 {

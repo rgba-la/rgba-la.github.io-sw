@@ -16,35 +16,39 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
 
       <!--MAILCHIMP STYLE EMBED-->
-
       <style type="text/css">
 
-      #mc_embed_signup input.mce_inline_error {
-         border-color: #000;
-      }
+         #mc_embed_signup input.mce_inline_error {
+            border-color: #000;
+         }
 
-      #mailchimp {
-         /*background: #f8f8f8;*/
-      }
-      #mailchimp input {
+         #mailchimp {
+            /*background: #f8f8f8;*/
+         }
+         #mailchimp input {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto 25px auto;
+         }
+         .mce_inline_error {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+         }
 
-      }
-      #mailchimp input.email { background: #fff }
-      #mailchimp input.name { background: #fff}
-      #mailchimp input[type="submit"] {
-         cursor: pointer;
-      }
-      #mailchimp input[type="submit"]:hover {
-         /*color: #fff;*/
-      }
+         div#mce-success-response {
+            text-align: center;
+            width: 70%;
+         }
 
-
-
-
-      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-
-      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-
+         #mailchimp input.email { background: #fff }
+         #mailchimp input.name { background: #fff}
+         #mailchimp input[type="submit"] {
+            cursor: pointer;
+         }
+         #mailchimp input[type="submit"]:hover {
+            /*color: #fff;*/
+         }
       </style>
    </head>
    <body>
@@ -349,19 +353,6 @@
                   <p>With 3 stops across the globe (Innsbruck, Beijing, Los Angeles) and a 16-story jump, Air + Style is an annual winter sports and music festival that has seen some of the most groundbreaking riding in history, as well as musical performances from Kendrick Lamar, J Cole, Steve Aoki, Kaskade, Haim, and many more.</p>
                </div>
                <div class="ev2">
-                  <!-- <div class="play-icon" id="playicon2">
-                     <svg width="50px" height="75px" viewbox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                         <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                             <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
-                                 <g id="play" transform="translate(695.000000, 3899.000000)">
-                                     <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
-                                     <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
-                                 </g>
-                             </g>
-                         </g>
-                     </svg>
-                  </div> -->
-                  <!-- <a href="https://www.youtube.com/watch?v=_E0PGhcdo2g" target="_blank"> -->
                      <img class="video-open-3" src="images/assets/homepage/05-as-sml-video2@2x.png" />
                   <!-- </a> -->
                   <div class="vertical-container lazyload">
@@ -371,20 +362,7 @@
             </div>
       </section>
       <div class="evc3">
-         <div class="ev3">
-            <!-- <div class="play-icon" id="playicon1">
-               <svg width="50px" height="75px" viewbox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                   <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                       <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
-                           <g id="play" transform="translate(695.000000, 3899.000000)">
-                               <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
-                               <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
-                           </g>
-                       </g>
-                   </g>
-               </svg>
-            </div> -->
-            <!-- <a href="https://www.youtube.com/watch?v=Ay3jvf_hN6g" target="_blank"> -->
+         <div class="ev3 video-open-4">
                <img class="video-open-4" src="images/assets/homepage/05-as-sml-video3@2x.png" />
             <!-- </a> -->
             <div class="vertical-container lazyload">
@@ -573,156 +551,155 @@
 
 
 
-      <!--  VIDEO MODALS -->
-
-      <!--skate-->
-      <section id="video-modal" class="video-modal">
-         <section class="video-modal-input-box">
-            <!--Button to close modal-->
-            <div id="video-close">
-               <div class="video-close">
-                  <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                       <title>close</title>
-                      <desc>Created with Sketch.</desc>
-                      <defs></defs>
-                      <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                           <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                              <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
-                                   <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
-                                   <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
-                              </g>
-                           </g>
-                      </g>
-                  </svg>
-               </div>
+   <!--  VIDEO MODALS -->
+   <!--skate-->
+   <section id="video-modal" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div id="video-close">
+            <div class="video-close">
+               <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>close</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                     <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
+                        <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
+                           <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
+                           <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
+                        </g>
+                     </g>
+                  </g>
+               </svg>
             </div>
-            <!-- Button to close the modal END-->
-            <div class="videoWrapper">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/mc8HehH1gSA" frameborder="0" allowfullscreen></iframe>
-            </div>
-         </section>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe width="560" height="540" src="https://www.youtube.com/embed/mc8HehH1gSA" frameborder="0" allowfullscreen></iframe>
+         </div>
       </section>
+   </section>
 
-      <!--A+S BEIJING-->
-      <section id="video-modal2" class="video-modal">
-         <section class="video-modal-input-box">
-            <!--Button to close modal-->
-            <div id="video-close">
-               <div class="video-close">
-                  <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                       <title>close</title>
-                      <desc>Created with Sketch.</desc>
-                      <defs></defs>
-                      <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                           <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                              <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
-                                   <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
-                                   <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
-                              </g>
-                           </g>
-                      </g>
-                  </svg>
-               </div>
+   <!--A+S BEIJING-->
+   <section id="video-modal2" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div id="video-close">
+            <div class="video-close">
+               <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>close</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <path style="" fill="#fff"></path>
+                  <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                     <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
+                        <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
+                           <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
+                           <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
+                        </g>
+                     </g>
+                  </g>
+               </svg>
             </div>
-            <!-- Button to close the modal END-->
-            <div class="videoWrapper">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/IFHcflZbBq0" frameborder="0" allowfullscreen></iframe>
-            </div>
-         </section>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe id="player" width="560" height="540" src="https://www.youtube.com/embed/IFHcflZbBq0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
       </section>
+   </section>
 
-      <!--A+S INNSBRUCK-->
-      <section id="video-modal3" class="video-modal">
-         <section class="video-modal-input-box">
-            <!--Button to close modal-->
-            <div id="video-close">
-               <div class="video-close">
-                  <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                       <title>close</title>
-                      <desc>Created with Sketch.</desc>
-                      <defs></defs>
-                      <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                           <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                              <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
-                                   <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
-                                   <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
-                              </g>
-                           </g>
-                      </g>
-                  </svg>
-               </div>
+   <!--A+S INNSBRUCK-->
+   <section id="video-modal3" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div id="video-close">
+            <div class="video-close">
+               <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>close</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                     <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
+                        <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
+                           <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
+                           <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
+                        </g>
+                     </g>
+                  </g>
+               </svg>
             </div>
-            <!-- Button to close the modal END-->
-            <div class="videoWrapper">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/_E0PGhcdo2g" frameborder="0" allowfullscreen></iframe>
-            </div>
-         </section>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe width="560" height="540" src="https://www.youtube.com/embed/_E0PGhcdo2g?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
       </section>
+   </section>
 
-      <!--A+S LOS ANGELES-->
-      <section id="video-modal4" class="video-modal">
-         <section class="video-modal-input-box">
-            <!--Button to close modal-->
-            <div id="video-close">
-               <div class="video-close">
-                  <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                       <title>close</title>
-                      <desc>Created with Sketch.</desc>
-                      <defs></defs>
-                      <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                           <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                              <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
-                                   <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
-                                   <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
-                              </g>
-                           </g>
-                      </g>
-                  </svg>
-               </div>
+   <!--A+S LOS ANGELES-->
+   <section id="video-modal4" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div id="video-close">
+            <div class="video-close">
+               <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>close</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                     <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
+                        <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
+                           <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
+                           <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
+                        </g>
+                     </g>
+                  </g>
+               </svg>
             </div>
-            <!-- Button to close the modal END-->
-            <div class="videoWrapper">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/Ay3jvf_hN6g" frameborder="0" allowfullscreen></iframe>
-            </div>
-         </section>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe width="560" height="540" src="https://www.youtube.com/embed/Ay3jvf_hN6g" frameborder="0" allowfullscreen></iframe>
+         </div>
       </section>
+   </section>
 
-      <!--Mammoth Resort-->
-
-      <section id="video-modal5" class="video-modal">
-         <section class="video-modal-input-box">
-            <!--Button to close modal-->
-            <div id="video-close">
-               <div class="video-close">
-                  <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                       <title>close</title>
-                      <desc>Created with Sketch.</desc>
-                      <defs></defs>
-                      <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                           <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                              <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
-                                   <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
-                                   <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
-                              </g>
-                           </g>
-                      </g>
-                  </svg>
-               </div>
+   <!--Mammoth Resort-->
+   <section id="video-modal5" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div id="video-close">
+            <div class="video-close">
+               <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>close</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                     <g id="SHOP-THE-LOOK" transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
+                        <g id="close-2---grey" transform="translate(1073.000000, 81.000000)">
+                           <path d="M1,1 L11.7331956,11.4784785" id="Line"></path>
+                           <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
+                        </g>
+                     </g>
+                  </g>
+               </svg>
             </div>
-            <!-- Button to close the modal END-->
-            <div class="videoWrapper">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/Ay3jvf_hN6g" frameborder="0" allowfullscreen></iframe>
-            </div>
-         </section>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe width="560" height="540" src="https://www.youtube.com/embed/Ay3jvf_hN6g" frameborder="0" allowfullscreen></iframe>
+         </div>
       </section>
+   </section>
 
-
-      <!-- END VIDEO MODALS -->
+   <!-- END VIDEO MODALS -->
 
    <!-- Carousel JS -->
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
    <script src="js/responsiveslides.min.js"></script>
    <!-- OWN JS FILE -->
+   <script src="js/lazyload.js"></script>
    <script src="js/parallax.js"></script>
    <script src="js/app.js"></script>
    </body>

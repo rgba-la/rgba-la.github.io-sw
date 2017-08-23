@@ -119,36 +119,40 @@ header {
   overflow: scroll;
 }
 
-#contact-modal, #video-modal, #video-modal2, #video-modal3, #video-modal4, #video-modal5  {
+#contact-modal  {
   overflow: auto;
   display: none;
 }
 
-
 .video-modal-input-box {
-   max-width: 350px;
+   max-width: 960px;
+   max-height: 540px;
    border-radius: 4px;
-   margin: 150px auto;
-   padding: 75px;
+   margin: 100px auto;
+   padding: 30px;
    position: relative;
 }
 
 .videoWrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 #video-close {
-
    cursor: pointer;
-display: flex;
-justify-content: flex-end;
-position: absolute;
-top: 36px;
-left: 532px;
+   display: flex;
+   justify-content: flex-end;
+   position: absolute;
+   top: 4px;
+   right: 8px;
+}
 
+iframe {
+   width: 100%;
+   max-width: 960px;
+   max-height: 540px;
 }
 
 .modal-input-box {
@@ -389,8 +393,8 @@ MEDIA QUERIES
   -o-transform: translateY(-12px) rotateZ(45deg);
   transform: translateY(-12px) rotateZ(45deg);
 }
+*/
 
-   */
    .hamburger::before {
       transform: translateY(-8px);
    }
