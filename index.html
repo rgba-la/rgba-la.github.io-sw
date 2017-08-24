@@ -14,6 +14,8 @@
    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
    crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
+   <!-- <script src="https://player.vimeo.com/api/player.js"></script>  -->
+   <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
 
    <!--MAILCHIMP STYLE EMBED-->
    <style type="text/css">
@@ -43,8 +45,12 @@
    #mailchimp input[type="submit"] {
       cursor: pointer;
    }
-   #mailchimp input[type="submit"]:hover {
-      /*color: #fff;*/
+   #mailchimp input[type="submit"]:hover{
+      background-color: #0F0F0F;
+      color: #fff;
+      -webkit-transition: 0.25s;
+      -moz-transition: 0.25s;
+      transition: 0.25s;
    }
    </style>
 
@@ -649,7 +655,8 @@
       </div>
       <!-- Button to close the modal END-->
       <div class="videoWrapper">
-         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/Ay3jvf_hN6g?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         <!-- <iframe class="player" width="560" height="540" src="https://player.vimeo.com/211970798" frameborder="0" allowfullscreen></iframe> -->
+         <iframe id="vimeo" src="https://player.vimeo.com/video/211970798?api=1" width="560" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
    </section>
 </section>

@@ -61,6 +61,8 @@ html, body {
   left: 0;
   position: absolute;
   background: #000;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -207,6 +209,8 @@ html, body {
 }
 
 .sv4 img, .sv5 img, .s1 img, .ev3 img {
+   -webkit-transition: all .4s ease-in-out;
+   -moz-transition: all .4s ease-in-out;
    transition: all .4s ease-in-out;
    z-index: -1;
 }
@@ -217,6 +221,8 @@ html, body {
 }
 
 .sv2 img, .sv3 img, .iv1 img, .iv2 img, .iv3 img, .iv4 img {
+   -webkit-transition:  all .4s ease-in-out;
+   -moz-transition:  all .4s ease-in-out;
    transition: all .4s ease-in-out;
    z-index: -1;
 }
