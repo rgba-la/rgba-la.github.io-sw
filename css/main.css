@@ -3,14 +3,6 @@
 Base Element Styles
 ********************************/
 
-.sv3-container {
-   width: 100%;
-   margin: 0 auto;
-   display: flex;
-   justify-content: center;
-}
-
-
 html, body {
    box-sizing: border-box;
    margin: 0;
@@ -103,6 +95,38 @@ Base Layout Styles
 .icon:hover:after {
    width: 45%;
    left: 0;
+}
+
+.social-icons-container {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.social {
+   margin-right: 20px;
+   margin-bottom: 20px;
+   cursor: pointer;
+}
+
+#social-fb {
+   width: 11px;
+   height: 20px;
+}
+
+#social-twitter {
+   width: 20px;
+   height: 17px;
+}
+
+#social-ig {
+   width: 20px;
+   height: 20px;
+}
+
+#social-yt {
+   width: 47px;
+   height: 20px;
 }
 
 .athlete:hover:after {
@@ -276,7 +300,6 @@ hr {
 }
 
 .athlete-text p {
-   /*margin: 35px;*/
    color: #FFF;
 }
 
@@ -427,13 +450,32 @@ hr {
    max-width: 1360px;
 }
 
+.sv3-container {
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+}
+
 .skate-carousel {
+   position: relative;
    display: flex;
    flex-direction: column;
    align-items: center;
    z-index: 10;
    overflow: hidden;
    margin: 0 auto;
+}
+
+.skate-carousel {
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.skate-carousel img {
+   z-index: 0;
 }
 
 .skate-carousel img {
@@ -820,6 +862,7 @@ hr {
    display: flex;
    align-items: center;
    flex-flow: column;
+   position: relative;
 }
 
 .mcci {
@@ -1154,7 +1197,6 @@ MEDIA QUERIES
       width: 320px;
       font-size: 11px;
       line-height: 25px;
-      /*margin-top: 20px;*/
    }
 
    .snow-video-text-container {
@@ -1170,7 +1212,7 @@ MEDIA QUERIES
       left: 35px;
    }
 
-   .skate-container{
+   .skate-container {
       width: 90%;
    }
 
@@ -1183,7 +1225,10 @@ MEDIA QUERIES
 
    .skate-carousel img {
       margin: 6.5vh auto;
-      /*width: 75%;*/
+   }
+
+   .nav-btns_nav, .nav-btns2_nav {
+      display: none;
    }
 
    .skate-2-container {
@@ -1845,6 +1890,59 @@ MEDIA QUERIES
       margin: 118px auto 0 auto;
    }
 
+   .carousel-container {
+      width: 100%;
+   }
+
+   .nav-btns {
+      position: relative;
+   }
+
+   .nav-btns_nav, .nav-btns2_nav {
+      display: block;
+      width: 35px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 2em;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 150ms ease;
+      z-index: 10;
+      background-color: rgba(0,0,0,0.3);
+   }
+
+   .nav-btns_nav:active, .nav-btns2_nav:active  {
+     opacity: 0;
+   }
+
+   .nav-btns_nav.next {
+      left: auto;
+      right: 0;
+      background-position: right top;
+   }
+
+   .nav-btns2_nav.next {
+      left: auto;
+      top: 32%;
+      right: 15%;
+      background-position: right top;
+   }
+
+   .nav-btns2_nav.prev {
+      right: auto;
+      top: 32%;
+      left: 15%;
+      background-position: left top;
+   }
+
+   .sc-container {
+      position: relative;
+   }
+
    .skate-video {
       width: 230px;
       margin-right: 15vw;
@@ -2044,6 +2142,20 @@ MEDIA QUERIES
 
    #skate-text {
       display: none;
+   }
+
+   .nav-btns2_nav.next {
+      left: auto;
+      top: 42%;
+      right: 15%;
+      background-position: right top;
+   }
+
+   .nav-btns2_nav.prev {
+      right: auto;
+      top: 42%;
+      left: 15%;
+      background-position: left top;
    }
 
    .skate-2-container {
@@ -2490,6 +2602,20 @@ MEDIA QUERIES
    .skate {
       top: 38%;
       left: 11%;
+   }
+
+   .nav-btns2_nav.next {
+      left: auto;
+      top: 44%;
+      right: 15%;
+      background-position: right top;
+   }
+
+   .nav-btns2_nav.prev {
+      right: auto;
+      top: 44%;
+      left: 15%;
+      background-position: left top;
    }
 
    .grey-box-2 {

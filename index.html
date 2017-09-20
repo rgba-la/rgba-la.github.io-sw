@@ -14,7 +14,6 @@
    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
    crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
-   <!-- <script src="https://player.vimeo.com/api/player.js"></script>  -->
    <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
 
    <!--MAILCHIMP STYLE EMBED-->
@@ -23,9 +22,7 @@
    #mc_embed_signup input.mce_inline_error {
       border-color: #000;
    }
-   #mailchimp {
-      /*background: #f8f8f8;*/
-   }
+
    #mailchimp input {
       display: flex;
       justify-content: center;
@@ -62,7 +59,8 @@
       <div id="nav" class="overlay">
          <div class="mobile-header">
             <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
-            <p class="mobile-logo">S<span class="ml">W</span></p>
+            <!-- <p class="mobile-logo">S<span class="ml">W</span></p> -->
+            <img class="mobile-logo" src="images/assets/homepage/logo-blk.png" alt="Mobile Logo">
          </div>
          <nav class="menu overlay">
             <a class="active" href="#">HOME</a>
@@ -93,7 +91,7 @@
       <div class="menu-toggle openBtn" onclick="openNav()">
          <div class="hamburger"></div>
       </div>
-      <div class="logo lazyload">
+      <div class="logo parallax">
          <img src="images/assets/homepage/01-home-hero-logo.png"/>
       </div>
    </section>
@@ -115,6 +113,13 @@
          </ul>
       </div>
       <div class="about-p lazyload">
+         <div class="social-icons-container">
+            <a href="https://www.facebook.com/ShaunWhite/" target="_blank"><img class="social" id="social-fb" src="images/assets/homepage/fb.svg" onmouseover="this.src='images/assets/homepage/fb-2.svg';" onmouseout="this.src='images/assets/homepage/fb.svg';"/></a>
+            <a href="https://twitter.com/shaunwhite" target="_blank"><img class="social" id="social-twitter" src="images/assets/homepage/twitter.svg" onmouseover="this.src='images/assets/homepage/twitter-2.svg';" onmouseout="this.src='images/assets/homepage/twitter.svg';"/></a>
+            <a href="https://www.instagram.com/shaunwhite/" target="_blank"><img class="social" id="social-ig" src="images/assets/homepage/ig.svg" onmouseover="this.src='images/assets/homepage/ig-2.svg';" onmouseout="this.src='images/assets/homepage/ig.svg';"/></a>
+            <a href="https://www.youtube.com/user/shaunwhite" target="_blank"><img class="social" id="social-yt" src="images/assets/homepage/yt.svg" onmouseover="this.src='images/assets/homepage/yt-2.svg';" onmouseout="this.src='images/assets/homepage/yt.svg';"/></a>
+
+         </div>
          <p>Shaun White is a dual sport professional athlete who maintains some of the highest accolades within snowboarding and skateboarding. Shaun has amassed numerous titles and victories, most notably gold medaling in both the 2006 &amp; 2010 Winter Olympics. He holds the X Games records for gold medals with 15 and the highest overall medal count with 23 to date. He also has won 10 ESPY awards for Best Male Action Sports Athlete and Best Male US Olympic Athlete.</p>
       </div>
    </section>
@@ -201,7 +206,8 @@
    </section>
    <section class="snow-video-container">
       <div class="snow-video-1 parallax">
-         <div class="play-icon">
+         <div class="play-icon video-open">
+            <!-- <img src="images/assets/homepage/play-mobile.svg" alt="Play Button"> -->
             <svg width="50px" height="75px" viewbox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
@@ -213,7 +219,7 @@
                </g>
             </svg>
          </div>
-         <img src="images/assets/homepage/03-snow-video@2x.png" />
+         <img class="video-open" src="images/assets/homepage/03-snow-video@2x.png" />
       </div>
       <div class="snow-video-2">
          <img src="images/assets/homepage/03-snow-video-bg@2x.png" />
@@ -229,8 +235,13 @@
    </section>
    <section class="skate-container">
       <div class="skate-carousel">
-         <img src="images/assets/homepage/04-skate-carousel-1@2x.png" />
-         <img src="images/assets/homepage/04-skate-carousel-2@2x.png" />
+         <img src="images/assets/homepage/sk-carousel1.png" />
+         <img src="images/assets/homepage/sk-carousel2.png" />
+         <img src="images/assets/homepage/sk-carousel3.png" />
+         <img src="images/assets/homepage/sk-carousel4.png" />
+         <img src="images/assets/homepage/sk-carousel5.png" />
+         <img src="images/assets/homepage/sk-carousel6.png" />
+         <img src="images/assets/homepage/sk-carousel7.png" />
       </div>
       <div class="skate lazyload">
          <p>SKATE</p>
@@ -241,7 +252,7 @@
    </section>
    <section class="skate-2-container">
       <div class="skate-video">
-         <img class="video-open" src="images/assets/homepage/04-skate-verticalvideo@2x.png" />
+         <img src="images/assets/homepage/04-skate-verticalvideo@2x.png" />
       </div>
       <div class="skate-text">
          <div class="skate-text-1 lazyload">
@@ -397,7 +408,7 @@
          <p class="col mt2 lazyload">We are just showing it how it is. I’ve been wanting to do something different for awhile now. Something more grown up from what I had been doing with the kids’ line the past 10 years. So we did just that. Welcome to WHT SPACE</p>
       </div>
       <div class="btn">
-         <a class="mr-btn button" href="google.com" target="_blank">EXPLORE THE COLLECTION</a>
+         <a class="mr-btn button" href="http://thewhtspace.com/" target="_blank">EXPLORE THE COLLECTION</a>
       </div>
       <div class="mri-container">
          <div class="mr-title lazyload">
@@ -450,9 +461,11 @@
       <!-- <div class="gbc">
       <div class="gb"></div>
    </div> -->
-   <div class="mcci skate-carousel">
-      <img src="images/assets/homepage/07-mammoth-carousel-1@2x.png" />
-      <img src="images/assets/homepage/07-mammoth-carousel-1@2x.png" />
+   <div class="carousel-container">
+      <div class="mcci skate-carousel">
+         <img src="images/assets/homepage/07-mammoth-carousel-1@2x.png" />
+         <img src="images/assets/homepage/07-mammoth-carousel-1@2x.png" />
+      </div>
    </div>
    <div class="mctc lazyload">
       <p>Shaun is looking to change that. As a part owner of Mammoth Resorts, he helps oversee the operation of more than 4,000 acres of skiable land in California, visited by more than 2 million skiers and snowboarders each year.</p>
@@ -496,16 +509,7 @@
       <!--Button to close modal-->
       <div id="close">
          <div class="close">
-            <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-               <title>Page 1</title>
-               <desc>Created with Sketch.</desc>
-               <defs></defs>
-               <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="Contact" transform="translate(-967.000000, -361.000000)" fill="#000000">
-                     <polygon id="Page-1" points="980.7144 361 975 366.7144 969.2848 361 967 363.2856 972.7144 369 967 374.7136 969.2848 377 975 371.2856 980.7144 377 983 374.7136 977.2848 369 983 363.2856"></polygon>
-                  </g>
-               </g>
-            </svg>
+            <img src="images/assets/homepage/close-x.svg" alt="Close Button">
          </div>
       </div>
       <!-- Button to close the modal END-->
@@ -528,29 +532,18 @@
 </section>
 <!-- END CONTACT MODAL -->
 <!--  VIDEO MODALS -->
-<!--Skate-->
+<!--Snow-->
 <section id="video-modal" class="video-modal">
    <section class="video-modal-input-box">
       <!--Button to close modal-->
       <div>
          <div class="video-close">
-            <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-               <title>close</title>
-               <desc>Created with Sketch.</desc>
-               <defs></defs>
-
-               <g transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                  <g transform="translate(1073.000000, 81.000000)">
-                     <path d="M1,1 L11.7331956,11.4784785"></path>
-                     <path d="M1,11.7025585 L11.5097688,1" id="Line"></path>
-                  </g>
-               </g>
-            </svg>
+            <img src="images/assets/media/icon-close.svg" alt="Close Button">
          </div>
       </div>
       <!-- Button to close the modal END-->
       <div class="videoWrapper">
-         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/mc8HehH1gSA?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/K9RueMMABgQ?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
       </div>
    </section>
 </section>
@@ -561,18 +554,7 @@
       <!--Button to close modal-->
       <div>
          <div class="video-close">
-            <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-               <title>close</title>
-               <desc>Created with Sketch.</desc>
-               <defs></defs>
-               <path style="" fill="#fff"></path>
-               <g transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                  <g transform="translate(1073.000000, 81.000000)">
-                     <path d="M1,1 L11.7331956,11.4784785"></path>
-                     <path d="M1,11.7025585 L11.5097688,1"></path>
-                  </g>
-               </g>
-            </svg>
+            <img src="images/assets/media/icon-close.svg" alt="Close Button">
          </div>
       </div>
       <!-- Button to close the modal END-->
@@ -588,17 +570,7 @@
       <!--Button to close modal-->
       <div>
          <div class="video-close">
-            <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-               <title>close</title>
-               <desc>Created with Sketch.</desc>
-               <defs></defs>
-               <g transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                  <g transform="translate(1073.000000, 81.000000)">
-                     <path d="M1,1 L11.7331956,11.4784785"></path>
-                     <path d="M1,11.7025585 L11.5097688,1"></path>
-                  </g>
-               </g>
-            </svg>
+            <img src="images/assets/media/icon-close.svg" alt="Close Button">
          </div>
       </div>
       <!-- Button to close the modal END-->
@@ -614,17 +586,7 @@
       <!--Button to close modal-->
       <div>
          <div class="video-close">
-            <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-               <title>close</title>
-               <desc>Created with Sketch.</desc>
-               <defs></defs>
-               <g transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                  <g transform="translate(1073.000000, 81.000000)">
-                     <path d="M1,1 L11.7331956,11.4784785"></path>
-                     <path d="M1,11.7025585 L11.5097688,1"></path>
-                  </g>
-               </g>
-            </svg>
+            <img src="images/assets/media/icon-close.svg" alt="Close Button">
          </div>
       </div>
       <!-- Button to close the modal END-->
@@ -640,23 +602,12 @@
       <!--Button to close modal-->
       <div>
          <div class="video-close">
-            <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-               <title>close</title>
-               <desc>Created with Sketch.</desc>
-               <defs></defs>
-               <g transform="translate(-1073.000000, -81.000000)" stroke="#BABABA" stroke-width="1.5">
-                  <g transform="translate(1073.000000, 81.000000)">
-                     <path d="M1,1 L11.7331956,11.4784785"></path>
-                     <path d="M1,11.7025585 L11.5097688,1"></path>
-                  </g>
-               </g>
-            </svg>
+            <img src="images/assets/media/icon-close.svg" alt="Close Button">
          </div>
       </div>
       <!-- Button to close the modal END-->
       <div class="videoWrapper">
-         <!-- <iframe class="player" width="560" height="540" src="https://player.vimeo.com/211970798" frameborder="0" allowfullscreen></iframe> -->
-         <iframe id="vimeo" src="https://player.vimeo.com/video/211970798?api=1" width="560" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/yIm6BJs2bo8?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
       </div>
    </section>
 </section>
@@ -670,10 +621,10 @@
 <!-- Carousel JS -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="js/responsiveslides.min.js"></script>
-<!-- OWN JS FILE -->
 <script src="js/lazyload.js"></script>
 <script src="js/scrolltotop.js"></script>
 <script src="js/parallax.js"></script>
+<!-- OWN JS FILE -->
 <script src="js/app.js"></script>
 </body>
 </html>
