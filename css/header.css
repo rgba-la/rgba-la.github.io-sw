@@ -2,21 +2,33 @@
 /* Come back to this */
 @font-face {
    font-family: 'Apercu-Regular';
-   src: url('../_fonts/ApercuRegular-f396cd8a.otf');
+   src: url('../_fonts/Apercu-Regular.eot');
+   src: url('../_fonts/Apercu-Regular.otf');
+   src: url('../_fonts/Apercu-Regular.woff') format('woff'),
+   url('../_fonts/Apercu-Regular.ttf') format('truetype'),
+   url('../_fonts/Apercu-Regular.svg') format('svg');
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: 'DIN-BlackAlternate';
-   src: url('../_fonts/DINBlackAlternate.ttf');
+   src: url('../_fonts/DINBlackAlternate.eot');
+   src: url('../_fonts/DINBlackAlternate.otf');
+   src: url('../_fonts/DINBlackAlternate.woff') format('woff'),
+   url('../_fonts/DINBlackAlternate.ttf') format('truetype'),
+   url('../_fonts/DINBlackAlternate.svg') format('svg');
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: 'DIN-CondensedBold';
-   src: url('../_fonts/DINCondensedBold.ttf');
+   src: url('../_fonts/DINCondensedBold.eot');
+   src: url('../_fonts/DINCondensedBold.otf');
+   src: url('../_fonts/DINCondensedBold.woff') format('woff'),
+   url('../_fonts/DINCondensedBold.ttf') format('truetype'),
+   url('../_fonts/DINCondensedBold.svg') format('svg');
    font-weight: normal;
    font-style: normal;
 }
