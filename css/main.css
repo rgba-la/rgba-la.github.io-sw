@@ -918,8 +918,6 @@ hr {
    -webkit-box-align: center;
    -ms-flex-align: center;
    align-items: center;
-   padding-top: 10px;
-   padding-right: 16px;
 }
 
 .ev1 .vertical-container p {
@@ -1721,7 +1719,7 @@ MEDIA QUERIES
    }
 
    .ev1 p {
-      width: 30px;
+      width: 34px;
    }
 
    .ev2 p, .ev3 p {
@@ -1733,6 +1731,10 @@ MEDIA QUERIES
       float: right;
       vertical-align: text-top;
       width: 90%
+   }
+
+   .vertical-container {
+      padding-right: 10px;
    }
 
    .wht-space {
@@ -2067,6 +2069,9 @@ MEDIA QUERIES
       margin: 70px auto 0 auto;
    }
 
+   .vertical-container {
+      padding-right: 0;
+   }
 
    #playicon4 {
       top: 64%;
@@ -2304,6 +2309,11 @@ MEDIA QUERIES
 
    .air-style-text {
       margin-top: 100px;
+   }
+
+   .vertical-container {
+      padding-right: 0;
+      padding-left: 22px;
    }
 
    #playicon4 {
@@ -2702,6 +2712,11 @@ MEDIA QUERIES
       border-radius: 4px;
       /*box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2); */
       /* FIX AFTER*/
+   }
+
+   .vertical-container {
+      padding-right: 16px;
+      padding-left: 0;
    }
 
    .wht-space {
