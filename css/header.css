@@ -315,6 +315,8 @@ input, textarea {
    background-color: #fff;
    width: 90%;
    -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
 }
 
 input:hover, textarea:hover {
