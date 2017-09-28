@@ -481,6 +481,12 @@ MEDIA QUERIES
       padding: 25px 153px 0 95px;
    }
 
+   @-moz-document url-prefix() {
+      .sv5 img {
+         width: 98% !important;
+      }
+   }
+
    .sv4 img, .sv5 img {
       width: 100%;
       border-radius: 6px;
@@ -553,6 +559,12 @@ MEDIA QUERIES
       line-height: 6vw;
       padding-left: 20px;
 
+   }
+
+   @-moz-document url-prefix() {
+      .ivc3  {
+         top: 10% !important;
+      }
    }
 
    .ivc, .ivc3 {

@@ -278,6 +278,18 @@ label {
    text-align: left;
 }
 
+@-moz-document url-prefix() {
+   #name {
+      margin-bottom: 35px;
+   }
+
+   #message {
+      font-size: 15px;
+      font-family: Apercu-Regular;
+      line-height: 30px;
+   }
+}
+
 #message {
    color: #A6AEB7;
 }
