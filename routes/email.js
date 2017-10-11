@@ -14,9 +14,9 @@ const transport = nodemailer.createTransport({
     requireTLS: true,
     pool: true,
     auth: {
-      user: 'Moralesg',
-      pass: 'Orchid22'
-      //   api_key: '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'
+      user: 'Moralesg', //Demo Testing
+      pass: 'Orchid22' //Demo Testing
+      //   api_key: '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' //Demo Testing
 
     }
 });

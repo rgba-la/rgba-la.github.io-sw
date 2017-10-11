@@ -2,92 +2,6 @@
 Base Element Styles
 ********************************/
 
-/*VIDEO MODAL */
-
-/*.videoWrapper {
-margin: 20% auto;
-display: flex;
-justify-content: center;
-}
-
-.modal-container.active {
-visibility: visible;
-pointer-events: all;
-background: rgba(0,0,0,0.4);
-}
-
-.modal-container {
-visibility: hidden;
-pointer-events: none;
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-height: 100%;
-z-index: 2001;
-padding-left: 30px;
-padding-right: 30px;
-overflow: scroll;
-background: transparent;
-}
-
-.modal-container.active .modal {
-transform: translateY(0);
-opacity: 1;
-}
-
-.modal-container .modal.video {
-max-width: 960px;
-padding: 0;
-}
-
-.modal-container .modal {
-position: relative;
-margin: 100px auto 20px auto;
-max-width: 787px;
-background: #fff;
-padding: 60px;
-text-align: center;
-pointer-events: all;
-opacity: 0;
-transition: opacity 500ms ease-in-out, transform 400ms ease-in-out;
-transform: translateY(20px);
--webkit-transform: translateY(20px);
-}
-
-.modal-container .modal.video .modal-closer {
-top: -20px;
-right: -20px;
-}
-
-.modal-container .modal .modal-closer {
-position: absolute;
-top: 30px;
-right: 30px;
-}
-
-.modal-container .modal.video .videoWrapper {
-position: relative;
-padding-bottom: 56.2%;
-height: 0;
-}
-
-.modal-container .modal.video .videoWrapper iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-
-.modal-container .modal.video iframe {
-display: block;
-width: 100%;
-}*/
-
-/* END VIDEO MODAL */
-
-
 html, body {
    -webkit-box-sizing: border-box;
    box-sizing: border-box;
@@ -227,7 +141,6 @@ Base Layout Styles
 .partnerships {
    max-width: 966px;
    margin: 115px auto;
-   /*position: relative;*/
 }
 
 hr {
@@ -258,7 +171,6 @@ MEDIA QUERIES
       top: 0;
       right: 0;
       width: 45px;
-      /*width: 11.5vw;*/
       height: 22px;
       margin-top: 32px;
       margin-right: 45%;
@@ -316,7 +228,6 @@ MEDIA QUERIES
       letter-spacing: 8px;
       line-height: 40px;
       word-wrap: break-word;
-
    }
 
    .hero {
@@ -438,7 +349,6 @@ MEDIA QUERIES
    /* BANNER AREA */
    .banner-text {
       width: 100%;
-      /*top: 38%;*/
    }
 
    .sw-text-3 {
@@ -486,7 +396,6 @@ MEDIA QUERIES
    }
 
    .banner-text {
-      /*top: 42%;*/
       top: 45%;
    }
 

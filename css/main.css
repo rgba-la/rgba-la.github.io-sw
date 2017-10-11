@@ -921,10 +921,7 @@ hr {
 }
 
 .ev1 .vertical-container p {
-   /*padding-bottom: 70px;*/
    padding-bottom: 62px;
-
-
 }
 
 .ev1 p, .ev2 p, .ev3 p {
@@ -932,7 +929,6 @@ hr {
    -ms-transform: rotate(180deg);
    transform: rotate(180deg);
    font-size: 11px;
-   /*position: absolute;*/
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -2002,7 +1998,6 @@ MEDIA QUERIES
 @media only screen and (min-width : 570px) {
    .intro-copy {
       right: 8.5vw;
-      /*right: 58px;*/
       top: -30px;
    }
 

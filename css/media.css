@@ -57,7 +57,6 @@ Base Layout Styles
 
 .m-subnav li a:hover {
    color: #0F0F0F;
-   /*text-decoration: underline; /*COME BACK TO THIS */
 }
 
 .m-subnav li a:after {
@@ -286,7 +285,6 @@ Base Layout Styles
    -webkit-transform: scale(.95);
    -ms-transform: scale(.95);
    transform: scale(.95);
-   /*opacity: 0.9;*/
 }
 
 .sv2 img, .sv3 img, .iv1 img, .iv2 img, .iv3 img, .iv4 img {
@@ -659,7 +657,6 @@ MEDIA QUERIES
    /* BANNER AREA */
    .banner-text {
       width: 100%;
-      /*top: 38%;*/
    }
 
    .sv3-container {
@@ -738,9 +735,7 @@ MEDIA QUERIES
    }
 
    .st h2 {
-      /*font-size: 50px;*/
       font-size: 15.4vw;
-      /*letter-spacing: 20px;*/
       letter-spacing: 7vw;
       line-height: 100px;
    }
@@ -748,7 +743,6 @@ MEDIA QUERIES
    .sv2-container {
       margin-top: 65px;
       margin-bottom: 50px;
-
    }
 
    .sv2 {
@@ -850,9 +844,7 @@ MEDIA QUERIES
    }
 
    .st h2 {
-      /*font-size: 220px;*/
       font-size: 16.5vw;
-      /*letter-spacing: 200px;*/
       letter-spacing: 14vw;
       line-height: 305px;
       padding-left: 14vw;
@@ -874,15 +866,11 @@ MEDIA QUERIES
    }
 
    .sv2 {
-      /*padding: 0 60px 0 180px;*/
       padding: 0 6% 0 18.2%;
-
    }
 
    .sv3 {
-      /*padding: 0 180px 0 5px;*/
       padding: 0 18.2% 0 0.5%;
-
    }
 
    @-moz-document url-prefix() {
@@ -904,7 +892,6 @@ MEDIA QUERIES
    }
 
    .sv4 {
-      /*padding: 0 95px 0 200px;*/
       padding: 0 10.4% 0 18%;
       position: relative;
    }
@@ -921,12 +908,9 @@ MEDIA QUERIES
    /* INTERVIEW SECTION */
 
    .it h2 {
-      /*font-size: 130px;*/
       font-size: 13vw;
-      /*letter-spacing: 32px;*/
       letter-spacing: 3.2vw;
       line-height: 305px;
-      /*padding-left: 42px;*/
       padding-left: 6vw;
    }
 
@@ -970,7 +954,6 @@ MEDIA QUERIES
 
    .itc2 {
       padding: 0 7% 0 7%;
-      /*margin-left: 10%;*/
    }
 
    .iv1 img, .iv2 img, .iv3 img, .iv4 img {
@@ -985,7 +968,6 @@ MEDIA QUERIES
    .iv2 {
       width: 100%;
       padding: 0 7.5% 0 7%;
-      /*margin-left: 10%;*/
    }
 
    .iv1, .iv3 {
