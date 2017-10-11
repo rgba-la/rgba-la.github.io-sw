@@ -1,25 +1,32 @@
 {
-  "name": "sw",
+  "name": "@Moraleg/sw",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "author": "Geraldine Morales <geraldine.morales02@gmail.com>",
+  "description": "sw website",
+  "keywords": [],
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app | bunyan"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Moraleg/sw.git"
+    "url": "https://github.com/moraleg/sw.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Moraleg/sw/issues"
+  "devDependencies": {},
+  "engines": {
+    "npm": ">=3.0.0",
+    "node": ">=6.0.0"
   },
-  "homepage": "https://github.com/Moraleg/sw#readme",
   "dependencies": {
+    "@danmasta/config": "^1.0.0",
+    "@danmasta/env": "^1.0.1",
     "body-parser": "^1.18.2",
-    "express": "^4.16.1",
-    "express-handlebars": "^3.0.0",
-    "nodemailer": "^4.1.2"
+    "bunyan": "^1.8.12",
+    "express": "^4.16.2",
+    "helmet": "^3.8.2",
+    "lodash": "^4.17.4",
+    "nodemailer": "^4.1.3",
+    "nodemailer-sendgrid-transport": "^0.2.0"
   }
 }

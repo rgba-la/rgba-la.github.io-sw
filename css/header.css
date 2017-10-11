@@ -279,7 +279,7 @@ label {
 
 @-moz-document url-prefix() {
    #name {
-      margin-bottom: 35px;
+      margin-bottom: 35px; 
    }
 
    #message {

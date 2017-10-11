@@ -319,7 +319,6 @@ MEDIA QUERIES
       top: 0;
       right: 0;
       width: 45px;
-      /*width: 11.5vw;*/
       height: 22px;
       margin-top: 32px;
       margin-right: 45%;
@@ -377,7 +376,6 @@ MEDIA QUERIES
       letter-spacing: 8px;
       line-height: 40px;
       word-wrap: break-word;
-
    }
 
    .hero {
@@ -424,9 +422,7 @@ MEDIA QUERIES
    }
 
    .st h2 {
-      /*font-size: 50px;*/
       font-size: 12.4vw;
-      /*letter-spacing: 20px;*/
       letter-spacing: 5vw;
       line-height: 100px;
    }
@@ -455,7 +451,6 @@ MEDIA QUERIES
       border-radius: 6px;
       -webkit-box-shadow: 0 2px 35px 0 rgba(0,0,0,.1);
       box-shadow: 0 2px 35px 0 rgba(0,0,0,.1);
-
    }
 
    .sv2 p, .sv3 p {
@@ -481,12 +476,6 @@ MEDIA QUERIES
       padding: 25px 153px 0 95px;
    }
 
-   @-moz-document url-prefix() {
-      .sv5 img {
-         width: 98% !important;
-      }
-   }
-
    .sv4 img, .sv5 img {
       width: 100%;
       border-radius: 6px;
@@ -504,9 +493,7 @@ MEDIA QUERIES
    /* INTERVIEW SECTION*/
 
    .it h2 {
-      /*font-size: 35px;*/
       font-size: 10.5vw;
-      /*letter-spacing: 14px;*/
       letter-spacing: 3.5vw;
       line-height: 100px;
       padding-left: 3.5vw;
@@ -524,47 +511,36 @@ MEDIA QUERIES
 
    .iv4 {
       width: 100%;
-      padding: 0 9.5% 0 0.8%;
+      padding: 0 10.5% 0 0.5%;
    }
 
    .iv1 p, .iv2 p, .iv3 p, .iv4 p {
       font-size: 11px;
       letter-spacing: 0.16px;
       line-height: 20px;
-      /*writing-mode: vertical-rl;
-      text-orientation: sideways;*/
    }
 
    .itc1 {
-      /*padding: 35px 27px 0 0;*/
-      padding: 10% 2.2% 0 4%;
-
+      padding: 10% 2.2% 0 3%;
    }
 
    .itc2 {
-      padding: 5% 6.2% 0 2%;
-   }
-
-   .itc2 p {
-      padding-left: 0;
-      text-align: right;
+      padding: 5% 3.5% 0 2%;
    }
 
    .itc1 p, .itc2 p {
-      /*font-size: 14px;*/
       font-size: 3.2vw;
-      /*letter-spacing: 1px;*/
       letter-spacing: 0.25vw;
-      /*line-height: 25px;*/
       line-height: 6vw;
-      padding-left: 20px;
-
    }
 
-   @-moz-document url-prefix() {
-      .ivc3  {
-         top: 10% !important;
-      }
+   .itc1 p {
+      padding-left: 30px;
+   }
+
+   .itc2 p {
+      padding-right: 5%;
+      text-align: right;
    }
 
    .ivc, .ivc3 {
@@ -572,7 +548,7 @@ MEDIA QUERIES
    }
 
    .ivc, .ivc2, .ivc3 {
-      margin: -5px auto;
+      margin: -6px auto;
    }
 
    .ivc3 {
@@ -584,7 +560,7 @@ MEDIA QUERIES
    }
 
    .iv2 {
-      padding: 0 2.5% 0 6.8%;
+      padding: 0 1.5% 0 6.8%;
    }
 
    .iv2 img, .iv3 img {
@@ -593,9 +569,71 @@ MEDIA QUERIES
 
 
    .iv3 {
-      padding: 0 5.2% 0 0;
+      padding: 0 6.8% 0 1.5%;
    }
 
+   /*Firefox Fixes*/
+   @-moz-document url-prefix() {
+
+      .sv2 {
+         padding: 0 15px 0 28px !important;
+      }
+
+      .sv3 {
+         padding: 0 28px 0 15px !important;
+      }
+
+      .sv5 img {
+         width: 94% !important;
+      }
+
+      .ivc3  {
+         top: 10% !important;
+      }
+
+      .iv1 {
+         padding: 0 2% 0 6.8% !important;
+      }
+
+      .iv1 img, .iv2 img, .iv3 img, .iv4 img {
+         width: 92% !important;
+      }
+
+      .itc1 {
+         padding: 10% 7.8% 0 0 !important;
+
+      }
+
+      .itc1 p {
+         padding-left: 0 !important;
+      }
+
+      .iv2 {
+         padding: 0 1.5% 0 6.8% !important;
+      }
+
+      .iv2 img, .iv3 img {
+         width: 95% !important;
+      }
+
+      .iv3 {
+         padding: 0 5.2% 0 1.5% !important;
+      }
+
+      .iv4 {
+         width: 95% !important;
+         padding: 0 3% 0 2.2% !important;
+      }
+
+      .itc2 {
+         padding: 5% 2.2% 0 3% !important;
+      }
+
+      .ivc3 {
+         margin-top: 30px !important;
+      }
+
+   }
 
 }
 
@@ -745,6 +783,21 @@ MEDIA QUERIES
       font-size: 13px;
    }
 
+   /*Firefox Fixes*/
+   @-moz-document url-prefix() {
+      .sv2 {
+         padding: 0 30px 0 80px !important;
+      }
+
+      .sv3 {
+         padding: 0 80px 0 30px !important;
+      }
+
+      .ivc3 {
+         margin-top: 50px !important;
+      }
+   }
+
 }
 
 /* Medium Devices, Desktops */
@@ -774,6 +827,20 @@ MEDIA QUERIES
    #sv4 {
       padding: 0 12.4% 0 17%;
       position: relative;
+   }
+
+   @-moz-document url-prefix() {
+      #sv4 {
+         padding: 0 6.2% 0 17% !important;
+      }
+
+      .sv5 {
+         padding: 58px 17% 0 6.2% !important;
+      }
+
+      .sv5 img {
+         width: 100% !important;
+      }
    }
 
    /* SECTION 2 */
@@ -818,6 +885,16 @@ MEDIA QUERIES
 
    }
 
+   @-moz-document url-prefix() {
+      .sv2 {
+         padding: 0 3% 0 18.2% !important;
+      }
+
+      .sv3 {
+         padding: 0 18.2% 0 3.5% !important;
+      }
+   }
+
    .sv2 img, .sv3 img {
       border-radius: 0;
    }
@@ -830,7 +907,6 @@ MEDIA QUERIES
       /*padding: 0 95px 0 200px;*/
       padding: 0 10.4% 0 18%;
       position: relative;
-
    }
 
    .sv5 {
@@ -872,6 +948,24 @@ MEDIA QUERIES
    .iv1, .itc2 {
       width: 100%;
       padding: 0 8% 0 7%;
+   }
+
+   @-moz-document url-prefix() {
+      .iv1 {
+         padding: 0 4% 0 7% !important;
+      }
+
+      .itc1 {
+         padding: 8% 11% 0 0 !important;
+      }
+
+      .ivc3 {
+         margin-top: 75px !important;
+      }
+
+      .itc2 p {
+         padding-left: 11% !important;
+      }
    }
 
    .itc2 {
