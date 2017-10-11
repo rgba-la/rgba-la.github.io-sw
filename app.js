@@ -5,6 +5,7 @@ const _ = require('lodash');
 const bodyparser = require('body-parser');
 const helmet = require('helmet');
 const path = require('path');
+const dotenv = require('dotenv');
 
 const log = require('./lib/log');
 const pkg = require('./package');
@@ -15,6 +16,8 @@ const routePartnerships = require('./routes/partnerships');
 const routeEmail = require('./routes/email');
 
 const app = express();
+
+dotenv.config();
 
 // express settings
 _.assign(app.settings, config.express);
