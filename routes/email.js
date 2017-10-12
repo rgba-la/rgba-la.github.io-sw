@@ -3,8 +3,6 @@ const config = require('@danmasta/config');
 const _ = require('lodash');
 const nodemailer = require('nodemailer');
 const sgTransport = require('nodemailer-sendgrid-transport');
-// const smtpTransport = require('nodemailer-smtp-transport');
-// const sesTransport = require('nodemailer-ses-transport');
 const log = require('../lib/log');
 
 // you can use any service here including gmail and mailchimp
@@ -13,9 +11,6 @@ const log = require('../lib/log');
 // https://nodemailer.com/smtp/well-known/
 const transport = nodemailer.createTransport(({
     service: 'SendGrid',
-   //  host: 'email-smtp.us-east-1.amazonaws.com',
-   //  port: 465,
-   //  secure: true,
     requireTLS: true,
     pool: true,
     auth: {
@@ -27,10 +22,8 @@ const transport = nodemailer.createTransport(({
 
 
 const defaults = {
-   //  from: 'sw <info@shaunwhiteenterprises.com>',
-   //  to: 'sw <info@shaunwhiteenterprises.com>',
-   from: 'gm <geraldine.morales02@gmail.com>',
-   to: 'gm <geraldine.morales02@gmail.com>',
+    from: 'sw <info@shaunwhiteenterprises.com>',
+    to: 'sw <info@shaunwhiteenterprises.com>',
     subject: 'SW Contact Request',
     text: null,
     html: null,
@@ -39,9 +32,7 @@ const defaults = {
 
 // update this email address to test in development
 if(env('DEV')){
-   //  defaults.to = 'andrea <andrea@rgba.la>';
-    defaults.to = 'gigi <geraldine.morales02@gmail.com>';
-
+    defaults.to = 'sw <info@shaunwhiteenterprises.com>';
 }
 
 // best practice would be to sanitze user input, but
