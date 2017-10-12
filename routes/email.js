@@ -25,10 +25,6 @@ const transport = nodemailer.createTransport(({
    debug: true
 }));
 
-console.log(process.env.SENDGRID_USERNAME);
-console.log('----------------------');
-console.log(process.env.SENDGRID_PASSWORD);
-
 
 const defaults = {
    //  from: 'sw <info@shaunwhiteenterprises.com>',

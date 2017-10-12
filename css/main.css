@@ -38,6 +38,18 @@ img {
 Base Layout Styles
 ********************************/
 
+/*Fixes*/
+
+
+
+/* Safari 7.1+ */ _::-webkit-full-page-media, _:future, :root .safari-greybox-fix { display: none; }
+
+/* Safari 7.1+ */ _::-webkit-full-page-media, _:future, :root .safari_accomplishments-fix { margin-top: 50px; }
+
+/* Safari 7.1+ */ _::-webkit-full-page-media, _:future, :root .safari_accomplishments2-fix { margin: 150px auto; }
+
+
+
 /* TOP */
 
 .hero-banner, .image-container,
@@ -1085,7 +1097,8 @@ hr {
    margin: auto;
    bottom: 0;
    top: 0;
-   right: auto;
+   right: 0;
+   left: 0;
 }
 
 .mrtc {
