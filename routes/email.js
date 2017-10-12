@@ -2,7 +2,8 @@ const env = require('@danmasta/env');
 const config = require('@danmasta/config');
 const _ = require('lodash');
 const nodemailer = require('nodemailer');
-const smtpTransport = require('nodemailer-smtp-transport');
+const sgTransport = require('nodemailer-sendgrid-transport');
+// const smtpTransport = require('nodemailer-smtp-transport');
 // const sesTransport = require('nodemailer-ses-transport');
 const log = require('../lib/log');
 
@@ -10,23 +11,23 @@ const log = require('../lib/log');
 // just check the nodemailer docs: https://nodemailer.com/about/
 // and update the auth with your apikey or credentials
 // https://nodemailer.com/smtp/well-known/
-const transport = nodemailer.createTransport(smtpTransport({
-   //  service: 'SES',
-    host: 'email-smtp.us-east-1.amazonaws.com',
-    port: 465,
-    secure: true,
-   //  requireTLS: true,
-   //  pool: true,
+const transport = nodemailer.createTransport(({
+    service: 'SendGrid',
+   //  host: 'email-smtp.us-east-1.amazonaws.com',
+   //  port: 465,
+   //  secure: true,
+    requireTLS: true,
+    pool: true,
     auth: {
-      user: process.env.SES_USERNAME,
-      pass: process.env.SES_PASSWORD
+      user: process.env.SENDGRID_USERNAME,
+      pass: process.env.SENDGRID_PASSWORD
    },
    debug: true
 }));
 
-console.log(process.env.SES_USERNAME);
+console.log(process.env.SENDGRID_USERNAME);
 console.log('----------------------');
-console.log(process.env.SES_PASSWORD);
+console.log(process.env.SENDGRID_PASSWORD);
 
 
 const defaults = {
