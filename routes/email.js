@@ -22,8 +22,8 @@ const transport = nodemailer.createTransport(({
 
 
 const defaults = {
-    from: 'sw <info@shaunwhiteenterprises.com>',
-    to: 'sw <info@shaunwhiteenterprises.com>',
+    from: 'sw <customerservice@shaunwhiteenterprises.com>',
+    to: 'sw <customerservice@shaunwhiteenterprises.com',
     subject: 'SW Contact Request',
     text: null,
     html: null,
@@ -32,7 +32,7 @@ const defaults = {
 
 // update this email address to test in development
 if(env('DEV')){
-    defaults.to = 'sw <info@shaunwhiteenterprises.com>';
+    defaults.to = 'sw <customerservice@shaunwhiteenterprises.com>';
 }
 
 // best practice would be to sanitze user input, but
