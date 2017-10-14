@@ -2132,7 +2132,7 @@ MEDIA QUERIES
    }
 
    .about {
-      margin-top: 5.4%;
+      margin-top: 4%;
    }
    .about-nav li a {
       font-size: 11px;
@@ -2398,7 +2398,7 @@ MEDIA QUERIES
       letter-spacing: 0.19px;
       padding-bottom: 10px;
       border-bottom: 1px solid black;
-      margin: 0px 0px 0px 75px;
+      margin: 50px 0px 0px 75px;
       position: absolute;
       display: inline-block;
       color: #2a2a2a;
