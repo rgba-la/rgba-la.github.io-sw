@@ -828,7 +828,7 @@ hr {
    -webkit-box-pack: center;
    -ms-flex-pack: center;
    justify-content: center;
-   margin-top: 150px;
+   margin-top: 105px;
 }
 
 .et2-container p {
@@ -1281,6 +1281,14 @@ MEDIA QUERIES
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
+   .hero {
+      display: block;
+   }
+
+   video {
+      display: none;
+   }
+
    .sv3-container {
       margin-top: 100px;
    }
@@ -1527,7 +1535,7 @@ MEDIA QUERIES
    }
 
    .skate {
-      top: 40%;
+      top: 36%;
       left: 35px;
    }
 
@@ -2030,6 +2038,10 @@ MEDIA QUERIES
       width: 420px;
    }
 
+   .skat {
+      top: 40%;
+   }
+
    .skate-text-3 {
       margin-top: 45px;
       margin-bottom: 10px;
@@ -2089,6 +2101,14 @@ MEDIA QUERIES
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
+   .hero {
+      display: none;
+   }
+
+   video {
+      display: block;
+   }
 
    .sv3-container {
       margin-top: 105px;
@@ -2490,7 +2510,7 @@ MEDIA QUERIES
    }
 
    .skate {
-      top: 32%;
+      top: 35%;
       left: 10%;
    }
 
