@@ -23,7 +23,7 @@ const transport = nodemailer.createTransport(({
 
 const defaults = {
     from: 'sw <customerservice@shaunwhiteenterprises.com>',
-    to: 'sw <customerservice@shaunwhiteenterprises.com',
+    to: 'sw <customerservice@shaunwhiteenterprises.com>',
     subject: 'SW Contact Request',
     text: null,
     html: null,
@@ -40,10 +40,10 @@ if(env('DEV')){
 module.exports = function (req, res, next) {
 
     let msg = _.defaults({
-        from: `${req.body.name} <${req.body.email}>`,
-        text: req.body.message,
-        html: req.body.message,
-        replyTo: req.body.email
+      from: 'sw <customerservice@shaunwhiteenterprises.com>',
+     text: req.body.message,
+     html: `${req.body.name} ${req.body.email} ${req.body.message}`,
+     replyTo: req.body.email
     }, defaults);
 
     transport.sendMail(msg, function(err, info){
