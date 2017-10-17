@@ -70,6 +70,16 @@ $(document).ready(function() {
 
 //===================================//
 
+//======= iOS Double Tap Fix ========//
+
+$(document).ready(function() {
+  $("a").on("click touchend", function(e) {
+    var el = $(this);
+    var link = el.attr("href");
+    window.location = link;
+  });
+});
+
 //CONTACT MODAL//
 
 //Event listener to open contact modal
@@ -189,7 +199,7 @@ $('.video-close').click(function(){
 
             // handle success
             } else {
-                $form.html('<h2>Thanks ' + data.name + ', your message has bent sent.</h2>');
+                $form.html('<h2>Thanks ' + data.name + ', your message has been sent.</h2>');
             }
 
         });
