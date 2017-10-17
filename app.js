@@ -39,6 +39,7 @@ app.use('/_fonts', express.static('_fonts'));
 app.use('/css', express.static('css'));
 app.use('/images', express.static('images'));
 app.use('/js', express.static('js'));
+app.use('/videos', express.static('videos'));
 
 // set route handlers
 app.get('/', routeIndex);
