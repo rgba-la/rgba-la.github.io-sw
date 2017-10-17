@@ -1,77 +1,166 @@
+<!-- Created by RGBA Team- Geraldine Morales, Andrea Montoya, Daniel Smith -->
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <title>Shaun White | Home</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="css/header.css">
-      <link rel="stylesheet" href="css/main.css">
-      <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
-   </head>
-   <body>
+<head>
+   <meta charset="utf-8">
+   <title>Shaun White | Home</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!--Favicon-->
+
+   <link rel="apple-touch-icon" sizes="57x57" href="images/assets/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="images/assets/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="images/assets/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="images/assets/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="images/assets/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="images/assets/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="images/assets/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="images/assets/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="images/assets/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/assets/favicon/favicon-16x16.png">
+   <link rel="manifest" href="images/assets/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="images/assets/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+
+
+   <!--Stylesheets-->
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/main.css">
+   <!-- <link href="http://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
+   <!--jQuery Scripts-->
+   <script
+   src="https://code.jquery.com/jquery-3.2.1.min.js"
+   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+   crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
+   <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+
+   <!--MAILCHIMP STYLE EMBED-->
+   <style type="text/css">
+
+   #mc_embed_signup input.mce_inline_error {
+      border-color: #000;
+   }
+
+   #mailchimp input {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      /*display: flex;*/
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin: 0 auto 25px auto;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+   }
+   .mce_inline_error {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding-bottom: 10px;
+   }
+   div#mce-success-response {
+      text-align: center;
+      width: 70%;
+   }
+   #mailchimp input.email { background: #fff }
+   #mailchimp input.name { background: #fff}
+   #mailchimp input[type="submit"] {
+      cursor: pointer;
+   }
+   #mailchimp input[type="submit"]:hover{
+      background-color: #0F0F0F;
+      color: #fff;
+      -webkit-transition: 0.25s;
+      -o-transition: 0.25s;
+      transition: 0.25s;
+   }
+   </style>
+
+</head>
+<body>
    <!-- Header -->
-      <header>
-         <!--Mobile Nav -->
-         <div id="nav" class="overlay">
-            <div class="mobile-header">
-               <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
-               <p class="mobile-logo">S<span class="ml">W</span></p>
-            </div>
-            <nav class="menu overlay">
-               <a class="active" href="#">HOME</a>
-               <!-- <a href="#">BIO</a> -->
-               <a href="media.html">MEDIA</a>
-               <!-- <a href="#">NEWS</a> -->
-               <a href="partnerships.html">PARTNERSHIPS</a>
-               <a class="contact-open">CONTACT</a>
-            </nav>
+   <header>
+      <!--Mobile Nav -->
+      <div id="nav" class="overlay">
+         <div class="mobile-header">
+            <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
+            <!-- <p class="mobile-logo">S<span class="ml">W</span></p> -->
+            <img class="mobile-logo" src="images/assets/homepage/logo-blk.png" alt="Mobile Logo">
          </div>
-         <!--End Mobile Nav -->
-         <!--Desktop Nav -->
-         <nav class="desktop">
-            <a class="active" href="#">HOME</a>
+         <nav class="menu overlay">
+            <a class="active" href="/">HOME</a>
             <!-- <a href="#">BIO</a> -->
-            <a href="media.html">MEDIA</a>
+            <a href="/media">MEDIA</a>
             <!-- <a href="#">NEWS</a> -->
-            <a href="partnerships.html">PARTNERSHIPS</a>
+            <a href="/partnerships">PARTNERSHIPS</a>
             <a class="contact-open">CONTACT</a>
          </nav>
-         <!--End Desktop Nav -->
-      </header>
+      </div>
+      <!--End Mobile Nav -->
+      <!--Desktop Nav -->
+      <nav class="desktop">
+         <a class="active" href="/">HOME</a>
+         <!-- <a href="#">BIO</a> -->
+         <a href="/media">MEDIA</a>
+         <!-- <a href="#">NEWS</a> -->
+         <a href="/partnerships">PARTNERSHIPS</a>
+         <a class="contact-open">CONTACT</a>
+      </nav>
+      <!--End Desktop Nav -->
+   </header>
    <!-- Hero Banner -->
-      <section class="full-width hero-banner">
-         <div class="hero-container">
-            <img class="hero" src="images/assets/homepage/01-home-hero-bg@2x.png"/>
-         </div>
-         <div class="menu-toggle openBtn" onclick="openNav()">
-            <div class="hamburger"></div>
-         </div>
-         <div class="logo lazyload">
-            <img src="images/assets/homepage/01-home-hero-logo.png"/>
-         </div>
-      </section>
+   <section class="full-width hero-banner">
+      <div class="hero-container">
+         <video autoplay loop muted>
+            <source src="videos/sw-hero-video-hero.mp4" type="video/mp4">
+            <source src="videos/sw-hero-video-hero.ogv" type="video/ogv">
+            <source src="videos/sw-hero-video-hero.webm" type="video/webm">
+            Your browser does not support the video tag.
+         </video>
+         <img class="hero" src="images/assets/homepage/01-home-hero-bg@2x.png"/>
+      </div>
+      <div class="menu-toggle openBtn" onclick="openNav()">
+         <div class="hamburger"></div>
+      </div>
+      <div class="logo parallax">
+         <img src="images/assets/homepage/01-home-hero-logo.png"/>
+      </div>
+   </section>
    <!-- End Hero Banner -->
    <!-- Fixed Elements -->
    <div class="text-container">
-     <p class="vertical-text" data-font-size="13px">
-       <span class="scroll">scroll to discover</span>
-     </p>
+      <p class="vertical-text" data-font-size="13px">
+         <span class="scroll">scroll to discover</span>
+      </p>
    </div>
    <!-- End Fixed Elements -->
    <!-- About -->
    <section class="about">
       <div class="about-nav">
-            <ul>
-               <li><a href="#icon" class="icon">ICON</a></li>
-               <li><a href="#athlete" class="athlete">ATHLETE</a></li>
-               <li><a href="#entrepreneur" class="entrepreneur">ENTREPRENEUR</a></li>
-            </ul>
+         <ul>
+            <li><a href="#icon" class="icon">ICON</a></li>
+            <li><a href="#athlete" class="athlete">ATHLETE</a></li>
+            <li><a href="#entrepreneur" class="entrepreneur">ENTREPRENEUR</a></li>
+         </ul>
       </div>
       <div class="about-p lazyload">
+         <div class="social-icons-container">
+            <a href="https://www.facebook.com/ShaunWhite/" target="_blank"><img class="social" id="social-fb" src="images/assets/homepage/fb.svg" onmouseover="this.src='images/assets/homepage/fb-2.svg';" onmouseout="this.src='images/assets/homepage/fb.svg';"/></a>
+            <a href="https://twitter.com/shaunwhite" target="_blank"><img class="social" id="social-twitter" src="images/assets/homepage/twitter.svg" onmouseover="this.src='images/assets/homepage/twitter-2.svg';" onmouseout="this.src='images/assets/homepage/twitter.svg';"/></a>
+            <a href="https://www.instagram.com/shaunwhite/" target="_blank"><img class="social" id="social-ig" src="images/assets/homepage/ig.svg" onmouseover="this.src='images/assets/homepage/ig-2.svg';" onmouseout="this.src='images/assets/homepage/ig.svg';"/></a>
+            <a href="https://www.youtube.com/user/shaunwhite" target="_blank"><img class="social" id="social-yt" src="images/assets/homepage/yt.svg" onmouseover="this.src='images/assets/homepage/yt-2.svg';" onmouseout="this.src='images/assets/homepage/yt.svg';"/></a>
+
+         </div>
          <p>Shaun White is a dual sport professional athlete who maintains some of the highest accolades within snowboarding and skateboarding. Shaun has amassed numerous titles and victories, most notably gold medaling in both the 2006 &amp; 2010 Winter Olympics. He holds the X Games records for gold medals with 15 and the highest overall medal count with 23 to date. He also has won 10 ESPY awards for Best Male Action Sports Athlete and Best Male US Olympic Athlete.</p>
       </div>
    </section>
@@ -85,7 +174,7 @@
             </div>
          </div>
          <div class="intro-copy-container">
-               <div class="intro-copy lazyload"><a name="icon"></a>
+            <div class="intro-copy lazyload"><a name="icon"></a>
                <hr>
                <h2>INT</h2>
                <h2>RO</h2>
@@ -127,50 +216,51 @@
                         <p class="atp">Shaun got sponsored by Burton at 7 and turned pro at 13. He won his first US Open at 16, becoming the youngest rider ever to do so, and won his first Olympics gold medal at 19. He racked up a record-breaking number of X Games golds, Dew Tour wins, and ESPY Awards, becoming the most decorated snowboarder in history—all before legal drinking age. </p>
                      </div>
                   </div>
+               </div>
             </div>
+         </div>
+         <div class="athlete-snow-img-container">
+            <div class="athlete-snow">
+               <img src="images/assets/homepage/03-snow-02@2x.png" />
             </div>
          </div>
-      <div class="athlete-snow-img-container">
-         <div class="athlete-snow">
-            <img src="images/assets/homepage/03-snow-02@2x.png" />
+         <div class="accomplishments .safari_accomplishments-fix">
+            <div class="one">
+               <p class="number lazyload">2</p>
+               <p class="acc-text lazyload">OLYMPIC GOLD</p><p class="acc-text">MEDALS</p>
+            </div>
+            <div class="two">
+               <p class="number lazyload">10</p>
+               <p class="acc-text lazyload">ESPY AWARDS</p>
+            </div>
+            <div class="three">
+               <p class="number lazyload">23</p>
+               <p class="acc-text lazyload">X GAMES</p>
+            </div>
          </div>
-      </div>
-      <div class="accomplishments">
-         <div class="one">
-            <p class="number lazyload">2</p>
-            <p class="acc-text lazyload">OLYMPIC GOLD</p><p class="acc-text">MEDALS</p>
-         </div>
-         <div class="two">
-            <p class="number lazyload">10</p>
-            <p class="acc-text lazyload">ESPY AWARDS</p>
-         </div>
-         <div class="three">
-            <p class="number lazyload">23</p>
-            <p class="acc-text lazyload">X GAMES</p>
-         </div>
-      </div>
       </div>
    </section>
-   <section class="accomplishments-copy-container">
+   <section class="accomplishments-copy-container safari_accomplishments2-fix">
       <div class="accomplishments-copy">
          <p>Shaun got sponsored by Burton at 7 and turned pro at 13. He won his first US Open at 16, becoming the youngest rider ever to do so, and won his first Olympics gold medal at 19. He racked up a record-breaking number of X Games golds, Dew Tour wins, and ESPY Awards, becoming the most decorated snowboarder in history—all before legal drinking age.</p>
       </div>
    </section>
    <section class="snow-video-container">
       <div class="snow-video-1 parallax">
-         <div class="play-icon">
+         <div class="play-icon video-open">
+            <!-- <img src="images/assets/homepage/play-mobile.svg" alt="Play Button"> -->
             <svg width="50px" height="75px" viewbox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
-                        <g id="play" transform="translate(695.000000, 3899.000000)">
-                            <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
-                            <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
-                        </g>
-                    </g>
-                </g>
+               <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
+                     <g id="play" transform="translate(695.000000, 3899.000000)">
+                        <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
+                        <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
+                     </g>
+                  </g>
+               </g>
             </svg>
          </div>
-         <img src="images/assets/homepage/03-snow-video@2x.png" />
+         <img class="video-open" src="images/assets/homepage/03-snow-video@2x.png" />
       </div>
       <div class="snow-video-2">
          <img src="images/assets/homepage/03-snow-video-bg@2x.png" />
@@ -186,8 +276,13 @@
    </section>
    <section class="skate-container">
       <div class="skate-carousel">
-         <img src="images/assets/homepage/04-skate-carousel-1@2x.png" />
-         <img src="images/assets/homepage/04-skate-carousel-2@2x.png" />
+         <img src="images/assets/homepage/sk-carousel1.png" />
+         <img src="images/assets/homepage/sk-carousel2.png" />
+         <img src="images/assets/homepage/sk-carousel3.png" />
+         <img src="images/assets/homepage/sk-carousel4.png" />
+         <img src="images/assets/homepage/sk-carousel5.png" />
+         <img src="images/assets/homepage/sk-carousel6.png" />
+         <img src="images/assets/homepage/sk-carousel7.png" />
       </div>
       <div class="skate lazyload">
          <p>SKATE</p>
@@ -242,7 +337,7 @@
             <h2>PRENEUR</h2>
          </div>
          <div class="entre-image-container-1">
-            <div class="entre-image-1">
+            <div class="entre-image-1 parallax">
                <img src="images/assets/homepage/05-as-1.png" alt="">
             </div>
             <div class="air-style-text lazyload">
@@ -252,7 +347,7 @@
             </div>
          </div>
          <div class="grey-box-container-2">
-            <div class="grey-box-2"></div>
+            <div class="grey-box-2 safari-greybox-fix"></div>
          </div>
       </div>
    </section>
@@ -286,64 +381,28 @@
       <section class="ec4">
          <div class="evc1">
             <div class="ev1">
-               <!-- <div class="play-icon" id="playicon1">
-                  <svg width="50px" height="75px" viewbox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
-                              <g id="play" transform="translate(695.000000, 3899.000000)">
-                                  <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
-                                  <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
-                              </g>
-                          </g>
-                      </g>
-                  </svg>
-               </div> -->
-               <a href="https://www.youtube.com/watch?v=IFHcflZbBq0" target="_blank"><img src="images/assets/homepage/05-as-sml-video1@2x.png"/></a>
+               <img class="video-open-2" src="images/assets/homepage/05-as-sml-video1.png"/>
                <div class="vertical-container lazyload">
                   <p>A+S BEIJING</p>
                </div>
             </div>
+         </div>
+         <div class="evc2">
+            <div class="ev-text lazyload">
+               <h2>RECAPS</h2>
+               <p>With 3 stops across the globe (Innsbruck, Beijing, Los Angeles) and a 16-story jump, Air + Style is an annual winter sports and music festival that has seen some of the most groundbreaking riding in history, as well as musical performances from Kendrick Lamar, J Cole, Steve Aoki, Kaskade, Haim, and many more.</p>
             </div>
-            <div class="evc2">
-               <div class="ev-text lazyload">
-                  <h2>RECAPS</h2>
-                  <p>With 3 stops across the globe (Innsbruck, Beijing, Los Angeles) and a 16-story jump, Air + Style is an annual winter sports and music festival that has seen some of the most groundbreaking riding in history, as well as musical performances from Kendrick Lamar, J Cole, Steve Aoki, Kaskade, Haim, and many more.</p>
-               </div>
-               <div class="ev2">
-                  <!-- <div class="play-icon" id="playicon2">
-                     <svg width="50px" height="75px" viewbox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                         <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                             <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
-                                 <g id="play" transform="translate(695.000000, 3899.000000)">
-                                     <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
-                                     <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
-                                 </g>
-                             </g>
-                         </g>
-                     </svg>
-                  </div> -->
-                  <a href="https://www.youtube.com/watch?v=_E0PGhcdo2g" target="_blank"><img src="images/assets/homepage/05-as-sml-video2@2x.png" /></a>
-                  <div class="vertical-container lazyload">
-                     <p>A+S INNSBRUCK</p>
-                  </div>
+            <div class="ev2">
+               <img class="video-open-3" src="images/assets/homepage/05-as-sml-video2.png" />
+               <div class="vertical-container lazyload">
+                  <p>A+S INNSBRUCK</p>
                </div>
             </div>
+         </div>
       </section>
       <div class="evc3">
-         <div class="ev3">
-            <!-- <div class="play-icon" id="playicon1">
-               <svg width="50px" height="75px" viewbox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                   <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                       <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
-                           <g id="play" transform="translate(695.000000, 3899.000000)">
-                               <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
-                               <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
-                           </g>
-                       </g>
-                   </g>
-               </svg>
-            </div> -->
-            <a href="https://www.youtube.com/watch?v=Ay3jvf_hN6g" target="_blank"><img src="images/assets/homepage/05-as-sml-video3@2x.png" /></a>
+         <div class="ev3 video-open-4">
+            <img class="video-open-4" src="images/assets/homepage/05-as-sml-video3.png" />
             <div class="vertical-container lazyload">
                <p>A+S LOS ANGELES</p>
             </div>
@@ -367,7 +426,7 @@
       </div>
       <div class="wsi-container">
          <div class="wsi">
-            <div class="wsi1-container">
+            <div class="wsi1-container lazyload">
                <img class="wsi1" src="images/assets/homepage/06-whtspace-sml.png" />
             </div>
             <img class="wsi2" src="images/assets/homepage/06-whtspace-medium.png"/>
@@ -390,7 +449,7 @@
          <p class="col mt2 lazyload">We are just showing it how it is. I’ve been wanting to do something different for awhile now. Something more grown up from what I had been doing with the kids’ line the past 10 years. So we did just that. Welcome to WHT SPACE</p>
       </div>
       <div class="btn">
-         <a class="mr-btn button" href="google.com" target="_blank">EXPLORE THE COLLECTION</a>
+         <a class="mr-btn button" href="http://thewhtspace.com/" target="_blank">EXPLORE THE COLLECTION</a>
       </div>
       <div class="mri-container">
          <div class="mr-title lazyload">
@@ -398,36 +457,35 @@
             <h2>RESORT</h2>
             <div class="play-icon" id="playicon4">
                <!--mobile-->
-               <svg class="play-mobile" width="25px" height="38px" viewBox="0 0 25 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                   <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
-                   <title>play</title>
-                   <desc>Created with Sketch.</desc>
-                   <defs></defs>
-                   <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                       <g id="Home-Mobile" transform="translate(-176.000000, -2001.000000)" stroke="#FFFFFF">
-                           <g id="Group-5" transform="translate(0.000000, 1928.000000)">
-                               <g id="play" transform="translate(176.000000, 73.000000)">
-                                   <rect id="Rectangle-3" stroke-width="2" opacity="0.50157416" x="1" y="1" width="23" height="35.5"></rect>
-                                   <polygon id="Path-5" stroke-width="1.5" points="11 15.5 11 22.3961835 14.5 18.9480918"></polygon>
-                               </g>
+               <svg class="play-mobile video-open-5" width="25px" height="38px" viewBox="0 0 25 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>play</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                     <g id="Home-Mobile" transform="translate(-176.000000, -2001.000000)" stroke="#FFFFFF">
+                        <g id="Group-5" transform="translate(0.000000, 1928.000000)">
+                           <g id="play" transform="translate(176.000000, 73.000000)">
+                              <rect id="Rectangle-3" stroke-width="2" opacity="0.50157416" x="1" y="1" width="23" height="35.5"></rect>
+                              <polygon id="Path-5" stroke-width="1.5" points="11 15.5 11 22.3961835 14.5 18.9480918"></polygon>
                            </g>
-                       </g>
-                   </g>
+                        </g>
+                     </g>
+                  </g>
                </svg>
                <!--desktop-->
-               <svg class="play-desktop"  width="50px" height="75px" viewbox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                   <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                       <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
-                           <g id="play" transform="translate(695.000000, 3899.000000)">
-                               <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
-                               <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
-                           </g>
-                       </g>
-                   </g>
+               <svg class="play-desktop video-open-5"  width="50px" height="75px" viewBox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                     <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
+                        <g id="play" transform="translate(695.000000, 3899.000000)">
+                           <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
+                           <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
+                        </g>
+                     </g>
+                  </g>
                </svg>
             </div>
          </div>
-         <img src="images/assets/homepage/07-mammoth-mainbg@2x.png" />
+         <img class="video-open-5" src="images/assets/homepage/07-mammoth-mainbg@2x.png" />
       </div>
       <div class="mri-bg-container">
       </div>
@@ -435,82 +493,181 @@
          <p class="mrt1 lazyload">"There are so many situations where people don’t get introduced to snowboarding in the right way and they never come back to it."</p>
          <p class="mrt2 lazyload">As a massive reinvestment into the sport that made him famous, Shaun White secured a deal in 2016 to own a percentage of legendary Southern California ski resort Mammoth Mountain—including the resorts he grew up riding, Bear Mountain and Snow Summit.</p>
       </div>
-      <div class="mri-right-container">
+      <div class="mri-right-container lazyload">
          <img src="images/assets/homepage/07-mammoth-right@2x.png" />
       </div>
    </section>
    <section class="mcc">
       <!-- <div class="gbc">
-         <div class="gb"></div>
-      </div> -->
+      <div class="gb"></div>
+   </div> -->
+   <div class="carousel-container">
       <div class="mcci skate-carousel">
-         <img src="images/assets/homepage/07-mammoth-carousel-1@2x.png" />
-         <img src="images/assets/homepage/07-mammoth-carousel-1@2x.png" />
+         <img src="images/assets/homepage/mammoth01@2x.png" />
+         <img src="images/assets/homepage/mammoth02@2x.png" />
+         <img src="images/assets/homepage/mammoth03@2x.png" />
+         <img src="images/assets/homepage/mammoth04@2x.png" />
+         <img src="images/assets/homepage/mammoth05@2x.png" />
       </div>
-      <div class="mctc lazyload">
-         <p>Shaun is looking to change that. As a part owner of Mammoth Resorts, he helps oversee the operation of more than 4,000 acres of skiable land in California, visited by more than 2 million skiers and snowboarders each year.</p>
+   </div>
+   <div class="mctc lazyload">
+      <p>Shaun is looking to change that. As a part owner of Mammoth Resorts, he helps oversee the operation of more than 4,000 acres of skiable land in California, visited by more than 2 million skiers and snowboarders each year.</p>
+   </div>
+</section>
+<!-- End Mammoth Resort -->
+<!-- Mailing List -->
+<section class="signup">
+   <div class="sc">
+      <img class="si" src="images/assets/homepage/08-footer-bg.png" />
+      <div class="si">
       </div>
-   </section>
-   <!-- End Mammoth Resort -->
-   <!-- Mailing List -->
-   <section class="signup">
-      <div class="sc">
-         <img class="si" src="images/assets/homepage/08-footer-bg.png" />
-         <div class="si">
-         </div>
-      </div>
-      <div class="si-form">
-         <p class="lazyload">SIGN UP FOR SHAUN’S MAILING LIST</p>
-         <form class="" action="index.html" method="post" target="_blank">
-            <label for="email"></label>
-            <input class="email" type="text" name="" value="Enter Email Address" width="550px">
-            <button class="subscribe button" type="submit" name="" value="Subscribe">SUBSCRIBE</button>
+   </div>
+   <div class="si-form">
+      <p class="lazyload">SIGN UP FOR SHAUN’S MAILING LIST</p>
+      <div id="mailchimp">
+         <form action="http://air-style.us9.list-manage.com/subscribe/post?u=b7d67a249b4705d767125d932&amp;id=9383cadb8f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+               <div class="mc-field-group">
+                  <label for="email"></label>
+                  <input type="email" name="EMAIL" value="Enter Email Address" class="required email" id="mce-EMAIL" width="550px" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+               </div>
+               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b7d67a249b4705d767125d932_9383cadb8f" tabindex="-1" value=""></div>
+               <div class="clear">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe subscribe" class="subscribe">
+               </div>
+               <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+               </div>  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            </div>
          </form>
       </div>
-   </section>
-   <!-- End Mailing List -->
-   <!--  CONTACT MODAL -->
-   <section id="contact-modal" class="modal">
-      <section class="modal-input-box">
-         <!--Button to close modal-->
-         <div id="close">
-            <div class="close">
-               <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                   <title>Page 1</title>
-                   <desc>Created with Sketch.</desc>
-                   <defs></defs>
-                   <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                       <g id="Contact" transform="translate(-967.000000, -361.000000)" fill="#000000">
-                           <polygon id="Page-1" points="980.7144 361 975 366.7144 969.2848 361 967 363.2856 972.7144 369 967 374.7136 969.2848 377 975 371.2856 980.7144 377 983 374.7136 977.2848 369 983 363.2856"></polygon>
-                       </g>
-                   </g>
-               </svg>
-            </div>
+   </div>
+   <a id="scroll-to-top" href="#" title="Scroll to Top" style="display: inline; opacity:1">Top</a>
+</section>
+<!-- End Mailing List -->
+<!--  CONTACT MODAL -->
+<section id="contact-modal" class="modal">
+   <section class="modal-input-box">
+      <!--Button to close modal-->
+      <div id="close">
+         <div class="close">
+            <img src="images/assets/homepage/close-x.svg" alt="Close Button">
          </div>
-         <!-- Button to close the modal END-->
-         <div class="legend-container">
-            <legend align="left"><h2>CONTACT</h2></legend>
+      </div>
+      <!-- Button to close the modal END-->
+      <div class="legend-container">
+         <legend align="left"><h2>CONTACT</h2></legend>
+      </div>
+      <form class="contact-form" method="POST" action="send">
+         <div class="email-container">
+            <p>For business opportunities, press inquiries, fan mail, or, ya know… maybe just your random thoughts of the day, please contact us via email: <b><a href="MAILTO:customerservice@shaunwhiteenterprises.com?subject=Hello!">customerservice@shaunwhiteenterprises.com</a></b></p>
          </div>
-         <form class="contact-form">
-            <div class="email-container">
-               <p>For business opportunities, press inquiries, fan mail, or, ya know… maybe just your random thoughts of the day, please contact us via email: <b><a href="MAILTO:info@shaunwhiteenterprises.com?subject=Hello!">info@shaunwhiteenterprises.com</a></b></p>
-            </div>
-            <label for="name"></label>
-            <input class="contact-input" id="name" type="text" name="name" placeholder="Name" required/><br/>
-            <label for="email"></label>
-            <input class="contact-input" id="email" type="email" name="email" placeholder="Your Email" required/>
-            <label for="message"></label>
-            <textarea class="contact-input" id="message" name="message" type="text" rows="10" cols="35" placeholder="Your Message" required></textarea>
-            <input id="submit" class="button" type="submit" value="SUBMIT"/><span id="status"></span>
-         </form>
-      </section>
+         <label for="name"></label>
+         <input class="contact-input" id="name" type="text" name="name" placeholder="Name" required/><br/>
+         <label for="email"></label>
+         <input class="contact-input" id="email" type="email" name="email" placeholder="Your Email" required/>
+         <label for="message"></label>
+         <textarea class="contact-input" id="message" name="message" type="text" rows="10" cols="35" placeholder="Your Message" required></textarea>
+         <input class="button" id="submit" type="submit" value="SUBMIT"/><span id="status"></span>
+      </form>
    </section>
-   <!-- END CONTACT MODAL -->
-   <!-- Carousel JS -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-   <script src="js/responsiveslides.min.js"></script>
-   <!-- OWN JS FILE -->
-   <script src="js/parallax.js"></script>
-   <script src="js/app.js"></script>
-   </body>
+</section>
+<!-- END CONTACT MODAL -->
+<!--  VIDEO MODALS -->
+<!--Snow-->
+<section id="video-modal" class="video-modal">
+   <section class="video-modal-input-box">
+      <!--Button to close modal-->
+      <div>
+         <div class="video-close">
+            <img src="images/assets/media/icon-close.svg" alt="Close Button">
+         </div>
+      </div>
+      <!-- Button to close the modal END-->
+      <div class="videoWrapper">
+         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/K9RueMMABgQ?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+   </section>
+</section>
+
+<!--A+S BEIJING-->
+<section id="video-modal2" class="video-modal">
+   <section class="video-modal-input-box">
+      <!--Button to close modal-->
+      <div>
+         <div class="video-close">
+            <img src="images/assets/media/icon-close.svg" alt="Close Button">
+         </div>
+      </div>
+      <!-- Button to close the modal END-->
+      <div class="videoWrapper">
+         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/IFHcflZbBq0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+   </section>
+</section>
+
+<!--A+S INNSBRUCK-->
+<section id="video-modal3" class="video-modal">
+   <section class="video-modal-input-box">
+      <!--Button to close modal-->
+      <div>
+         <div class="video-close">
+            <img src="images/assets/media/icon-close.svg" alt="Close Button">
+         </div>
+      </div>
+      <!-- Button to close the modal END-->
+      <div class="videoWrapper">
+         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/_E0PGhcdo2g?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+   </section>
+</section>
+
+<!--A+S LOS ANGELES-->
+<section id="video-modal4" class="video-modal">
+   <section class="video-modal-input-box">
+      <!--Button to close modal-->
+      <div>
+         <div class="video-close">
+            <img src="images/assets/media/icon-close.svg" alt="Close Button">
+         </div>
+      </div>
+      <!-- Button to close the modal END-->
+      <div class="videoWrapper">
+         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/Ay3jvf_hN6g?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+   </section>
+</section>
+
+<!--Mammoth Resort-->
+<section id="video-modal5" class="video-modal">
+   <section class="video-modal-input-box">
+      <!--Button to close modal-->
+      <div>
+         <div class="video-close">
+            <img src="images/assets/media/icon-close.svg" alt="Close Button">
+         </div>
+      </div>
+      <!-- Button to close the modal END-->
+      <div class="videoWrapper">
+         <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/yIm6BJs2bo8?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+   </section>
+</section>
+<!-- END VIDEO MODALS -->
+<!--MAILCHIMP SCRIPT-->
+<script type="text/javascript" src="http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script type="text/javascript">
+(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+</script>
+<!-- END MAILCHIMP SCRIPT-->
+<!-- Carousel JS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script src="js/lazyload.js"></script>
+<script src="js/scrolltotop.js"></script>
+<script src="js/parallax.js"></script>
+<!-- OWN JS FILE -->
+<script src="js/app.js"></script>
+</body>
 </html>

@@ -1,13 +1,34 @@
+<!-- Created by RGBA Team- Geraldine Morales, Andrea Montoya, Daniel Smith -->
 <!DOCTYPE html>
 <html>
 <head>
    <meta charset="utf-8">
    <title>Shaun White | Partnerships</title>
+   <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/header.css">
-   <link rel="stylesheet" href="css/media.css">
    <link rel="stylesheet" href="css/partnerships.css">
-
    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!--Favicon-->
+
+   <link rel="apple-touch-icon" sizes="57x57" href="images/assets/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="images/assets/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="images/assets/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="images/assets/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="images/assets/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="images/assets/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="images/assets/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="images/assets/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="images/assets/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/assets/favicon/favicon-16x16.png">
+   <link rel="manifest" href="images/assets/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="images/assets/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+
    <script
    src="https://code.jquery.com/jquery-3.2.1.min.js"
    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -21,25 +42,26 @@
       <div id="nav" class="overlay">
          <div class="mobile-header">
             <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
-            <p class="mobile-logo">S<span class="ml">W</span></p>
+            <!-- <p class="mobile-logo">S<span class="ml">W</span></p> -->
+            <img class="mobile-logo" src="images/assets/homepage/logo-blk.png" alt="Mobile Logo">
          </div>
          <nav class="menu overlay">
-            <a href="index.html">HOME</a>
+            <a href="/index.html">HOME</a>
             <!-- <a href="#">BIO</a> -->
-            <a href="media.html">MEDIA</a>
+            <a href="/media.html">MEDIA</a>
             <!-- <a href="#">NEWS</a> -->
-            <a href="partnerships.html" class="active">PARTNERSHIPS</a>
+            <a href="/partnerships.html" class="active">PARTNERSHIPS</a>
             <a href="#" class="contact-open">CONTACT</a>
          </nav>
       </div>
       <!--End Mobile Nav -->
       <!--Desktop Nav -->
       <nav class="desktop">
-         <a href="index.html">HOME</a>
+         <a href="/index.html">HOME</a>
          <!-- <a href="#">BIO</a> -->
-         <a href="media.html">MEDIA</a>
+         <a href="/media.html">MEDIA</a>
          <!-- <a href="#">NEWS</a> -->
-         <a href="partnerships.html" class="active">PARTNERSHIPS</a>
+         <a href="/partnerships.html" class="active">PARTNERSHIPS</a>
          <a href="#" class="contact-open">CONTACT</a>
       </nav>
       <!--End Desktop Nav -->
@@ -47,62 +69,101 @@
    <!-- Hero Banner -->
    <section class="full-width hero-banner">
       <div class="hero-container">
-         <a href="https://youtu.be/xyaga7hibR4" target="_blank"><img class="mm-hero" src="images/assets/partnerships/mobile-partnership-hero.jpg"/></a>
-         <a href="index.html"><img class="media-logo" src="images/assets/media/condensed-logo@2x.png"/></a>
-         <a href="https://youtu.be/xyaga7hibR4" target="_blank"><img class="hero" src="images/assets/partnerships/partnership-hero.png"/></a>
+         <img class="mm-hero" src="images/assets/partnerships/mobile-partnership-hero.jpg"/>
+         <a href="index.html"><img class="media-logo" src="images/assets/media/logo-wht.png"/></a>
+         <img class="hero" src="images/assets/partnerships/partnership-hero.png"/>
       </div>
       <div class="menu-toggle openBtn" onclick="openNav()">
          <div class="hamburger"></div>
       </div>
       <div class="banner-text-container">
-         <div class="banner-text">
+         <div class="banner-text parallax">
             <h2>PARTNERSHIPS</h2>
          </div>
       </div>
    </section>
    <!-- End Hero Banner -->
+   <!-- Fixed Elements -->
+   <div class="text-container">
+     <p class="vertical-text" data-font-size="13px">
+       <span class="scroll">Brands &amp; Companies</span>
+     </p>
+   </div>
+   <!-- End Fixed Elements -->
    <!--Section One-->
    <section class="partnerships">
-      <img src="images/assets/partnerships/partnership-logos.png" alt="">
+      <img class="lazyload" src="images/assets/partnerships/partnership-logos.png" alt="">
       <img class="bg" src="images/assets/partnerships/partnership-bg.png" alt="">
-
    </section>
    <hr>
-
+   <!--END Section One-->
    <!--Section Two Container-->
-   <section class="skate-2-container">
-      <div class="skate-video">
+   <section class="partnerships-2-container">
+      <div class="sw-img parallax" data-id="modal1">
          <img src="images/assets/partnerships/partnership-left.png" />
       </div>
-      <div class="skate-text">
-         <div class="skate-text-1">
+      <div class="sw-text">
+         <div class="sw-text-1">
             <p>“I take a central role in each of my partnerships, from designing products for Burton and Oakley, to becoming the majority shareholder of Air + Style. I’m actively involved!”</p>
          </div>
-         <div class="skate-text-2">
+         <div class="sw-text-2">
             <p>Whether he’s designing products, developing campaigns, or repping his sponsors, Shaun takes a central role in each of his partnerships. If you ask him how he splits his time, he’ll tell you he’s 100 percent focused on everything he does… 100 percent of the time. The math doesn’t really add up or allow for much sleep. But it also ensures he puts his whole heart into every single thing he does.</p>
          </div>
-         <div class="skate-img">
+         <div class="snow-img parallax">
             <img src="images/assets/partnerships/partnership-right.png" />
          </div>
       </div>
    </section>
-   <div id="skate-text">
-      <div class="skate-text-3">
+   <div id="sw-text">
+      <div class="sw-text-3">
          <p>"When all the other snowboarders would head to the southern hemisphere for summer training, I’d take a break and do the skate circuit."</p>
       </div>
-      <div class="skate-text-4">
+      <div class="sw-text-4">
          <p>While Shaun was being lauded mostly as a snowboard prodigy, he was turning just as many heads in the skate scene. Legendary skateboarder Tony Hawk befriended a 7-year-old Shaun at the famous Encinitas YMCA vert ramp and mentored the up-and-comer, eventually turning him pro for his company, Birdhouse Skateboards, at the age of 17 in 2003. </p>
       </div>
    </div>
    <!--END Section Two Container-->
-   <!-- Mailing List -->
-   <section class="signup">
+   <!-- Footer -->
+   <section>
+
       <div class="sc">
          <img class="si" src="images/assets/homepage/08-footer-bg.png" />
       </div>
+      <a id="scroll-to-top" href="#" title="Scroll to Top" style="display: inline; opacity:1">Top</a>
    </section>
-   <!-- End Mailing List -->
+   <!-- End Footer -->
+   <!--  CONTACT MODAL -->
+   <section id="contact-modal" class="modal">
+      <section class="modal-input-box">
+         <!--Button to close modal-->
+         <div id="close">
+            <div class="close">
+               <img src="images/assets/homepage/close-x.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="legend-container">
+            <legend align="left"><h2>CONTACT</h2></legend>
+         </div>
+         <form class="contact-form" method="POST">
+            <div class="email-container">
+               <p>For business opportunities, press inquiries, fan mail, or, ya know… maybe just your random thoughts of the day, please contact us via email: <b><a href="MAILTO:customerservice@shaunwhiteenterprises.com?subject=Hello!">customerservice@shaunwhiteenterprises.com</a></b></p>
+            </div>
+            <label for="name"></label>
+            <input class="contact-input" id="name" type="text" name="name" placeholder="Name" required/><br/>
+            <label for="email"></label>
+            <input class="contact-input" id="email" type="email" name="email" placeholder="Your Email" required/>
+            <label for="message"></label>
+            <textarea class="contact-input" id="message" name="message" type="text" rows="10" cols="35" placeholder="Your Message" required></textarea>
+            <input class="button" id="submit" type="submit" value="SUBMIT"/><span id="status"></span>
+         </form>
+      </section>
+   </section>
+   <!-- END CONTACT MODAL -->
 <!-- OWN JS SCRIPT-->
+<script src="js/lazyload.js"></script>
+<script src="js/scrolltotop.js"></script>
+<script src="js/parallax.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

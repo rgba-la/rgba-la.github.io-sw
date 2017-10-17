@@ -1,5 +1,4 @@
 // Mobile Nav Slide
-//
 function openNav() {
    document.getElementById('nav').style.width = "100%";
 }
@@ -8,15 +7,11 @@ function closeNav() {
    document.getElementById('nav').style.width = "0%";
 }
 
-// $(function(){
-//   $('.menu-toggle, nav').click(function(){
-//     $('.menu-toggle').toggleClass('navbar-on');
-//     $('menu').fadeToggle();
-//     $('menu').removeClass('menu');
-//
-//   });
-// });
 
+// document.querySelector( ".menu-toggle" )
+// .addEventListener( "click", function() {
+//     this.classList.toggle( "active" );
+// });
 
 //==================================//
 
@@ -61,80 +56,144 @@ $('a[href*="#"]')
 //===================================//
 
 //Carousel Slider
-
-$(function() {
-   $(".skate-carousel").responsiveSlides();
+$(document).ready(function() {
+   $(".skate-carousel").responsiveSlides({
+      auto: true,
+      nav: true,
+      prevText: "&#8249;",
+      nextText: "&#8250;",
+      pager: false,
+      namespace: "nav-btns"
+   });
 });
 
-
-document.querySelector( ".menu-toggle" )
-  .addEventListener( "click", function() {
-    this.classList.toggle( "active" );
-  });
 
 //===================================//
 
-//Event listener to open/close contact modal
+//CONTACT MODAL//
+
+//Event listener to open contact modal
 $('.contact-open').on('click', function () {
-  $('#contact-modal').css('display', 'block');
+  $('#contact-modal').fadeIn();
 });
 
+//Event listener to close contact modal
 $('.close').on('click', function() {
-  $('#contact-modal').css('display', 'none');
-});
-//
-// $('.modal').on('click', function() {
-//   $('#contact-modal').css('display', 'none');
-// });
+  $('#contact-modal').fadeOut();
 
+});
+
+//============= VIDEO MODALS ==============//
+
+//Event listener to open video modals
+$('.video-open').on('click', function () {
+  $('#video-modal').fadeIn();
+});
+$('.video-open-2').on('click', function () {
+  $('#video-modal2').fadeIn();
+});
+$('.video-open-3').on('click', function () {
+  $('#video-modal3').fadeIn();
+});
+$('.video-open-4').on('click', function () {
+  $('#video-modal4').fadeIn();
+});
+$('.video-open-5').on('click', function () {
+  $('#video-modal5').fadeIn();
+});
+$('.video-open-6').on('click', function () {
+  $('#video-modal6').fadeIn();
+});
+$('.video-open-7').on('click', function () {
+  $('#video-modal7').fadeIn();
+});
+$('.video-open-8').on('click', function () {
+  $('#video-modal8').fadeIn();
+});
+$('.video-open-9').on('click', function () {
+  $('#video-modal9').fadeIn();
+});
+$('.video-open-10').on('click', function () {
+  $('#video-modal10').fadeIn();
+});
+$('.video-open-11').on('click', function () {
+  $('#video-modal11').fadeIn();
+});
+$('.video-open-12').on('click', function () {
+  $('#video-modal12').fadeIn();
+});
+$('.video-open-13').on('click', function () {
+  $('#video-modal13').fadeIn();
+});
+$('.video-open-14').on('click', function () {
+  $('#video-modal14').fadeIn();
+});
+
+// Close  Video Modals
+$('.video-close').on('click', function() {
+  $('#video-modal').fadeOut();
+  $('#video-modal2').fadeOut();
+  $('#video-modal3').fadeOut();
+  $('#video-modal4').fadeOut();
+  $('#video-modal5').fadeOut();
+  $('#video-modal6').fadeOut();
+  $('#video-modal7').fadeOut();
+  $('#video-modal8').fadeOut();
+  $('#video-modal9').fadeOut();
+  $('#video-modal10').fadeOut();
+  $('#video-modal11').fadeOut();
+  $('#video-modal12').fadeOut();
+  $('#video-modal13').fadeOut();
+  $('#video-modal14').fadeOut();
+});
+
+//Pause Youtube videos when closing modals
+$('.video-close').click(function(){
+  $('.player').each(function(){
+     this.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+   });
+});
+
+//===================================//
 
 //Contact form
+(function(){
 
-function _(id){ return document.getElementById(id); }
+    var $form = $('.contact-form');
+    var $submit = $('#submit');
+    var $status = $('#status');
 
-function submitForm() {
-   _("submit").disabled = true;
-   _("status").innerHTML = "please wait...";
-   var formdata = new FormData();
-   formdata.append("name", _("name").value);
-   formdata.append("email", _("email").value);
-   formdata.append("message", _("message").value);
-   var ajax = new XMLHttpRequest();
-   ajax.open("POST", "form.php");
-   ajax.onreadystatechange = function(){
-      if(ajax.readyState == 4 && ajax.status == 200) {
-         if(ajax.responseText == "success") {
-            _("form").innerHTML = '<h2>Thanks ' + _("name").value+', your message has bent sent.</h2>';
-         } else {
-            _("status").innerHTML = ajax.responseText;
-            _("submit").disabled = false;
-         }
-      }
-   };
-   ajax.send(formdata);
-}
+    function formdata(elem){
 
-//Lazy Load
-$(".lazyload").each(function(idx){
-    var i = idx + 1;
-    var elem = $(this);
+        return Array.from(new FormData(elem).entries()).reduce(function(res, val){
+            return (res[val[0]] = val[1]) && res;
+        }, {});
 
-    $(window).scroll(function () {
-        fadeIn();
-    });
-
-    $(window).load(function() {
-        fadeIn();
-    });
-
-    function fadeIn() {
-        var windowHeight = window.innerHeight;
-        var scrollHeight = $(window).scrollTop();
-        var fromTop = elem.offset().top;
-        var elemPos = windowHeight + scrollHeight - fromTop.toFixed(0);
-
-        if (elemPos > 0){
-            $(elem).addClass('active');
-        };
     }
-});
+
+    $form.on('submit', function (event) {
+
+        event.preventDefault();
+
+        var data = formdata(event.target);
+
+        $submit.attr('disabled', true);
+        $status.html('please wait...');
+
+        $.post('/api/email', data, function (res, status, xhr) {
+
+            // handle error
+            if (res.err) {
+                $status.html(res.err);
+                $submit.attr('disabled', false);
+
+            // handle success
+            } else {
+                $form.html('<h2>Thanks ' + data.name + ', your message has bent sent.</h2>');
+            }
+
+        });
+
+    });
+
+}());

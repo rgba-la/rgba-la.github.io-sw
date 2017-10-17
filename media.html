@@ -1,11 +1,34 @@
+<!-- Created by RGBA Team- Geraldine Morales, Andrea Montoya, Daniel Smith -->
 <!DOCTYPE html>
 <html>
 <head>
    <meta charset="utf-8">
    <title>Shaun White | Media</title>
+   <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/header.css">
    <link rel="stylesheet" href="css/media.css">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!--Favicon-->
+
+   <link rel="apple-touch-icon" sizes="57x57" href="images/assets/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="images/assets/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="images/assets/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="images/assets/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="images/assets/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="images/assets/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="images/assets/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="images/assets/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="images/assets/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/assets/favicon/favicon-16x16.png">
+   <link rel="manifest" href="images/assets/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="images/assets/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+
    <script
    src="https://code.jquery.com/jquery-3.2.1.min.js"
    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -19,25 +42,26 @@
       <div id="nav" class="overlay">
          <div class="mobile-header">
             <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
-            <p class="mobile-logo">S<span class="ml">W</span></p>
+            <!-- <p class="mobile-logo">S<span class="ml">W</span></p> -->
+            <img class="mobile-logo" src="images/assets/homepage/logo-blk.png" alt="Mobile Logo">
          </div>
          <nav class="menu overlay">
-            <a href="index.html">HOME</a>
+            <a href="/index.html">HOME</a>
             <!-- <a href="#">BIO</a> -->
-            <a class="active" href="media.html">MEDIA</a>
+            <a class="active" href="/media.html">MEDIA</a>
             <!-- <a href="#">NEWS</a> -->
-            <a href="partnerships.html">PARTNERSHIPS</a>
+            <a href="/partnerships.html">PARTNERSHIPS</a>
             <a href="#" class="contact-open">CONTACT</a>
          </nav>
       </div>
       <!--End Mobile Nav -->
       <!--Desktop Nav -->
       <nav class="desktop">
-         <a href="index.html">HOME</a>
+         <a href="/index.html">HOME</a>
          <!-- <a href="#">BIO</a> -->
-         <a class="active" href="media.html">MEDIA</a>
+         <a class="active" href="/media.html">MEDIA</a>
          <!-- <a href="#">NEWS</a> -->
-         <a href="partnerships.html">PARTNERSHIPS</a>
+         <a href="/partnerships.html">PARTNERSHIPS</a>
          <a href="#" class="contact-open">CONTACT</a>
       </nav>
       <!--End Desktop Nav -->
@@ -45,26 +69,33 @@
    <!-- Hero Banner -->
    <section class="full-width hero-banner">
       <div class="hero-container">
+         <video class="hero video-open" autoplay loop muted>
+            <source src="videos/media-video-hero.mp4" type="video/mp4">
+            <source src="videos/media-video-hero.ogv" type="video/ogv">
+            <source src="videos/media-video-hero.webm" type="video/webm">
+            Your browser does not support the video tag.
+         </video>
          <a href="https://youtu.be/xyaga7hibR4" target="_blank"><img class="mm-hero" src="images/assets/media/mobile/mobile-media-hero@2x.jpg"/></a>
-         <a href="index.html"><img class="media-logo" src="images/assets/media/condensed-logo@2x.png"/></a>
-         <a href="https://youtu.be/xyaga7hibR4" target="_blank"><img class="hero" src="images/assets/media/main-media-hero@2x.png"/></a>
+         <a href="/"><img class="media-logo" src="images/assets/media/logo-wht.png"/></a>
+         <!-- <img class="hero video-open" src="images/assets/media/main-media-hero@2x.png"/> -->
       </div>
       <div class="menu-toggle openBtn" onclick="openNav()">
          <div class="hamburger"></div>
       </div>
       <div class="banner-text-container">
-         <div class="banner-text">
+         <div class="banner-text parallax">
             <h2>SHAUN WHITE REEL HD</h2>
-            <div class="play-icon">
+            <div class="play-icon video-open">
+
                <svg width="50px" height="75px" viewbox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                   <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                       <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
-                           <g id="play" transform="translate(695.000000, 3899.000000)">
-                               <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
-                               <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
-                           </g>
-                       </g>
-                   </g>
+                  <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                     <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
+                        <g id="play" transform="translate(695.000000, 3899.000000)">
+                           <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
+                           <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
+                        </g>
+                     </g>
+                  </g>
                </svg>
             </div>
          </div>
@@ -83,18 +114,18 @@
    <section class="offset-container">
       <div class="sv3-container"><a name="media"></a>
          <div id="sv4" class="sv4">
-            <a href="https://www.youtube.com/watch?v=Ro-YP5LJSo0" target="_blank"><img src="images/assets/media/media-01-video@2x.png"/></a>
+            <img class="video-open-2" src="images/assets/media/media-01-video@2x.png"/>
             <p>Winning Burton US Open Run 2016</p>
          </div>
          <div class="sv5">
-            <a href="https://www.youtube.com/watch?v=07-hntATz3U" target="_blank"><img src="images/assets/media/media-02-video@2x.png"/></a>
-            <p>Winning Olympic Run: Vancouver 2010</p>
+            <img class="video-open-3" src="images/assets/media/media-02-video@2x.png"/>
+            <p>GoPro: Shaun Flippin' White</p>
          </div>
       </div>
       <section class="section1">
          <div class="section1-container">
             <div class="s1">
-               <a href="https://www.youtube.com/watch?v=k3Uc3dg0nQM" target="_blank"><img src="images/assets/media/media-03-video@2x.png" /></a>
+               <img class="video-open-4" src="images/assets/media/media-03-video@2x.png" />
                <p>Winning Olympic Run: 2006</p>
             </div>
          </div>
@@ -108,30 +139,30 @@
             <h2>SNOW</h2>
          </div>
          <div class="svc">
-            <a href="https://www.youtube.com/watch?v=xk4p9u02BS0" target="_blank"><div class="sv">
-               <div class="play-icon">
+            <div class="sv parallax">
+               <div class="play-icon video-open-5">
                   <svg width="50px" height="75px" viewbox="0 0 50 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
-                              <g id="play" transform="translate(695.000000, 3899.000000)">
-                                  <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
-                                  <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
-                              </g>
-                          </g>
-                      </g>
+                     <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Home---Final" transform="translate(-695.000000, -3899.000000)" stroke="#FFFFFF">
+                           <g id="play" transform="translate(695.000000, 3899.000000)">
+                              <rect id="Rectangle-3" stroke-width="3" opacity="0.50157416" x="1.5" y="1.5" width="47" height="72"></rect>
+                              <polygon id="Path-5" stroke-width="2" points="22 31 22 44.792367 29 37.8961835"></polygon>
+                           </g>
+                        </g>
+                     </g>
                   </svg>
                </div>
-               <img class="svi" src="images/assets/media/media-04-video@2x.png"/>
+               <img class="svi video-open-5" src="images/assets/media/media-04-video@2x.png"/>
                <p>Red Bull - Shaun White's Full Run - Project X</p>
-            </div></a>
+            </div>
          </div>
          <div class="sv2-container">
             <div class="sv2">
-               <a href="https://www.youtube.com/watch?v=33ZxPqDnNvQ" target="_blank"><img src="images/assets/media/media-05-video@2x.png"/></a>
+               <img class="video-open-6" src="images/assets/media/media-05-video@2x.png"/>
                <p>Red Bull - Freeriding in the Backcountry</p>
             </div>
             <div class="sv3">
-               <a href="https://www.youtube.com/watch?v=YQIvm_2ay-U" target="_blank"><img src="images/assets/media/media-06-video@2x.png"/></a>
+               <img class="video-open-7" src="images/assets/media/media-06-video@2x.png"/>
                <p>The Double Mctwist - RedBull</p>
             </div>
          </div>
@@ -139,19 +170,19 @@
          <!-- Media Section 3 -->
          <div class="sv3-container">
             <div class="sv4">
-               <a href="https://www.youtube.com/watch?v=Oc1fjMkUdw8" target="_blank"><img src="images/assets/media/media-07-video@2x.png"/></a>
-               <p>Young Shaun White 1994 interview / Snow clips</p>
+               <img class="video-open-8" src="images/assets/media/sw-teaches-kids@2x.png"/>
+               <p>Shaun Teaches Kids to Skateboard</p>
             </div>
             <div class="sv5">
-               <a href="https://www.youtube.com/watch?v=FSc_S17XEes" target="_blank"><img src="images/assets/media/media-08-video@2x.png"/></a>
+               <img class="video-open-9" src="images/assets/media/media-08-video@2x.png"/>
                <p>Winter X-Games Perfect 100</p>
             </div>
          </div>
          <section class="section1">
             <div class="section1-container">
                <div class="s1">
-                  <a href="https://www.youtube.com/watch?v=k3Uc3dg0nQM" target="_blank"><img src="images/assets/media/media-03-video@2x.png" /></a>
-                  <p>Winning Olympic Run: 2006</p>
+                  <img class="video-open-10" src="images/assets/media/media-09-video@2x.png" />
+                  <p>Winter X Games 2013:</p>
                </div>
             </div>
          </section>
@@ -165,30 +196,30 @@
             <h2>INTERVIEWS</h2>
          </div>
          <div class="ivc">
-            <div class="iv1">
-               <a href="https://www.youtube.com/watch?v=MMCRXbWQuvs" target="_blank"><img class="iv1-img" src="images/assets/media/media-10-video@2x.png"/></a>
+            <div class="iv1 parallax">
+               <img class="iv1-img video-open-11" src="images/assets/media/media-10-video@2x.png"/>
                <p>David Lettermen</p>
             </div>
             <div class="itc1">
-               <p class="lazyload">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp."</p>
+               <p class="lazyload">"See that wasn’t really a mistake. I was just really hungry for snow. There was no food at the top."</p>
             </div>
          </div>
          <div class="ivc2">
             <div class="iv2">
-               <a href="https://www.youtube.com/watch?v=4RV4rcrSYgk" target="_blank"><img class="iv1-img" src="images/assets/media/media-11-video@2x.png"/></a>
+               <img class="iv1-img video-open-12" src="images/assets/media/media-11-video@2x.png"/>
                <p>Time: 10 Questions for Shaun White</p>
             </div><div class="iv3">
-               <a href="https://www.youtube.com/watch?v=0VoMWO-jrjY&list=PLC2F9C79CC6A1735F&index=8" target="_blank"><img class="iv1-img" src="images/assets/media/media-12-video@2x.png"/>
-               <p>Larry King Live</p></a>
+               <img class="iv1-img video-open-13" src="images/assets/media/media-12-video@2x.png"/>
+               <p>Larry King Live</p>
             </div>
          </div>
          <div class="ivc3">
-            <div class="iv4">
-               <a href="https://www.youtube.com/watch?v=mvYQbc6RGa0" target="_blank"><img class="iv4-img" src="images/assets/media/media-13-video@2x.png"/>
-               <p>Shaun White Forbes Unfiltered</p></a>
+            <div class="iv4 video-open-14">
+               <img class="iv4-img" src="images/assets/media/media-13-video@2x.png"/>
+               <p>Shaun White Forbes Unfiltered</p>
             </div>
             <div class="itc2">
-               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp."</p>
+               <p>"Now I can kinda be free to do what I want, and upload what I want to my fans directly"</p>
             </div>
          </div>
       </div>
@@ -196,6 +227,7 @@
    <!-- End Interviews Section -->
    <!-- Footer -->
    <section class="footer">
+      <a id="scroll-to-top" href="#" title="Scroll to Top" style="display: inline; opacity:1">Top</a>
       <img src="images/assets/media/media-footer@2x.png"/>
    </section>
    <!-- End Footer -->
@@ -205,25 +237,16 @@
          <!--Button to close modal-->
          <div id="close">
             <div class="close">
-               <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                   <title>Page 1</title>
-                   <desc>Created with Sketch.</desc>
-                   <defs></defs>
-                   <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                       <g id="Contact" transform="translate(-967.000000, -361.000000)" fill="#000000">
-                           <polygon id="Page-1" points="980.7144 361 975 366.7144 969.2848 361 967 363.2856 972.7144 369 967 374.7136 969.2848 377 975 371.2856 980.7144 377 983 374.7136 977.2848 369 983 363.2856"></polygon>
-                       </g>
-                   </g>
-               </svg>
+               <img src="images/assets/homepage/close-x.svg" alt="Close Button">
             </div>
          </div>
          <!-- Button to close the modal END-->
          <div class="legend-container">
             <legend align="left"><h2>CONTACT</h2></legend>
          </div>
-         <form class="contact-form">
+         <form class="contact-form" method="POST">
             <div class="email-container">
-               <p>For business opportunities, press inquiries, fan mail, or, ya know… maybe just your random thoughts of the day, please contact us via email: <b><a href="MAILTO:info@shaunwhiteenterprises.com?subject=Hello!">info@shaunwhiteenterprises.com</a></b></p>
+               <p>For business opportunities, press inquiries, fan mail, or, ya know… maybe just your random thoughts of the day, please contact us via email: <b><a href="MAILTO:customerservice@shaunwhiteenterprises.com?subject=Hello!">customerservice@shaunwhiteenterprises.com</a></b></p>
             </div>
             <label for="name"></label>
             <input class="contact-input" id="name" type="text" name="name" placeholder="Name" required/><br/>
@@ -236,7 +259,241 @@
       </section>
    </section>
    <!-- END CONTACT MODAL -->
+
+   <!--  VIDEO MODALS -->
+   <!--Banner Video-->
+   <section id="video-modal" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/xyaga7hibR4?enablejsapi=1"
+            frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+   <!--US OPEN Video-->
+   <section id="video-modal2" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" id="video" width="560" height="540" src="https://www.youtube.com/embed/Ro-YP5LJSo0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+   <!--GoPro: Shaun Flippin' White Video-->
+   <section id="video-modal3" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/9oui1hhkgdo?enablejsapi=1"
+            frameborder="0" allowfullscreen></iframe>
+
+         </div>
+      </section>
+   </section>
+
+   <!--Olympics 2006 Video-->
+   <section id="video-modal4" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/k3Uc3dg0nQM?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+   <!--Full run Video-->
+   <section id="video-modal5" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/xk4p9u02BS0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+   <!--Freeriding in backcountry Video-->
+   <section id="video-modal6" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/33ZxPqDnNvQ?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+   <!--Double Mctwist Video-->
+   <section id="video-modal7" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/YQIvm_2ay-U?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+   <!--Shaun teached kids Video-->
+   <section id="video-modal8" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/ttgfy8qT6qg?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+   <!--Winter X-Games 100 Video-->
+   <section id="video-modal9" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/FSc_S17XEes?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+   <!--Winter X-Games 2013 Video-->
+   <section id="video-modal10" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/UU8Xtm8Gl3I?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+
+   <!--David Lettermen Video-->
+   <section id="video-modal11" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/MMCRXbWQuvs?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+   <!--10 Questions Video-->
+   <section id="video-modal12" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/4RV4rcrSYgk?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+   <!--Larry King Video-->
+   <section id="video-modal13" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/0VoMWO-jrjY?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+   <!--Forbes Video-->
+   <section id="video-modal14" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/mvYQbc6RGa0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+   <!-- END VIDEO MODALS -->
+
    <!-- OWN JS SCRIPT-->
+   <script src="js/lazyload.js"></script>
+   <script src="js/scrolltotop.js"></script>
+   <script src="js/parallax.js"></script>
    <script src="js/app.js"></script>
 </body>
 </html>
