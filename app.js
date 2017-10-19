@@ -13,6 +13,7 @@ const pkg = require('./package');
 const routeIndex = require('./routes/index');
 const routeMedia = require('./routes/media');
 const routePartnerships = require('./routes/partnerships');
+const routeBio = require('./routes/bio');
 const routeEmail = require('./routes/email');
 
 const app = express();
@@ -45,6 +46,7 @@ app.use('/videos', express.static('videos'));
 app.get('/', routeIndex);
 app.get('/media', routeMedia);
 app.get('/partnerships', routePartnerships);
+app.get('/bio', routeBio);
 
 app.post('/api/email', routeEmail);
 

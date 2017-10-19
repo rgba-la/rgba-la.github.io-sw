@@ -139,9 +139,49 @@ Base Layout Styles
 }
 
 .partnerships {
-   max-width: 966px;
+   max-width: 1030px;
    margin: 115px auto;
+   margin-top: 0px;
+   position: relative;
+   left:0;
+   right: 0;
+   padding: 20px;
 }
+
+.partner-logo {
+   display: inline-block;
+   max-width: 180px;
+   /*width: 15%;*/
+   margin-right: 5%;
+}
+
+.charities {
+   max-width: 1030px;
+   margin: 115px auto;
+   margin-top: 0px;
+   position: relative;
+   padding: 20px;
+}
+
+.charity-logo {
+   display: inline-block;
+   max-width: 180px;
+   /*width: 15%;*/
+   margin-right: 5%;
+}
+
+.partner-title {
+   text-transform: uppercase;
+   font-family: DIN-CondensedBold;
+   font-size: 20px;
+   color: rgba(15,15,15,0.50);
+   letter-spacing: 1.5px;
+   display: inline-block;
+   margin-right: 10%;
+   margin-left: 10%;
+}
+
+
 
 hr {
    max-width: 1090px;
@@ -175,6 +215,10 @@ MEDIA QUERIES
       margin-top: 32px;
       margin-right: 45%;
       z-index: 500;
+   }
+
+   .partner-title {
+      display: none;
    }
 
    .banner-text-container {
@@ -239,8 +283,28 @@ MEDIA QUERIES
    }
 
    .partnerships {
-      width: 80%;
-      margin: 75px auto;
+      width: 100%;
+      margin: 45px auto 0 auto;
+   }
+
+   .charities {
+      width: 100%;
+      /*margin: 0px 0px auto;*/
+      margin: 0px auto;
+
+   }
+
+   .partnerships, .charities {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline;
+   }
+
+   .partner-logo, .charity-logo {
+      width: 60%;
    }
 
    .bg {
@@ -399,6 +463,10 @@ MEDIA QUERIES
       top: 45%;
    }
 
+    .partner-title {
+      display: inline-block;
+   }
+
    .banner-text h2 {
       width: 100%;
       font-size: 4.02vw;
@@ -549,9 +617,18 @@ MEDIA QUERIES
    }
 
    .partnerships {
-      width: 80%;
+      width: 100%;
       margin: 115px auto;
+      margin-bottom: 0px;
    }
+
+   .charities {
+      width: 100%;
+      margin: 115px auto;
+      margin-top: 0px;
+   }
+
+
    .bg {
       top: 70%;
    }

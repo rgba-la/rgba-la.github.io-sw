@@ -1,0 +1,436 @@
+
+/*******************************
+Base Element Styles
+********************************/
+
+html, body {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   overflow-x: hidden;
+   width: 100%;
+   height: auto;
+   padding: 0;
+   font-family: Apercu-Regular;
+   color: #0F0F0F;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:hover {
+   cursor: pointer;
+}
+
+ul {
+   list-style: none;
+}
+
+img {
+   width: 100%;
+   vertical-align: middle;
+   border-style: none;
+}
+
+
+/*******************************
+Base Layout Styles
+********************************/
+
+.banner-text {
+   font-family: DIN-CondensedBold;
+   position: absolute;
+   left: 0;
+   text-align: center;
+   color: #FFF;
+   display:-webkit-box;
+   display:-ms-flexbox;
+   display:flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-flow: column wrap;
+   flex-flow: column wrap;
+}
+
+.bio1-container {
+   width: 100%;
+   max-width: 960px;
+}
+
+.insta-container {
+   width: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   margin: 0 auto;
+   margin: 120px 0;
+}
+
+#instafeed {
+   margin: 0 auto;
+}
+
+#instafeed img {
+   width: auto;
+   margin: 0 auto;
+   padding: 4px;
+   -webkit-box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
+           box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
+}
+
+#instafeed img:hover {
+   opacity: 0.7;
+   -moz-opacity: 0.7;
+   -webkit-opacity: 0.7;
+}
+
+.bio-footer-container {
+   position: relative;
+}
+
+.headline {
+   font-family: DIN-CondensedBold;
+}
+
+.headline, .tag {
+   color: #101010;
+   text-align: center;
+   margin-top: 0;
+}
+
+.tag {
+   font-family: Apercu-Regular;
+   font-size: 12px;
+   letter-spacing: 0.62px;
+   line-height: 13px;
+}
+
+.tag a {
+   position: relative;
+}
+
+.tag a:after {
+   background: none repeat scroll 0 0 transparent;
+   bottom: -4px;
+   content: "";
+   display: block;
+   height: 1.5px;
+   left: 0;
+   position: absolute;
+   background: #000;
+   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+   -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+   transition: width 0.3s ease 0s, left 0.3s ease 0s;
+   width: 0;
+}
+.tag a:hover:after {
+   width: 95%;
+   left: 4%;
+}
+
+/***************************
+MEDIA QUERIES
+***************************/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+   /* BANNER AREA */
+   .media-logo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45px;
+      height: 22px;
+      margin-top: 32px;
+      margin-right: 45%;
+      z-index: 500;
+   }
+
+   .banner-text-container {
+      width: 100%;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+   }
+
+   .banner-text {
+      width: 100%;
+      top: 48%;
+      margin: 0 auto;
+      display: inline-block;
+   }
+
+   .banner-text .play-icon {
+      position: absolute;
+      top: 175px;
+      left: 49%;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+   }
+
+   .banner-text h2 {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 30px;
+      letter-spacing: 8px;
+      line-height: 40px;
+      word-wrap: break-word;
+   }
+
+   .hero {
+      display: none;
+   }
+
+   .p1 {
+      width: 320px;
+      max-width: 100%;
+      margin: 45px auto 0 auto;
+      text-align: left;
+      font-size: 12px;
+      line-height: 25px;
+   }
+
+   .bio-quote {
+      width: 100%;
+      max-width: 300px;
+      margin: 40px auto 0 auto;
+      font-size: 14px;
+      font-family: DIN-CondensedBold;
+      line-height: 25px;
+      letter-spacing: 1.17px;
+      text-align: center;
+      text-transform: uppercase;
+   }
+
+   .p2, .p4, .p6, .p9 {
+      width: 100%;
+      max-width: 320px;
+      margin: 40px auto 0 auto;
+      font-size: 12px;
+      line-height: 25px;
+   }
+
+   .p3, .p5, .p7, .p8, .p10 {
+      width: 100%;
+      max-width: 320px;
+      margin: 25px auto 0 auto;
+      font-size: 12px;
+      line-height: 25px;
+   }
+
+   .bio1-container {
+      margin: 40px auto 0 auto;
+   }
+
+   .insta-container {
+      margin: 60px auto;
+   }
+
+   .headline {
+      margin-bottom: 10px;
+      font-size: 18px;
+      letter-spacing: 1.17px;
+      line-height: 25px;
+      text-transform: uppercase;
+   }
+
+   .tag {
+      margin-bottom: 60px;
+   }
+
+   #instafeed {
+      max-width: 318px;
+   }
+}
+
+@media only screen and (min-width : 430px) {
+
+   .banner-text .play-icon {
+      position: absolute;
+      top: 140px;
+      left: 49%;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+   }
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 570px) {
+
+   /* BANNER AREA */
+   .banner-text {
+      width: 100%;
+   }
+
+   .p1 {
+      width: 420px;
+   }
+
+   .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10  {
+      max-width: 420px;
+   }
+
+   .bio-quote {
+      /*max-width: 550px;*/
+      max-width: 480px;
+   }
+
+   #instafeed {
+      max-width: 474px;
+   }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+   .media-logo {
+      position: absolute;
+      width: 45px;
+      height: 22px;
+      margin-top: 32px;
+      margin-left: 40px;
+      z-index: 500;
+      top: 10px;
+      left: 10px;
+   }
+
+   .banner-text {
+      top: 45%;
+   }
+
+   .banner-text h2 {
+      width: 100%;
+      font-size: 4.02vw;
+      letter-spacing: 1.5vw;
+      line-height: 50px;
+   }
+
+   .banner-text .play-icon {
+      position: absolute;
+      top: 120px;
+      left: 49%;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+   }
+
+   .hero {
+      display: block;
+   }
+
+   .mm-hero {
+      display: none;
+   }
+
+   .insta-container {
+      margin: 120px auto;
+   }
+
+   #instafeed {
+      max-width: 632px;
+   }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+   .p1 {
+      width: 800px;
+      max-width: 100%;
+      margin: 80px auto 0 auto;
+      text-align: left;
+      font-size: 15px;
+      line-height: 30px;
+   }
+
+   .bio-quote {
+      width: 100%;
+      max-width: 800px;
+      margin: 60px auto 0 auto;
+      font-size: 24px;
+      font-family: DIN-CondensedBold;
+      line-height: 40px;
+      letter-spacing: 2px;
+      text-align: center;
+      text-transform: uppercase;
+   }
+
+   .p2, .p4, .p6, .p9 {
+      width: 100%;
+      max-width: 800px;
+      margin: 60px auto 0 auto;
+      font-size: 15px;
+      line-height: 30px;
+   }
+
+   .p3, .p5, .p7, .p8, .p10 {
+      width: 100%;
+      max-width: 800px;
+      margin: 40px auto 0 auto;
+      font-size: 15px;
+      line-height: 30px;
+   }
+
+   .bio1-container {
+      margin: 60px auto 0 auto;
+   }
+
+   .headline {
+      margin-bottom: 10px;
+      font-size: 24px;
+      letter-spacing: 2px;
+      line-height: 40px;
+      text-transform: uppercase;
+   }
+
+   .tag {
+      margin-bottom: 60px;
+      font-size: 15px;
+      line-height: 30px;
+   }
+
+   #instafeed {
+      max-width: 948px;
+   }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1080px) {
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+
+}
+
+@media only screen and (min-width : 1350px) {
+
+}

@@ -53,32 +53,18 @@ $('a[href*="#"]')
    }
 });
 
-//===================================//
-
-//Carousel Slider
-$(document).ready(function() {
-   $(".skate-carousel").responsiveSlides({
-      auto: true,
-      nav: true,
-      prevText: "&#8249;",
-      nextText: "&#8250;",
-      pager: false,
-      namespace: "nav-btns"
-   });
-});
-
 
 //===================================//
 
 //======= iOS Double Tap Fix ========//
 
-$(document).ready(function() {
-  $("a").on("click touchend", function(e) {
-    var el = $(this);
-    var link = el.attr("href");
-    window.location = link;
-  });
-});
+// $(document).ready(function() {
+//   $("a").on("click touchend", function(e) {
+//     var el = $(this);
+//     var link = el.attr("href");
+//     window.location = link;
+//   });
+// });
 
 //CONTACT MODAL//
 
@@ -138,6 +124,15 @@ $('.video-open-13').on('click', function () {
 $('.video-open-14').on('click', function () {
   $('#video-modal14').fadeIn();
 });
+$('.video-open-15').on('click', function () {
+  $('#video-modal15').fadeIn();
+});
+$('.video-open-16').on('click', function () {
+  $('#video-modal16').fadeIn();
+});
+$('.video-open-17').on('click', function () {
+  $('#video-modal17').fadeIn();
+});
 
 // Close  Video Modals
 $('.video-close').on('click', function() {
@@ -155,6 +150,9 @@ $('.video-close').on('click', function() {
   $('#video-modal12').fadeOut();
   $('#video-modal13').fadeOut();
   $('#video-modal14').fadeOut();
+  $('#video-modal15').fadeOut();
+  $('#video-modal16').fadeOut();
+  $('#video-modal17').fadeOut();
 });
 
 //Pause Youtube videos when closing modals
