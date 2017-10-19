@@ -247,7 +247,7 @@ Base Layout Styles
    margin: 0 auto;
 }
 
-.ivc, .ivc2, .ivc3 {
+.ivc, .ivc2, .ivc3, .ivc4, .ivc5 {
    position: relative;
    width: 100%;
    display: -webkit-box;
@@ -300,9 +300,14 @@ Base Layout Styles
    transform: scale(.95);
 }
 
-#video-modal, #video-modal2, #video-modal3, #video-modal4, #video-modal5, #video-modal6, #video-modal7, #video-modal8, #video-modal9, #video-modal10, #video-modal11, #video-modal12, #video-modal13, #video-modal14  {
+#video-modal, #video-modal2, #video-modal3, #video-modal4, #video-modal5, #video-modal6, #video-modal7, #video-modal8, #video-modal9, #video-modal10, #video-modal11, #video-modal12, #video-modal13, #video-modal14, #video-modal15, #video-modal16, #video-modal17 {
    overflow: auto;
    display: none;
+}
+
+
+.last {
+   color: #fff;
 }
 
 /***************************
@@ -513,7 +518,8 @@ MEDIA QUERIES
 
    .iv4 {
       width: 100%;
-      padding: 0 10.5% 0 0.5%;
+      padding: 0 11% 0 1%;
+
    }
 
    .iv1 p, .iv2 p, .iv3 p, .iv4 p {
@@ -537,19 +543,19 @@ MEDIA QUERIES
    }
 
    .itc1 p {
-      padding-left: 30px;
+      padding-left: 22px;
    }
 
    .itc2 p {
-      padding-right: 5%;
+      padding-right: 6%;
       text-align: right;
    }
 
-   .ivc, .ivc3 {
+   .ivc {
       top: -4.6vh;
    }
 
-   .ivc, .ivc2, .ivc3 {
+   .ivc, .ivc2, .ivc3, .ivc5 {
       margin: -6px auto;
    }
 
@@ -558,20 +564,22 @@ MEDIA QUERIES
       -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
       flex-direction: row-reverse;
-      margin-top: 10%;
+   }
+
+   .ivc3, .ivc4, .ivc5 {
+      margin-top: 4%;
    }
 
    .iv2 {
-      padding: 0 1.5% 0 6.8%;
+      padding: 0 2% 0 6.8%;
    }
 
    .iv2 img, .iv3 img {
       width: 90%;
    }
 
-
    .iv3 {
-      padding: 0 6.8% 0 1.5%;
+      padding: 0 6.8% 0 2%;
    }
 
    /*Firefox Fixes*/
@@ -603,11 +611,14 @@ MEDIA QUERIES
 
       .itc1 {
          padding: 10% 7.8% 0 0 !important;
-
       }
 
       .itc1 p {
          padding-left: 0 !important;
+      }
+
+      .itc1 p, .itc2 p {
+         padding-top: 12%
       }
 
       .iv2 {
@@ -631,7 +642,7 @@ MEDIA QUERIES
          padding: 5% 2.2% 0 3% !important;
       }
 
-      .ivc3 {
+      .ivc3, .ivc4, .ivc5 {
          margin-top: 30px !important;
       }
 
@@ -665,6 +676,14 @@ MEDIA QUERIES
 
    .sv3-container {
       margin-top: 100px;
+   }
+
+   .itc1 p {
+      padding-left: 36px;
+   }
+
+   .iv4 {
+      padding: 0 10.5% 0 1%;
    }
 
 }
@@ -927,10 +946,19 @@ MEDIA QUERIES
       letter-spacing: 0.2vw;
       line-height: 3vw;
       padding-left: 0;
+      padding-top: 10%;
+   }
+
+   .itc2 p {
+      padding-right: 0;
    }
 
    .ivc, .ivc2 {
       margin: -30px auto;
+   }
+
+   .ivc3, .ivc4, .ivc5 {
+      margin-top: 6%;
    }
 
    .iv1, .itc2 {
@@ -952,7 +980,11 @@ MEDIA QUERIES
       }
 
       .itc2 p {
-         padding-left: 11% !important;
+         padding-right: 4% !important;
+      }
+
+      .itc1 p, .itc2 p {
+         padding-top: 20%;
       }
    }
 
@@ -983,7 +1015,7 @@ MEDIA QUERIES
    }
 
    .itc1 {
-      padding: 8% 16% 0 0;
+      padding: 8% 15% 0 0;
    }
 
    .iv3 {
@@ -1003,7 +1035,12 @@ MEDIA QUERIES
 }
 
 @media only screen and (min-width : 1200px) {
-   .iv1, .itc2 {
+
+   .iv1 {
+      padding: 0 7% 0 7%;
+   }
+
+   .itc2 {
       padding: 0 8% 0 7%;
    }
 
@@ -1014,6 +1051,11 @@ MEDIA QUERIES
    .iv2 {
       padding: 0 8% 0 7%;
    }
+
+   .itc2 p {
+      padding-top: 20%;
+   }
+
 }
 
 @media only screen and (min-width : 1440px) {
@@ -1021,4 +1063,19 @@ MEDIA QUERIES
    .iv2 {
       padding: 0 9.5% 0 7%;
    }
+
+   .itc1 p {
+      padding-left: 36px;
+   }
+
+   .itc2 {
+      padding: 0 10% 0 7%;
+   }
+
+
+      @-moz-document url-prefix() {
+         .iv1 img {
+            width: 95% !important;
+         }
+      }
 }

@@ -10,7 +10,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!--Favicon-->
-
    <link rel="apple-touch-icon" sizes="57x57" href="images/assets/favicon/apple-icon-57x57.png">
    <link rel="apple-touch-icon" sizes="60x60" href="images/assets/favicon/apple-icon-60x60.png">
    <link rel="apple-touch-icon" sizes="72x72" href="images/assets/favicon/apple-icon-72x72.png">
@@ -29,6 +28,7 @@
    <meta name="msapplication-TileImage" content="images/assets/favicon/ms-icon-144x144.png">
    <meta name="theme-color" content="#ffffff">
 
+   <!-- jQuery Scripts -->
    <script
    src="https://code.jquery.com/jquery-3.2.1.min.js"
    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -42,12 +42,11 @@
       <div id="nav" class="overlay">
          <div class="mobile-header">
             <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
-            <!-- <p class="mobile-logo">S<span class="ml">W</span></p> -->
             <img class="mobile-logo" src="images/assets/homepage/logo-blk.png" alt="Mobile Logo">
          </div>
          <nav class="menu overlay">
             <a href="/">HOME</a>
-            <!-- <a href="#">BIO</a> -->
+            <a href="/bio">BIO</a>
             <a class="active" href="/media">MEDIA</a>
             <!-- <a href="#">NEWS</a> -->
             <a href="/partnerships">PARTNERSHIPS</a>
@@ -58,7 +57,7 @@
       <!--Desktop Nav -->
       <nav class="desktop">
          <a href="/">HOME</a>
-         <!-- <a href="#">BIO</a> -->
+         <a href="/bio">BIO</a>
          <a class="active" href="/media">MEDIA</a>
          <!-- <a href="#">NEWS</a> -->
          <a href="/partnerships">PARTNERSHIPS</a>
@@ -69,7 +68,7 @@
    <!-- Hero Banner -->
    <section class="full-width hero-banner">
       <div class="hero-container">
-         <video class="hero video-open" autoplay loop muted>
+         <video class="hero" autoplay loop muted>
             <source src="videos/media-hero-video.mp4" type="video/mp4">
             <source src="videos/media-hero-video.ogv" type="video/ogv">
             <source src="videos/media-hero-video.webm" type="video/webm">
@@ -219,7 +218,25 @@
                <p>Shaun White Forbes Unfiltered</p>
             </div>
             <div class="itc2">
-               <p>"Now I can kinda be free to do what I want, and upload what I want to my fans directly"</p>
+               <p class="lazyload">"Now I can kinda be free to do what I want, and upload what I want to my fans directly"</p>
+            </div>
+         </div>
+         <div class="ivc4">
+            <div class="iv2">
+               <img class="iv1-img video-open-15" src="images/assets/media/tim-ferris@2x.png"/>
+               <p>Shaun White Interview | Tim Ferris</p>
+            </div><div class="iv3">
+               <a href="https://itunes.apple.com/us/station/shaun-white/idra.1207484087" target="_blank"><img class="iv1-img video-open-16" src="images/assets/media/miked@2x.png"/></a>
+               <p>Beats1 Mike D Interview</p>
+            </div>
+         </div>
+         <div class="ivc5">
+            <div id="last" class="iv1">
+               <img class="iv1-img video-open-17" src="images/assets/media/tom-bilyeu@2x.png"/>
+               <p>Shaun White on Always Winning, Even When You Lose | Impact Theory</p>
+            </div>
+            <div class="itc1">
+               <p class="last">"See that wasn’t really a mistake. I was just really hungry for snow. There was no food at the top."</p>
             </div>
          </div>
       </div>
@@ -485,6 +502,54 @@
          <!-- Button to close the modal END-->
          <div class="videoWrapper">
             <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/mvYQbc6RGa0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+   <!--Tim Ferris Video-->
+   <section id="video-modal15" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/A7eGdk8H9NU?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section>
+
+   <!--Mike D Video-->
+   <!-- <section id="video-modal16" class="video-modal">
+      <section class="video-modal-input-box"> -->
+         <!--Button to close modal-->
+         <!-- <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div> -->
+         <!-- Button to close the modal END-->
+         <!-- <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/mvYQbc6RGa0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+      </section>
+   </section> -->
+
+   <!--Impact Theory Video-->
+   <section id="video-modal17" class="video-modal">
+      <section class="video-modal-input-box">
+         <!--Button to close modal-->
+         <div>
+            <div class="video-close">
+               <img src="images/assets/media/icon-close.svg" alt="Close Button">
+            </div>
+         </div>
+         <!-- Button to close the modal END-->
+         <div class="videoWrapper">
+            <iframe class="player" width="560" height="540" src="https://www.youtube.com/embed/ULPE3_nPNL0?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
          </div>
       </section>
    </section>

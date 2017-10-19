@@ -7,8 +7,8 @@ $(".lazyload").each(function(idx){
         fadeIn();
     });
 
-    $(window).load(function() {
-        fadeIn();
+    $(window).on('load', function () {
+      fadeIn();
     });
 
     function fadeIn() {

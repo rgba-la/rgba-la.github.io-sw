@@ -448,13 +448,6 @@ MEDIA QUERIES
       transition: all .7s ease;
    }
 
-   .navbar-on .hamburger::before, .navbar-on .hamburger::after{
-      background-color: #333;
-      position: absolute;
-      margin-top: 12px;
-      z-index: 1000;
-   }
-
    .hamburger::before {
       -webkit-transform: translateY(-8px);
       -ms-transform: translateY(-8px);
@@ -462,15 +455,21 @@ MEDIA QUERIES
    }
 
    .hamburger:hover:before {
-      -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-      transform: translateY(-10px);
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px);
    }
 
    .hamburger::after {
       -webkit-transform: translateY(5px);
       -ms-transform: translateY(5px);
       transform: translateY(5px);
+   }
+
+   .hamburger:hover:after {
+      -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+      transform: translateY(-2px);
    }
 
    .overlay {

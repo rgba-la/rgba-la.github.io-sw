@@ -500,6 +500,15 @@ hr {
    z-index: 100;
 }
 
+.ei3-container .play-icon {
+   left: 50%;
+   -ms-transform: translateX(-50%) translateY(-50%);
+   -webkit-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%);
+   top: 50%;
+   z-index: 100;
+}
+
 .snow-video-2 {
    width: 100%;
    position: absolute;
@@ -579,11 +588,6 @@ hr {
    z-index: 10;
    overflow: hidden;
    margin: 0 auto;
-}
-
-.skate-carousel {
-   margin-bottom: 50px;
-   position: relative;
    float: left;
    width: 100%;
 }
@@ -819,6 +823,7 @@ hr {
    width: 100%;
    max-width: 960px;
    margin-top: 105px;
+   position: relative;
 }
 
 .et2-container {
@@ -1755,7 +1760,9 @@ MEDIA QUERIES
    }
 
    .wht-space {
-      margin: 150px auto 0;
+      /*margin: 150px auto 0;*/
+      margin: 120px auto 0;
+
    }
 
    .wht-space-title hr {
@@ -1811,7 +1818,9 @@ MEDIA QUERIES
    }
 
    .mammoth {
-      margin: 45px auto 0;
+      /*margin: 45px auto 0;*/
+      margin: 30% auto 0;
+
    }
 
    .mt1, .mt2 {
@@ -1865,7 +1874,7 @@ MEDIA QUERIES
 
    .mrtc {
       width: 80%;
-      margin: 45px auto 0;
+      margin: 70px auto 0;
    }
 
    .mrt1 {
@@ -1888,11 +1897,11 @@ MEDIA QUERIES
    }
 
    .mcc {
-      margin: 12% auto 0;
+      margin: 5% auto 0;
    }
 
    .mctc {
-      margin-top: 12%;
+      margin-top: 5%;
    }
 
    .mctc p {
@@ -2289,7 +2298,8 @@ MEDIA QUERIES
       -o-transition: all 150ms ease;
       transition: all 150ms ease;
       z-index: 10;
-      background-color: rgba(0,0,0,0.3);
+      background-color: rgba(0,0,0,.12);
+      -webkit-font-smoothing: antialiased;
    }
 
    .nav-btns_nav:active, .nav-btns2_nav:active  {
@@ -2297,23 +2307,33 @@ MEDIA QUERIES
    }
 
    .nav-btns_nav.next {
+      background-image: url('../images/assets/homepage/right-arrow.svg');
+      background-repeat: no-repeat;
+      background-position: left;
       left: auto;
       right: 0;
-      background-position: right top;
    }
 
    .nav-btns2_nav.next {
       left: auto;
-      top: 32%;
+      top: 36%;
       right: 15%;
-      background-position: right top;
+   }
+
+   .nav-btns_nav.prev, .nav-btns_nav.next, .nav-btns2_nav.prev {
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+
+   .nav-btns_nav.prev {
+      background-image: url('../images/assets/homepage/left-arrow.svg');
    }
 
    .nav-btns2_nav.prev {
+      background-image: url('../images/assets/homepage/left-arrow.svg');
       right: auto;
-      top: 32%;
+      top: 36%;
       left: 15%;
-      background-position: left top;
    }
 
    .sc-container {
@@ -2534,16 +2554,14 @@ MEDIA QUERIES
 
    .nav-btns2_nav.next {
       left: auto;
-      top: 42%;
+      top: 45%;
       right: 15%;
-      background-position: right top;
    }
 
    .nav-btns2_nav.prev {
       right: auto;
-      top: 42%;
+      top: 45%;
       left: 15%;
-      background-position: left top;
    }
 
    .skate-2-container {
@@ -2694,9 +2712,25 @@ MEDIA QUERIES
       line-height: 40px;
    }
 
-   .recap-mobile {
-      display: none;
+   .rc-mobile {
+      width: 550px;
    }
+
+   .rc-mobile h2 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: 2px;
+      line-height: 40px;
+      text-align: left;
+   }
+
+   .rc-mobile p {
+      font-size: 15px;
+      line-height: 30px;
+   }
+   /*.recap-mobile {
+      display: none;
+   }*/
 
    .ev1 p {
       width: 80px;
@@ -2739,7 +2773,6 @@ MEDIA QUERIES
    .ev1 img, .ev2 img, .ev3 img {
       border-radius: 4px;
       /*box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2); */
-      /* FIX AFTER*/
    }
 
    .vertical-container {
@@ -2797,7 +2830,9 @@ MEDIA QUERIES
    }
 
    .mammoth {
-      margin: 30% auto 0;
+      /*margin: 30% auto 0;*/
+      margin: 22% auto 0;
+
    }
 
    .mcc {
@@ -2884,7 +2919,7 @@ MEDIA QUERIES
       line-height: 30px;
       margin: 0;
       width: 448px;
-      margin-top: 35px;
+      margin-top: 75px;
    }
 
    .mctc {
@@ -2892,7 +2927,7 @@ MEDIA QUERIES
    }
 
    .mctc p {
-      margin-bottom: 0;
+      margin: 0;
       font-size: 15px;
       line-height: 30px;
       width: 448px;
@@ -2983,9 +3018,9 @@ MEDIA QUERIES
       margin-top: 220px;
    }
 
-   .mammoth {
+   /*.mammoth {
       margin: 25% auto 0;
-   }
+   }*/
 
 }
 
@@ -3017,14 +3052,12 @@ MEDIA QUERIES
       left: auto;
       top: 44%;
       right: 15%;
-      background-position: right top;
    }
 
    .nav-btns2_nav.prev {
       right: auto;
       top: 44%;
       left: 15%;
-      background-position: left top;
    }
 
    .grey-box-2 {
@@ -3048,7 +3081,8 @@ MEDIA QUERIES
    }
 
    .mammoth {
-      margin: 30% auto 0;
+      /*margin: 30% auto 0;*/
+      margin: 25% auto 0;
    }
 
    #playicon4 {
@@ -3140,7 +3174,8 @@ MEDIA QUERIES
    }
 
    .mammoth {
-      margin: 35% auto 0;
+      /*margin: 35% auto 0;*/
+      margin: 28% auto 0;
    }
 
    #playicon4 {
