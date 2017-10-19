@@ -1,6 +1,8 @@
-const newrelic = require ('newrelic');
 const env = require('@danmasta/env');
 const config = require('@danmasta/config');
+if(process.env.NODE_ENV === 'production'){
+    const newrelic = require ('newrelic');
+}
 const express = require('express');
 const _ = require('lodash');
 const bodyparser = require('body-parser');
