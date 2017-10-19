@@ -1370,7 +1370,7 @@ MEDIA QUERIES
 
    .intro-copy {
       right: 18vw;
-      top: -30px;
+      top: -25px;
    }
 
    .intro-image {
@@ -1977,7 +1977,7 @@ MEDIA QUERIES
 
    .intro-copy {
       right: 9vw;
-      top: -30px;
+      top: -25px;
    }
 
    .grey-box {
@@ -2028,7 +2028,7 @@ MEDIA QUERIES
 @media only screen and (min-width : 570px) {
    .intro-copy {
       right: 8.5vw;
-      top: -30px;
+      top: -25px;
    }
 
    .athlete-snow {
@@ -2169,7 +2169,7 @@ MEDIA QUERIES
 
    .intro-copy {
       right: 2vw;
-      top: -64px;
+      top: -50px;
    }
 
    .intro-copy h2 {
@@ -2983,7 +2983,7 @@ MEDIA QUERIES
 
    .intro-copy {
       right: 10px;
-      top: -80px;
+      top: -50px;
    }
 
    .intro-copy h2 {
