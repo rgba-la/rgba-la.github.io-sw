@@ -1,3 +1,4 @@
+const newrelic = require ('newrelic');
 const env = require('@danmasta/env');
 const config = require('@danmasta/config');
 const express = require('express');
