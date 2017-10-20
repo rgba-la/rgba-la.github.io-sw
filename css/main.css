@@ -1883,6 +1883,21 @@ MEDIA QUERIES
       display: none
    }
 
+   .mobile-btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 45px;
+   }
+
+   .mobile-btn .mr-btn {
+      margin-top: 0;
+   }
+
+   .desktop-btn {
+      display: none;
+   }
+
    .mr-title {
       height: 500px;
       display: -webkit-box;
@@ -2414,6 +2429,16 @@ MEDIA QUERIES
 
    .play-icon {
       top: 75%;
+   }
+
+   .mobile-btn {
+      display: none;
+   }
+
+   .desktop-btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
    }
 
 }
