@@ -312,40 +312,6 @@ hr {
    word-break: break-all;
 }
 
-.intro-2 {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-pack: center;
-   -ms-flex-pack: center;
-   justify-content: center;
-}
-
-.intro-module-2 {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-orient: vertical;
-   -webkit-box-direction: normal;
-   -ms-flex-direction: column;
-   flex-direction: column;
-   -webkit-box-align: center;
-   -ms-flex-align: center;
-   align-items: center;
-   -ms-flex-wrap: wrap;
-   flex-wrap: wrap;
-}
-
-.intro-quote {
-   font-family: DIN-CondensedBold, sans-serif;
-   color: #0F0F0F;
-   text-transform: uppercase;
-}
-
-.intro-bio {
-   font-family: Apercu-Regular, sans-serif;
-}
-
 /* ATHLETE */
 
 .athlete {
@@ -1458,24 +1424,6 @@ MEDIA QUERIES
       line-height: 25px;
    }
 
-   .intro-2 {
-      margin-top: 45px;
-   }
-
-   .intro-quote {
-      width: 300px;
-      font-size: 14px;
-      letter-spacing: 1.17px;
-      line-height: 25px;
-      text-align: left;
-   }
-
-   .intro-bio {
-      width: 320px;
-      font-size: 12px;
-      line-height: 25px;
-   }
-
    .insta-container {
       margin: 60px auto;
    }
@@ -2284,24 +2232,9 @@ MEDIA QUERIES
       margin: 115px 0;
    }
 
-   .intro-quote {
-      width: 700px;
-      font-size: 24px;
-      letter-spacing: 2px;
-      line-height: 40px;
-      text-align: center;
-   }
-
-   .intro-bio {
-      width: 500px;
-      font-size: 15px;
-      line-height: 30px;
-   }
-
    .grey-box {
       width: 51%;
    }
-
 
    .grey-box-container {
       margin: 115px auto 0 auto;
@@ -2550,9 +2483,6 @@ MEDIA QUERIES
       z-index: 10000;
    }
 
-   .intro-quote {
-      width: 782px;
-   }
    .intro-image {
       width: 52%;
    }
@@ -3282,9 +3212,6 @@ MEDIA QUERIES
 }
 
 @media only screen and (min-width: 1600px) {
-   .intro-2 {
-      margin-top: 200px;
-   }
 
    .grey-box-container {
       height: 600px;
@@ -3314,9 +3241,6 @@ MEDIA QUERIES
 }
 
 @media only screen and (min-width: 2100px) {
-   .intro-2 {
-      margin-top: 350px;
-   }
 
    .grey-box-container {
       height: 750px;
@@ -3332,7 +3256,5 @@ MEDIA QUERIES
 }
 
 @media only screen and (min-width: 2500px) {
-   .intro-2 {
-      margin-top: 400px;
-   }
+
 }
