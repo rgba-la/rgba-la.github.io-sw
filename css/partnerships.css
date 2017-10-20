@@ -10,7 +10,7 @@ html, body {
    width: 100%;
    height: auto;
    padding: 0;
-   font-family: Apercu-Regular;
+   font-family: Apercu-Regular, sans-serif;
    color: #0F0F0F;
 }
 
@@ -39,7 +39,7 @@ Base Layout Styles
 ********************************/
 
 .banner-text {
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
    position: absolute;
    left: 0;
    text-align: center;
@@ -100,7 +100,7 @@ Base Layout Styles
    text-align: center;
    width: 100%;
    text-transform: uppercase;
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
    text-align: center;
 }
 
@@ -172,7 +172,7 @@ Base Layout Styles
 
 .partner-title {
    text-transform: uppercase;
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
    font-size: 20px;
    color: rgba(15,15,15,0.50);
    letter-spacing: 1.5px;
@@ -367,7 +367,7 @@ MEDIA QUERIES
    .skate-text-6 {
       margin-top: 21px;
       width: 300px;
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       letter-spacing: 1.17px;
       line-height: 25px;
       text-align: center;

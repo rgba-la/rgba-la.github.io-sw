@@ -43,7 +43,7 @@ html, body {
    width: 100%;
    height: auto;
    padding: 0;
-   font-family: Apercu-Regular;
+   font-family: Apercu-Regular, sans-serif;
    color: #0F0F0F;
 }
 
@@ -222,7 +222,7 @@ iframe {
 
 .legend-container legend h2 {
    text-align: left;
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
    font-size: 24px;
    letter-spacing: 2px;
 }
@@ -269,7 +269,7 @@ label {
 
 .email-container p {
    font-size: 15px;
-   font-family: Apercu-Regular;
+   font-family: Apercu-Regular, sans-serif;
    line-height: 30px;
    overflow-wrap: break-word;
 }
@@ -285,7 +285,7 @@ label {
 
    #message {
       font-size: 15px;
-      font-family: Apercu-Regular;
+      font-family: Apercu-Regular, sans-serif;
       line-height: 30px;
    }
 }
@@ -407,7 +407,7 @@ MEDIA QUERIES
    nav a {
       color: #ACACAC;
       margin-bottom: 40px;
-      font-family: DIN-BlackAlternate;
+      font-family: DIN-BlackAlternate, sans-serif;
       font-size: 16px;
       letter-spacing: 4px;
       line-height: 20px;
@@ -522,7 +522,7 @@ MEDIA QUERIES
    }
 
    .ml {
-      font-family: Apercu-Regular
+      font-family: Apercu-Regular, sans-serif;
    }
 
    .closeBtn {
@@ -554,7 +554,7 @@ MEDIA QUERIES
 
    .desktop a {
       color: rgba(255,255,255,0.5);
-      font-family: 'DIN-BlackAlternate';
+      font-family: DIN-BlackAlternate, sans-serif;
       letter-spacing: 3px;
       margin: 0 30px 0 0;
       font-size: 11px;

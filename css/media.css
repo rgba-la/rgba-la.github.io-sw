@@ -9,7 +9,7 @@ html, body {
    overflow-x: hidden;
    width: 100%;
    padding: 0;
-   font-family: Apercu-Regular;
+   font-family: Apercu-Regular, sans-serif;
    color: #0F0F0F;
 }
 
@@ -19,7 +19,7 @@ Base Layout Styles
 /* BANNER AREA */
 
 .banner-text {
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
    position: absolute;
    left: 0;
    text-align: center;
@@ -52,7 +52,7 @@ Base Layout Styles
 }
 
 .m-subnav li a {
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
 }
 
 .m-subnav li a:hover {
@@ -141,7 +141,7 @@ Base Layout Styles
 }
 
 .st h2 {
-   font-family: DIN-BlackAlternate;
+   font-family: DIN-BlackAlternate, sans-serif;
    color: #F7F7F7;
    text-align: center;
    display: -webkit-box;
@@ -231,7 +231,7 @@ Base Layout Styles
 }
 
 .it h2 {
-   font-family: DIN-BlackAlternate;
+   font-family: DIN-BlackAlternate, sans-serif;
    color: #F7F7F7;
    text-align: center;
    display: -webkit-box;
@@ -266,7 +266,7 @@ Base Layout Styles
 
 .itc1 p, .itc2 p {
    margin: 0;
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
    text-transform: uppercase;
 }
 
@@ -281,7 +281,7 @@ Base Layout Styles
    z-index: -1;
 }
 
-.sv4 img:hover, .sv5 img:hover, .s1 img:hover, .ev3 img:hover, .sv img:hover {
+.sv4 img:hover, .sv5 img:hover, .s1 img:hover, .ev3 img:hover, .svi:hover {
    -webkit-transform: scale(.95);
    -ms-transform: scale(.95);
    transform: scale(.95);
@@ -408,7 +408,7 @@ MEDIA QUERIES
 
    /* SECTION 1 */
    .s1 img {
-      border-radius: 6px;
+      border-radius: 4px;
    }
 
    /* SECTION 2 */
@@ -455,7 +455,7 @@ MEDIA QUERIES
 
    .sv2 img, .sv3 img {
       width: 100%;
-      border-radius: 6px;
+      border-radius: 4px;
       -webkit-box-shadow: 0 2px 35px 0 rgba(0,0,0,.1);
       box-shadow: 0 2px 35px 0 rgba(0,0,0,.1);
    }
@@ -485,7 +485,7 @@ MEDIA QUERIES
 
    .sv4 img, .sv5 img {
       width: 100%;
-      border-radius: 6px;
+      border-radius: 4px;
       -webkit-box-shadow: 0 2px 35px 0 rgba(0,0,0,.1);
       box-shadow: 0 2px 35px 0 rgba(0,0,0,.1);
    }
@@ -513,7 +513,7 @@ MEDIA QUERIES
 
    .iv1 img, .iv2 img, .iv3 img, .iv4 img {
       width: 100%;
-      border-radius: 6px;
+      border-radius: 4px;
    }
 
    .iv4 {
