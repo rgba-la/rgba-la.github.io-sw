@@ -10,7 +10,7 @@ html, body {
    width: 100%;
    height: auto;
    padding: 0;
-   font-family: Apercu-Regular;
+   font-family: Apercu-Regular, sans-serif;
    color: #0F0F0F;
 }
 
@@ -39,9 +39,6 @@ Base Layout Styles
 ********************************/
 
 /*Fixes*/
-
-
-
 /* Safari 7.1+ */ _::-webkit-full-page-media, _:future, :root .safari-greybox-fix { display: none; }
 
 /* Safari 7.1+ */ _::-webkit-full-page-media, _:future, :root .safari_accomplishments-fix { margin-top: 50px; }
@@ -49,13 +46,10 @@ Base Layout Styles
 /* Safari 7.1+ */ _::-webkit-full-page-media, _:future, :root .safari_accomplishments2-fix { margin: 150px auto; }
 
 
-
 /* TOP */
-
 .hero-banner, .image-container,
 .hero-container, .hero {
    max-width: 100%;
-
 }
 
 .logo {
@@ -84,7 +78,7 @@ Base Layout Styles
    -webkit-box-align: center;
    -ms-flex-align: center;
    align-items: center;
-   padding-left: 4%;
+   /*padding-left: 4%;*/
 }
 
 .about-nav ul {
@@ -103,7 +97,7 @@ Base Layout Styles
 
 .about-nav li a {
    color:#0F0F0F;
-   font-family: DIN-BlackAlternate;
+   font-family: DIN-BlackAlternate, sans-serif;
 }
 
 .about-nav li a:after {
@@ -164,6 +158,78 @@ Base Layout Styles
    height: 20px;
 }
 
+.insta-container {
+   width: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   margin: 0 auto;
+   margin: 120px 0;
+}
+
+#instafeed {
+   margin: 0 auto;
+}
+
+#instafeed img {
+   width: auto;
+   margin: 0 auto;
+   padding: 4px;
+   -webkit-box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
+   box-shadow: 2px 2px 50px 0 rgba(0,0,0,.2);
+}
+
+#instafeed img:hover {
+   opacity: 0.7;
+   -moz-opacity: 0.7;
+   -webkit-opacity: 0.7;
+}
+
+.headline {
+   font-family: DIN-CondensedBold, sans-serif;
+}
+
+.headline, .tag {
+   color: #101010;
+   text-align: center;
+   margin-top: 0;
+}
+
+.tag {
+   font-family: Apercu-Regular, sans-serif;
+   font-size: 12px;
+   letter-spacing: 0.62px;
+   line-height: 13px;
+}
+
+.tag a {
+   position: relative;
+}
+
+.tag a:after {
+   background: none repeat scroll 0 0 transparent;
+   bottom: -4px;
+   content: "";
+   display: block;
+   height: 1.5px;
+   left: 0;
+   position: absolute;
+   background: #000;
+   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+   -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+   transition: width 0.3s ease 0s, left 0.3s ease 0s;
+   width: 0;
+}
+
+.tag a:hover:after {
+   width: 95%;
+   left: 4%;
+}
+
 .athlete:hover:after {
    width: 60%;
    left: 0;
@@ -207,7 +273,6 @@ Base Layout Styles
 }
 
 .grey-box-container {
-   margin: 115px auto 0 auto;
    max-width: 100%;
    position: relative;
    top: -50%;
@@ -242,7 +307,7 @@ hr {
 
 .intro-copy h2 {
    margin: 0;
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
    color: #0F0F0F;
    word-break: break-all;
 }
@@ -272,13 +337,13 @@ hr {
 }
 
 .intro-quote {
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
    color: #0F0F0F;
    text-transform: uppercase;
 }
 
 .intro-bio {
-   font-family: Apercu-Regular;
+   font-family: Apercu-Regular, sans-serif;
 }
 
 /* ATHLETE */
@@ -311,7 +376,7 @@ hr {
 }
 
 .athlete-title-container h2 {
-   font-family: DIN-BlackAlternate;
+   font-family: DIN-BlackAlternate, sans-serif;
    margin: 0;
    color: #F7F7F7;
 }
@@ -411,11 +476,11 @@ hr {
 }
 
 .number {
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
 }
 
 .acc-text {
-   font-family: DIN-BlackAlternate;
+   font-family: DIN-BlackAlternate, sans-serif;
    color: #101010;
 }
 
@@ -521,7 +586,7 @@ hr {
 }
 
 .snow-video-text-1 p {
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
 }
 
 .snow-video-text-container {
@@ -541,7 +606,7 @@ hr {
 .snow-video-text-1 {
    margin: 0 auto;
    text-align: center;
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
    text-transform: uppercase;
 }
 
@@ -624,7 +689,7 @@ hr {
 }
 
 .skate p {
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
    color: #FFF;
 }
 
@@ -675,7 +740,7 @@ hr {
    text-align: center;
    width: 100%;
    text-transform: uppercase;
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
    text-align: center;
 }
 
@@ -838,7 +903,7 @@ hr {
 
 .et2-container p {
    text-align: center;
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
    text-transform: uppercase;
 }
 
@@ -1306,6 +1371,9 @@ MEDIA QUERIES
       padding: 80px 45px 0 0
    }
 
+   .grey-box-container {
+      margin: 100px auto 0 auto;
+   }
 
    .sv4 img, .sv5 img {
       width: 100%;
@@ -1351,6 +1419,7 @@ MEDIA QUERIES
       margin-top: 45px;
       width: 320px;
    }
+
    .about-p p {
       line-height: 25px;
       font-size: 12px;
@@ -1407,6 +1476,26 @@ MEDIA QUERIES
       line-height: 25px;
    }
 
+   .insta-container {
+      margin: 60px auto;
+   }
+
+   .headline {
+      margin-bottom: 10px;
+      font-size: 18px;
+      letter-spacing: 1.17px;
+      line-height: 25px;
+      text-transform: uppercase;
+   }
+
+   .tag {
+      margin-bottom: 60px;
+   }
+
+   #instafeed {
+      max-width: 318px;
+   }
+
    .athlete-title-container h2 {
       padding-left: 2%;
       font-size: 12.4vw;
@@ -1456,7 +1545,7 @@ MEDIA QUERIES
 
    .snow {
       font-size: 30px;
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       letter-spacing: 1.5px;
       line-height: 7.2vw;
       margin: 0;
@@ -1630,7 +1719,7 @@ MEDIA QUERIES
    .skate-text-6 {
       margin-top: 21px;
       width: 300px;
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       letter-spacing: 1.17px;
       line-height: 25px;
       text-align: center;
@@ -1641,7 +1730,7 @@ MEDIA QUERIES
       font-size: 12.5vw;
       letter-spacing: 20px;
       line-height: 8px;
-      font-family: DIN-BlackAlternate;
+      font-family: DIN-BlackAlternate, sans-serif;
       color: #F7F7F7;
    }
 
@@ -1666,7 +1755,7 @@ MEDIA QUERIES
       font-size: 30px;
       letter-spacing: 1.5px;
       line-height: 25px;
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
    }
 
    .air-style-text {
@@ -1707,7 +1796,7 @@ MEDIA QUERIES
 
    .rc-mobile h2 {
       font-size: 24px;
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       letter-spacing: 2px;
       line-height: 40px;
       margin: 0;
@@ -1770,7 +1859,7 @@ MEDIA QUERIES
    }
 
    .wht-space-title h2 {
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       font-size: 7.5vw;
       letter-spacing: 1.5px;
       line-height: 6.4vw;
@@ -1806,7 +1895,7 @@ MEDIA QUERIES
 
    .wst p {
       margin: 0;
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       font-size: 3.5vw;
       letter-spacing: 1.17px;
       line-height: 25px;
@@ -1861,7 +1950,7 @@ MEDIA QUERIES
    }
 
    .mr-title h2 {
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       font-size: 7.5vw;
       margin: 0;
       letter-spacing: 1.5px;
@@ -1881,7 +1970,7 @@ MEDIA QUERIES
       font-size: 14px;
       letter-spacing: 1.17px;
       line-height: 25px;
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       width: 300px;
       text-align: center;
       margin: 0;
@@ -1916,7 +2005,7 @@ MEDIA QUERIES
    }
 
    .si-form p {
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       font-size: 24px;
       letter-spacing: 2px;
       line-height: 40px;
@@ -2031,6 +2120,10 @@ MEDIA QUERIES
       top: -25px;
    }
 
+   #instafeed {
+      max-width: 474px;
+   }
+
    .athlete-snow {
       bottom: 10.5%;
    }
@@ -2119,6 +2212,14 @@ MEDIA QUERIES
       display: block;
    }
 
+   .insta-container {
+      margin: 0px auto;
+   }
+
+   #instafeed {
+      max-width: 632px;
+   }
+
    .sv3-container {
       margin-top: 105px;
    }
@@ -2201,7 +2302,9 @@ MEDIA QUERIES
       width: 51%;
    }
 
+
    .grey-box-container {
+      margin: 115px auto 0 auto;
       height: 350px;
    }
 
@@ -2385,6 +2488,28 @@ MEDIA QUERIES
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
+   .headline {
+      margin-bottom: 10px;
+      font-size: 24px;
+      letter-spacing: 2px;
+      line-height: 40px;
+      text-transform: uppercase;
+   }
+
+   .tag {
+      margin-bottom: 60px;
+      font-size: 15px;
+      line-height: 30px;
+   }
+
+   .insta-container {
+      margin: 120px auto;
+   }
+
+   #instafeed {
+      max-width: 948px;
+   }
+
    .sv3-container {
       margin-top: 150px;
    }
@@ -2460,7 +2585,7 @@ MEDIA QUERIES
 
    .snow {
       font-size: 100px;
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       letter-spacing: 5px;
       line-height: 10.2vw;
    }
@@ -2654,7 +2779,7 @@ MEDIA QUERIES
       font-size: 100px;
       letter-spacing: 5px;
       line-height: 80px;
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
    }
 
    .air-style-text hr {
@@ -2670,7 +2795,7 @@ MEDIA QUERIES
       display: block;
       font-size: 14px;
       letter-spacing: 1px;
-      font-family: Apercu-Regular;
+      font-family: Apercu-Regular, sans-serif;
       text-transform: uppercase;
       margin-top: 20px;
       padding-left: 100px;
@@ -2757,7 +2882,7 @@ MEDIA QUERIES
    .ev-text h2 {
       margin: 0;
       font-size: 24px;
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       letter-spacing: 2px;
       line-height: 40px;
       text-align: left;
@@ -2816,7 +2941,7 @@ MEDIA QUERIES
    }
 
    #wst1 p {
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       font-size: 24px;
       letter-spacing: 2px;
       line-height: 40px;
@@ -2906,7 +3031,7 @@ MEDIA QUERIES
       font-size: 24px;
       letter-spacing: 2px;
       line-height: 40px;
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       width: 60%;
       max-width: 700px;
       text-align: center;
@@ -2938,7 +3063,7 @@ MEDIA QUERIES
    }
 
    .si-form p {
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       font-size: 24px;
       letter-spacing: 2px;
       line-height: 40px;

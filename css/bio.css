@@ -11,7 +11,7 @@ html, body {
    width: 100%;
    height: auto;
    padding: 0;
-   font-family: Apercu-Regular;
+   font-family: Apercu-Regular, sans-serif;
    color: #0F0F0F;
 }
 
@@ -40,7 +40,7 @@ Base Layout Styles
 ********************************/
 
 .banner-text {
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
    position: absolute;
    left: 0;
    text-align: center;
@@ -95,7 +95,7 @@ Base Layout Styles
 }
 
 .headline {
-   font-family: DIN-CondensedBold;
+   font-family: DIN-CondensedBold, sans-serif;
 }
 
 .headline, .tag {
@@ -105,7 +105,7 @@ Base Layout Styles
 }
 
 .tag {
-   font-family: Apercu-Regular;
+   font-family: Apercu-Regular, sans-serif;
    font-size: 12px;
    letter-spacing: 0.62px;
    line-height: 13px;
@@ -215,7 +215,7 @@ MEDIA QUERIES
       max-width: 300px;
       margin: 40px auto 0 auto;
       font-size: 14px;
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       line-height: 25px;
       letter-spacing: 1.17px;
       text-align: center;
@@ -372,7 +372,7 @@ MEDIA QUERIES
       max-width: 800px;
       margin: 60px auto 0 auto;
       font-size: 24px;
-      font-family: DIN-CondensedBold;
+      font-family: DIN-CondensedBold, sans-serif;
       line-height: 40px;
       letter-spacing: 2px;
       text-align: center;
