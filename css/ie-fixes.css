@@ -35,7 +35,7 @@
    *::-ms-backdrop, .skate-2-container {
       width: auto;
       height: auto;
-      max-width: 1440px;
+      max-width: 1000px;
    }
 
    .skate-img img {
@@ -105,11 +105,13 @@
    }
 
    #mailchimp input {
-      margin: 0 20px;
+      margin-top: 20px;
+      margin: 20px 0 0 0 !important;
    }
 
    *::-ms-backdrop, #mailchimp input {
-      margin: 0 20px;
+      margin-top: 20px;
+      margin: 20px 0 0 0 !important;
    }
 
    .sc {
@@ -149,6 +151,24 @@
       height: auto;
       margin: 0 auto;
    }
+
+   .insta-container {
+      display: block;
+   }
+
+   *::-ms-backdrop, .insta-container {
+      display: block;
+   }
+
+   .wsi1-container {
+      display: block;
+   }
+
+   *::-ms-backdrop, .wsi1-container {
+      display: block;
+      box-shadow: none;
+   }
+
 
    /* MEDIA PAGE */
 
@@ -192,15 +212,28 @@
    .sw-img img {
       width: auto;
       height: auto;
-      max-width:400px;
+      max-width: 400px;
    }
 
    *::-ms-backdrop, .sw-img img {
       width: auto;
       height: auto;
-      max-width:400px;
+      max-width: 400px;
    }
 
+   .snow-video-1 {
+      display: block;
+      text-align: center;
+   }
+
+   *::-ms-backdrop, .snow-video-1 {
+      display: block;
+      text-align: center;
+   }
+
+   .skate-video, .skate-img {
+      display: block;
+   }
 
    @media only screen and (min-width : 320px) {
 
@@ -253,6 +286,14 @@
          max-width: 1200px;
       }
 
+      .wsi1-container {
+         display: block;
+      }
+
+      *::-ms-backdrop, .wsi1-container {
+         display: block;
+      }
+
       /* Partnerships Page */
       .snow-img img {
          width: auto;
@@ -290,9 +331,6 @@
          display: block;
       }
 
-      .insta-container {
-         display: block;
-      }
 
    }
 
@@ -311,11 +349,11 @@
       }
 
       .mri-right-container {
-         display: none;
+         display: none !important;
       }
 
       *::-ms-backdrop, .mri-right-container {
-         display: none;
+         display: none !important;
       }
 
       /* PARTNERSHIPS PAGE */

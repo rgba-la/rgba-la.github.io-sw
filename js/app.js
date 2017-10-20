@@ -7,24 +7,6 @@ function closeNav() {
    document.getElementById('nav').style.width = "0%";
 }
 
-
-// document.querySelector( ".menu-toggle" )
-// .addEventListener( "click", function() {
-//     this.classList.toggle( "active" );
-// });
-
-
-var docWidth = document.documentElement.offsetWidth;
-
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
-
 //==================================//
 
 // Subnav Scroll
@@ -68,15 +50,6 @@ $('a[href*="#"]')
 
 //===================================//
 
-//======= iOS Double Tap Fix ========//
-
-// $(document).ready(function() {
-//   $("a").on("click touchend", function(e) {
-//     var el = $(this);
-//     var link = el.attr("href");
-//     window.location = link;
-//   });
-// });
 
 //CONTACT MODAL//
 
