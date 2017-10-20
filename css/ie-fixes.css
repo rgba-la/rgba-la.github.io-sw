@@ -353,11 +353,7 @@
       }
 
       *::-ms-backdrop, .mri-right-container {
-         display: none;
-      }
-
-      .mri-right-container {
-         display: none;
+         display: none !important;
       }
 
       /* PARTNERSHIPS PAGE */
