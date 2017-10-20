@@ -1512,7 +1512,9 @@ MEDIA QUERIES
    }
 
    .accomplishments-copy-container {
-      margin: 25px auto;
+      /*margin: 25px auto;*/
+      margin: 10px auto;
+
    }
 
    .athlete-snow {
