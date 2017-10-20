@@ -106,12 +106,12 @@
 
    #mailchimp input {
       margin-top: 20px;
-      margin: 20px 0 0 0;
+      margin: 20px 0 0 0 !important;
    }
 
    *::-ms-backdrop, #mailchimp input {
       margin-top: 20px;
-      margin: 20px 0 0 0;
+      margin: 20px 0 0 0 !important;
    }
 
    .sc {
@@ -349,7 +349,7 @@
       }
 
       .mri-right-container {
-         display: none;
+         display: none !important;
       }
 
       *::-ms-backdrop, .mri-right-container {
