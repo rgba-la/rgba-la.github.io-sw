@@ -1,5 +1,8 @@
 const env = require('@danmasta/env');
 const config = require('@danmasta/config');
+if(process.env.NODE_ENV === 'production'){
+    const newrelic = require ('newrelic');
+}
 const express = require('express');
 const _ = require('lodash');
 const bodyparser = require('body-parser');
@@ -41,6 +44,7 @@ app.use('/css', express.static('css'));
 app.use('/images', express.static('images'));
 app.use('/js', express.static('js'));
 app.use('/videos', express.static('videos'));
+app.use('/loaderio-9c086537d969d5ed5cd850c357e7db3e.html', express.static('loaderio-9c086537d969d5ed5cd850c357e7db3e.html'));
 
 // set route handlers
 app.get('/', routeIndex);
