@@ -169,6 +169,13 @@
       box-shadow: none;
    }
 
+   .mri-right-container {
+      display: none !important;
+   }
+
+   *::-ms-backdrop, .mri-right-container {
+      display: none !important;
+   }
 
    /* MEDIA PAGE */
 
@@ -346,14 +353,6 @@
          width: auto;
          height: auto;
          max-width: 334px;
-      }
-
-      .mri-right-container {
-         display: none !important;
-      }
-
-      *::-ms-backdrop, .mri-right-container {
-         display: none !important;
       }
 
       /* PARTNERSHIPS PAGE */
