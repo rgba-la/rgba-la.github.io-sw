@@ -389,6 +389,7 @@ textarea {
    cursor: pointer;
    font-size: 0;
    display: none;
+   z-index: 1000;
 }
 
 
