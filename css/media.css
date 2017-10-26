@@ -281,7 +281,7 @@ Base Layout Styles
    z-index: -1;
 }
 
-.sv4 img:hover, .sv5 img:hover, .s1 img:hover, .ev3 img:hover, .svi:hover {
+.sv4 img:hover, .sv5 img:hover, .s1 img:hover, .ev3 img:hover {
    -webkit-transform: scale(.95);
    -ms-transform: scale(.95);
    transform: scale(.95);
@@ -300,7 +300,7 @@ Base Layout Styles
    transform: scale(.95);
 }
 
-#video-modal, #video-modal2, #video-modal3, #video-modal4, #video-modal5, #video-modal6, #video-modal7, #video-modal8, #video-modal9, #video-modal10, #video-modal11, #video-modal12, #video-modal13, #video-modal14, #video-modal15, #video-modal16, #video-modal17 {
+#video-modal, #video-modal2, #video-modal3, #video-modal4, #video-modal5, #video-modal6, #video-modal7, #video-modal8, #video-modal9, #video-modal10, #video-modal11, #video-modal12, #video-modal13, #video-modal14, #video-modal15, #video-modal16, #video-modal17, #video-modal18 {
    overflow: auto;
    display: none;
 }
