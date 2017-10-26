@@ -118,7 +118,9 @@ $('.video-open-16').on('click', function () {
 $('.video-open-17').on('click', function () {
   $('#video-modal17').fadeIn();
 });
-
+$('.video-open-18').on('click', function () {
+  $('#video-modal18').fadeIn();
+});
 // Close  Video Modals
 $('.video-close').on('click', function() {
   $('#video-modal').fadeOut();
@@ -138,6 +140,7 @@ $('.video-close').on('click', function() {
   $('#video-modal15').fadeOut();
   $('#video-modal16').fadeOut();
   $('#video-modal17').fadeOut();
+  $('#video-modal18').fadeOut();
 });
 
 //Pause Youtube videos when closing modals
