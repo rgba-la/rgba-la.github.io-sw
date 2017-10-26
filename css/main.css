@@ -1499,14 +1499,6 @@ MEDIA QUERIES
       color: #fff;
    }
 
-   .intro-stats {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      padding-left: 5%;
-      margin: 0 auto;
-   }
-   
    .sample-stats {
       width: 100%;
       margin: 0 auto;
@@ -1564,7 +1556,7 @@ MEDIA QUERIES
 
    .athlete-snow {
       width: 28%;
-      bottom: -12%;
+      bottom: 5%;
    }
 
    .number {
@@ -1608,7 +1600,7 @@ MEDIA QUERIES
    }
 
    .snow-video-text-container {
-      margin-top: 10%;
+      margin-top: 5%;
    }
 
    .skate-container {
@@ -2132,7 +2124,7 @@ MEDIA QUERIES
    }
 
    .accomplishments-copy-container {
-      margin: 25px auto 100px auto;
+      margin: 25px auto 75px auto;
    }
 
    .snow-video-text-1 {
@@ -2265,7 +2257,7 @@ MEDIA QUERIES
 
    .logo img {
       width: 50%;
-      max-width: 500px;
+      max-width: 400px;
    }
 
    .about {
@@ -2363,8 +2355,16 @@ MEDIA QUERIES
       left: 35px;
    }
 
+   .snow-video-text-container {
+      margin-top: 0;
+   }
+
+   .snow-video-text-2 {
+      margin-top: 60px;
+   }
+
    .athlete-snow {
-      bottom: -5%;
+      bottom: 5%;
    }
 
    .accomplishments-copy-container {
@@ -2436,7 +2436,7 @@ MEDIA QUERIES
 
    .nav-btns2_nav.next {
       left: auto;
-      top: 36%;
+      top: 50%;
       right: 15%;
    }
 
@@ -2452,7 +2452,7 @@ MEDIA QUERIES
    .nav-btns2_nav.prev {
       background-image: url('../images/assets/homepage/left-arrow.svg');
       right: auto;
-      top: 36%;
+      top: 50%;
       left: 15%;
    }
 
@@ -2648,9 +2648,9 @@ MEDIA QUERIES
    }
 
    .athlete-snow {
-      /*bottom: -2%;*/
-      width: 22%;
-      bottom: -12%;
+      width: 20%;
+      bottom: 0;
+      right: -1%;
    }
 
    .number {
@@ -2669,11 +2669,11 @@ MEDIA QUERIES
    }
 
    .snow-video-text-container {
-      margin-top: 13%;
+      margin-top: 0%;
    }
 
    .snow-video-text-1 {
-      width: 900px;
+      width: 700px;
       font-size: 24px;
       letter-spacing: 2px;
       line-height: 40px;
@@ -3146,9 +3146,12 @@ MEDIA QUERIES
    }
 
    .athlete-snow {
-      /*bottom: -4%;*/
-      bottom: -12%;
-      right: -2%;
+      bottom: 0%;
+      right: -5%;
+   }
+
+   .snow-video-text-2 {
+      margin-top: 100px;
    }
 
    .skate-container {
@@ -3195,8 +3198,7 @@ MEDIA QUERIES
    }
 
    .athlete-snow {
-      /*bottom: -6%;*/
-      bottom: -10%;
+      bottom: 0%;
       right: -2%;
    }
 
@@ -3254,6 +3256,10 @@ MEDIA QUERIES
 
 @media only screen and (min-width: 1350px) {
 
+   .logo img {
+      max-width: 500px;
+   }
+
    .vertical-text {
       width: 8%;
    }
@@ -3296,7 +3302,7 @@ MEDIA QUERIES
 
    .snow-video-text-container {
       /*margin-top: 12%;*/
-      margin-top: 5%;
+      margin-top: 2%;
    }
 
    .snow {
