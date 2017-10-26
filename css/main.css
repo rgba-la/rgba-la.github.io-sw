@@ -1378,7 +1378,7 @@ MEDIA QUERIES
 
    .about-p {
       margin-top: 45px;
-      width: 320px;
+      width: 90%;
    }
 
    .about-p p {
@@ -1593,7 +1593,7 @@ MEDIA QUERIES
    }
 
    .snow-video-text-2 {
-      width: 320px;
+      width: 90%;
       font-size: 11px;
       line-height: 25px;
       text-align: left;
@@ -1658,7 +1658,7 @@ MEDIA QUERIES
    }
 
    .skate-text-4 {
-      width: 320px;
+      width: 90%;
    }
 
    .skate-img {
@@ -1690,7 +1690,7 @@ MEDIA QUERIES
    }
 
    .skate-text-5 {
-      width: 320px;
+      width: 90%;
       font-size: 12px;
       line-height: 25px;
    }
@@ -1973,7 +1973,7 @@ MEDIA QUERIES
       font-size: 12px;
       line-height: 25px;
       margin: 0;
-      width: 320px;
+      width: 90%;
       margin-top: 45px;
    }
 
@@ -2057,6 +2057,10 @@ MEDIA QUERIES
       top: -25px;
    }
 
+   .about-p {
+      width: 320px;
+   }
+
    .intro-stats {
       padding-left: 4%;
    }
@@ -2101,6 +2105,10 @@ MEDIA QUERIES
 
    #playicon4 {
       top: 62%;
+   }
+
+   .mrt2 {
+      width: 320px;
    }
 }
 

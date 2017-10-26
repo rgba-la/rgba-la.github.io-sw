@@ -208,8 +208,6 @@ iframe {
    background-color: white;
    max-width: 350px;
    border-radius: 4px;
-   margin: 150px auto;
-   padding: 75px;
    position: relative;
 }
 
@@ -356,12 +354,11 @@ input:focus, textarea:focus {
 }
 
 #submit {
-   /*width: 101%;*/
    border: 1.5px solid #000;
    font-size: 13px;
    letter-spacing: 1px;
    font-weight: 600;
-   margin: 0 auto 0 18px;
+   border-radius: 0;
 }
 
 #submit:hover {
@@ -536,7 +533,29 @@ MEDIA QUERIES
    .hero-container {
       padding: 10px;
    }
+
+   .modal-input-box {
+      margin: 150px 20px;
+      padding: 40px;
+   }
+
+   #submit {
+      margin: 0 auto 0 20px;
+   }
 }
+
+@media only screen and (min-width : 480px) {
+   #submit {
+      width: 101%;
+      margin: 0 auto;
+   }
+
+   .modal-input-box {
+      margin: 150px auto;
+      padding: 40px;
+   }
+}
+
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
@@ -576,6 +595,10 @@ MEDIA QUERIES
    .hero-banner {
       margin-top: 43px;
       margin-left: 40px;
+   }
+
+   .modal-input-box {
+      padding: 75px;
    }
 
 }

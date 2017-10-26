@@ -202,7 +202,7 @@ MEDIA QUERIES
    }
 
    .p1 {
-      width: 320px;
+      width: 90%;
       max-width: 100%;
       margin: 45px auto 0 auto;
       text-align: left;
@@ -224,7 +224,7 @@ MEDIA QUERIES
 
    .p2, .p4, .p6, .p9 {
       width: 100%;
-      max-width: 320px;
+      max-width: 90%;
       margin: 40px auto 0 auto;
       font-size: 12px;
       line-height: 25px;
@@ -232,7 +232,7 @@ MEDIA QUERIES
 
    .p3, .p5, .p7, .p8, .p10 {
       width: 100%;
-      max-width: 320px;
+      max-width: 90%;
       margin: 25px auto 0 auto;
       font-size: 12px;
       line-height: 25px;
