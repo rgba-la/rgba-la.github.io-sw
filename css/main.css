@@ -939,7 +939,6 @@ hr {
    margin: 0 auto;
    text-align: center;
    padding-right: 20%;
-   /*padding-top: 25px;*/
    position: relative;
 }
 
@@ -1563,7 +1562,7 @@ MEDIA QUERIES
       line-height: 50px;
       font-size: 50px;
       text-align: left;
-      padding: 0 2% 0 5%;
+      padding: 0 3% 0 5%;
    }
 
    .acc-text {
@@ -2893,10 +2892,6 @@ MEDIA QUERIES
       line-height: 30px;
    }
 
-   /*.recap-mobile {
-      display: none;
-   }*/
-
    .ev1 p {
       width: 80px;
    }
@@ -2995,9 +2990,7 @@ MEDIA QUERIES
    }
 
    .mammoth {
-      /*margin: 30% auto 0;*/
       margin: 22% auto 0;
-
    }
 
    .mcc {
@@ -3252,7 +3245,6 @@ MEDIA QUERIES
    }
 
    .mammoth {
-      /*margin: 30% auto 0;*/
       margin: 25% auto 0;
    }
 
@@ -3309,7 +3301,6 @@ MEDIA QUERIES
    }
 
    .snow-video-text-container {
-      /*margin-top: 12%;*/
       margin-top: 2%;
    }
 
@@ -3357,7 +3348,6 @@ MEDIA QUERIES
    }
 
    .mammoth {
-      /*margin: 35% auto 0;*/
       margin: 28% auto 0;
    }
 
