@@ -442,26 +442,6 @@ hr {
    flex-wrap: wrap;
 }
 
-.accomplishments {
-   width: 80%;
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   z-index: 0;
-   text-align: center;
-   -ms-flex-wrap: wrap;
-   flex-wrap: wrap;
-}
-
-.accomplishments div p, .intro-stats div p {
-   margin: 0;
-}
-
-.one {
-   border-right: 1px solid #EEE;
-   padding-right: 30px;
-}
-
 .number {
    font-family: DIN-CondensedBold, sans-serif;
 }
@@ -469,10 +449,6 @@ hr {
 .acc-text {
    font-family: DIN-BlackAlternate, sans-serif;
    color: #101010;
-}
-
-.one .number, .one .acc-text {
-   text-align: left
 }
 
 .accomplishments-copy-container {
@@ -1530,29 +1506,15 @@ MEDIA QUERIES
       padding-left: 5%;
       margin: 0 auto;
    }
-
-   .accomplishments {
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start;
-   }
-
-   .accomplishments div {
-      margin-right: 44px;
-   }
-
-   .intro-stats div {
-      margin-right: 22px;
-   }
-
+   
    .sample-stats {
-      width: 86%;
+      width: 100%;
       margin: 0 auto;
    }
 
    .sample-stats ul {
       display: block;
-      text-align: center;
+      text-align: left;
       margin: 0 auto;
       padding: 0;
    }
@@ -1561,19 +1523,30 @@ MEDIA QUERIES
       display: inline-block;
       text-align: left;
       border-right: 1px solid #EEE;
-      padding-left: 25px;
+      vertical-align: top;
+      width: 85px;
+      max-height: 65px;
+      margin-bottom: 30px;
    }
 
    li.one-stats {
-      width: 25%;
-      padding-left: 0;
-      padding-right: 22px;
+      width: 90px;
+      padding-right: 2%;
+      margin-bottom: 30px;
+      vertical-align: top;
    }
 
    li.two-stats {
-      padding-right: 45px;
       margin-bottom: 30px;
       border-right: none;
+      vertical-align: top;
+      text-align: left;
+      border-right: 1px solid #EEE;
+      width: 85px;
+   }
+
+   li.three-stats {
+      border-left: none;
    }
 
    .acc-1 {
@@ -1591,7 +1564,6 @@ MEDIA QUERIES
 
    .athlete-snow {
       width: 28%;
-      /*bottom: 27%;*/
       bottom: -12%;
    }
 
@@ -1599,53 +1571,17 @@ MEDIA QUERIES
       line-height: 50px;
       font-size: 50px;
       text-align: left;
-      padding: 0 23px 0 23px;
-   }
-
-   .three-stats {
-      border-left: none;
+      padding: 0 2% 0 5%;
    }
 
    .acc-text {
       font-size: 10px;
       letter-spacing: 0.62px;
       line-height: 13px;
-      /*min-width: 46px;*/
       word-break: break-all;
       display: block;
       text-align: left;
-   }
-
-   /*.three-stats {
-      width: 10%;
-      display: inline-block;
-      border-left: 1px solid #EEE;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      padding-left: 35px
-   }*/
-
-   .three {
-      margin-top: 29px;
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-      align-items: baseline;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
+      width: 85px;
    }
 
    .accomplishments-copy {
@@ -1696,7 +1632,6 @@ MEDIA QUERIES
    }
 
    .skate-carousel img {
-      /*margin: 6.5vh auto;*/
       margin: 10% auto;
    }
 
@@ -2134,7 +2069,7 @@ MEDIA QUERIES
       padding-left: 4%;
    }
 
-   .three-stats {
+   li.three-stats {
       padding-left: 30px;
    }
 
@@ -2288,11 +2223,28 @@ MEDIA QUERIES
    }
 
    .insta-container {
-      margin: 0px auto;
+      margin: 0 auto;
    }
+
 
    #instafeed {
       max-width: 632px;
+   }
+
+   .sample-stats {
+      margin-top: 100px;
+   }
+
+   .sample-stats ul {
+      text-align: center;
+   }
+
+   .sample-stats li {
+      margin-left: 20px;
+   }
+
+   .number {
+      padding: 0 2% 0 2%;
    }
 
    .sv3-container {
@@ -2374,6 +2326,10 @@ MEDIA QUERIES
       margin-bottom: 100px;
    }
 
+   .athlete {
+      margin-top: 0;
+   }
+
    .athlete-image-container {
       display: inline-block;
       position: relative;
@@ -2392,18 +2348,10 @@ MEDIA QUERIES
       max-width: 1360px;
    }
 
-   .accomplishments {
-      padding-left: 4%
-   }
-
    .intro-stats {
       padding-left: 6%;
       margin: 100px auto 0 auto;
       width: 80%;
-   }
-
-   .one {
-      padding-right: 40px;
    }
 
    .snow {
@@ -2417,20 +2365,6 @@ MEDIA QUERIES
 
    .athlete-snow {
       bottom: -5%;
-   }
-
-   .three-stats {
-      margin-top: 0;
-      width: 14%;
-      display: inline-block;
-      border-left: 1px solid #EEE;
-   }
-
-   .three {
-      margin-top: 0;
-      width: 20%;
-      display: inline-block;
-      border-left: 1px solid #EEE;
    }
 
    .accomplishments-copy-container {
@@ -2620,8 +2554,20 @@ MEDIA QUERIES
       max-width: 948px;
    }
 
-   .intro-stats {
-      padding-left: 12%;
+   .sample-stats {
+      width: 100%;
+   }
+
+   .sample-stats li {
+      max-height: 75px;
+   }
+
+   .number {
+      padding: 0 2% 0 2%;
+   }
+
+   .acc-text {
+      width: 92px;
    }
 
    .sv3-container {
@@ -2707,47 +2653,15 @@ MEDIA QUERIES
       bottom: -12%;
    }
 
-   .intro-stats {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-   }
-
-   .accomplishments {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      padding: 0 4% 0 0;
-   }
-
-   .accomplishments div, .intro-stats div {
-      margin-right: 82px;
-   }
-
    .number {
-      line-height: 75px;
-      font-size: 75px;
+      line-height: 60px;
+      font-size: 60px;
    }
 
    .acc-text {
       font-size: 12px;
       letter-spacing: 0.75px;
       line-height: 18px;
-   }
-
-   .one {
-      border-right: 1px solid #EEE;
-      padding-right: 70px;
-   }
-
-   .three, .three-stats {
-      border-left: 1px solid #EEE;
-   }
-
-   .three, .three-stats {
-      margin-top: 0;
-      width: 20%;
-      display: inline-block;
    }
 
    .accomplishments-copy {
@@ -3348,10 +3262,6 @@ MEDIA QUERIES
       min-height: 700px;
    }
 
-   .one {
-      padding-right: 100px;
-   }
-
    .accomplishments-copy-container {
     margin: 75px auto;
    }
@@ -3419,10 +3329,6 @@ MEDIA QUERIES
 }
 
 @media only screen and (min-width: 1600px) {
-
-   .one {
-      padding-right: 110px;
-   }
 
    .grey-box-container {
       height: 600px;
