@@ -2718,13 +2718,13 @@ MEDIA QUERIES
 
    .nav-btns2_nav.next {
       left: auto;
-      top: 45%;
+      top: 50%;
       right: 15%;
    }
 
    .nav-btns2_nav.prev {
       right: auto;
-      top: 45%;
+      top: 50%;
       left: 15%;
    }
 
@@ -3221,13 +3221,13 @@ MEDIA QUERIES
 
    .nav-btns2_nav.next {
       left: auto;
-      top: 44%;
+      top: 50%;
       right: 15%;
    }
 
    .nav-btns2_nav.prev {
       right: auto;
-      top: 44%;
+      top: 50%;
       left: 15%;
    }
 
