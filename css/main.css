@@ -1298,11 +1298,6 @@ Browser Fixes
 /*Fixes*/
 /* Safari 7.1+ */ _::-webkit-full-page-media, _:future, :root .safari-greybox-fix { display: none; }
 
-/* Safari 7.1+ */ _::-webkit-full-page-media, _:future, :root .safari_accomplishments-fix { margin-top: 50px; }
-
-/* Safari 7.1+ */ _::-webkit-full-page-media, _:future, :root .safari_accomplishments2-fix { margin: 150px auto; }
-
-
 
 /***************************
 MEDIA QUERIES
@@ -2584,7 +2579,6 @@ MEDIA QUERIES
    .sv4 {
       padding: 0 8.4% 0 10%;
       position: relative;
-
    }
 
    .sv5 {
@@ -3190,8 +3184,8 @@ MEDIA QUERIES
       padding-left: 12%;
    }
 
-   .one {
-      padding-right: 80px;
+   .athlete {
+      margin-top: 50px;
    }
 
    .athlete-text-container {
@@ -3356,7 +3350,7 @@ MEDIA QUERIES
    }
 
    .si-form {
-      margin: 15% auto 0;
+      margin: 6% auto 0;
    }
 
 }
