@@ -139,13 +139,17 @@ Base Layout Styles
 }
 
 .partnerships {
-   max-width: 1030px;
+   max-width: 1170px;
    margin: 115px auto;
    margin-top: 0px;
    position: relative;
    left:0;
    right: 0;
    padding: 20px;
+}
+
+.partnerships a {
+   width: 180px;
 }
 
 .partner-logo {
@@ -156,7 +160,7 @@ Base Layout Styles
 }
 
 .charities {
-   max-width: 1030px;
+   max-width: 1170px;
    margin: 115px auto;
    margin-top: 0px;
    position: relative;
@@ -299,12 +303,12 @@ MEDIA QUERIES
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: baseline;
-          -ms-flex-align: baseline;
-              align-items: baseline;
+      -ms-flex-align: baseline;
+       align-items: baseline;
    }
 
    .partner-logo, .charity-logo {
-      width: 60%;
+      width: 70%;
    }
 
    .bg {
