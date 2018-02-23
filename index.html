@@ -77,7 +77,18 @@
       text-align: center;
       width: 70%;
    }
-   #mailchimp input.email { background: #fff }
+   #mailchimp input.email {
+      background: #fff;
+      border: 2px solid rgba(0,0,0,0);
+   }
+   #mailchimp input.email:hover {
+    border: 2px solid #000;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s;
+   }
    #mailchimp input.name { background: #fff}
    #mailchimp input[type="submit"] {
       cursor: pointer;
